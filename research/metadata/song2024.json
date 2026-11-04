@@ -1,0 +1,756 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          18
+        ]
+      ],
+      "date-time": "2026-08-18T03:02:15Z",
+      "timestamp": 1787022135038,
+      "version": "build-2736575974"
+    },
+    "reference-count": 40,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              5
+            ]
+          ],
+          "date-time": "2024-01-05T00:00:00Z",
+          "timestamp": 1704412800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "61572444"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "61572444"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "61250007"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "61250007"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100013066",
+        "name": "Key Scientific Research Project of Colleges and Universities in Henan Province",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "22A520049"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "22A520049"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100013066",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100007129",
+        "name": "Natural Science Foundation of Shandong Province",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "ZR2022MD039"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "ZR2022MD039"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100007129",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.plosone.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS ONE"
+    ],
+    "abstract": "<jats:p>In the process of Canny edge detection, a large number of high complexity calculations such as Gaussian filtering, gradient calculation, non-maximum suppression, and double threshold judgment need to be performed on the image, which takes up a lot of operation time, which is a great challenge to the real-time requirements of the algorithm. The traditional Canny edge detection technology mainly uses customized equipment such as DSP and FPGA, but it has some problems, such as long development cycle, difficult debugging, resource consumption, and so on. At the same time, the adopted CUDA platform has the problem of poor cross-platform. In order to solve this problem, a fine-grained parallel Canny edge detection method is proposed, which is optimized from three aspects: task partition, vector memory access, and NDRange optimization, and CPU-GPU collaborative parallelism is realized. At the same time, the parallel Canny edge detection methods based on multi-core CPU and CUDA architecture are designed. The experimental results show that OpenCL accelerated Canny edge detection algorithm (OCL_Canny) achieves 20.68 times acceleration ratio compared with CPU serial algorithm at 7452 × 8024 image resolution. At the image resolution of 3500 × 3500, the OCL_Canny algorithm achieves 3.96 times the acceleration ratio compared with the CPU multi-threaded Canny parallel algorithm. At 1024 × 1024 image resolution, the OCL_Canny algorithm achieves 1.21 times the acceleration ratio compared with the CUDA-based Canny parallel algorithm. The effectiveness and performance portability of the proposed Canny edge detection parallel algorithm are verified, and it provides a reference for the research of fast calculation of image big data.</jats:p>",
+    "DOI": "10.1371/journal.pone.0292345",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          5
+        ]
+      ],
+      "date-time": "2024-01-05T13:28:50Z",
+      "timestamp": 1704461330000
+    },
+    "page": "e0292345",
+    "update-policy": "https://doi.org/10.1371/journal.pone.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 32,
+    "title": [
+      "A parallel Canny edge detection algorithm based on OpenCL acceleration"
+    ],
+    "prefix": "10.1371",
+    "volume": "19",
+    "author": [
+      {
+        "given": "Yupu",
+        "family": "Song",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Cailin",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shiyang",
+        "family": "Xiao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Qinglei",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5538-7789",
+        "authenticated-orcid": true,
+        "given": "Han",
+        "family": "Xiao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          5
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "4",
+        "key": "pone.0292345.ref001",
+        "doi-asserted-by": "crossref",
+        "first-page": "1571",
+        "DOI": "10.1007/s40998-020-00333-5",
+        "article-title": "Adaptive edge detection technique implemented on FPGA",
+        "volume": "44",
+        "author": "S Taslimi",
+        "year": "2020",
+        "journal-title": "Iranian Journal of Science and Technology-Transactions of Electrical Engineering"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0292345.ref002",
+        "first-page": "25",
+        "article-title": "Multi-GPGPU based medical image processing in hip replacement",
+        "volume": "14",
+        "author": "A Morar",
+        "year": "2012",
+        "journal-title": "Control Eng Appl Inf"
+      },
+      {
+        "issue": "5",
+        "key": "pone.0292345.ref003",
+        "doi-asserted-by": "crossref",
+        "first-page": "11891",
+        "DOI": "10.1007/s10586-017-1508-x",
+        "article-title": "Edge detection of satellite image using fuzzy logic",
+        "volume": "22",
+        "author": "R Dhivya",
+        "year": "2019",
+        "journal-title": "Cluster Comput"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0292345.ref004",
+        "doi-asserted-by": "crossref",
+        "first-page": "379",
+        "DOI": "10.1109/TPDS.2020.3021238",
+        "article-title": "Multi-GPU design and performance evaluation of homomorphic encryption on GPU clusters",
+        "volume": "32",
+        "author": "A Al Badawi",
+        "year": "2021",
+        "journal-title": "IEEE T Parall Distr"
+      },
+      {
+        "issue": "17",
+        "key": "pone.0292345.ref005",
+        "doi-asserted-by": "crossref",
+        "first-page": "17075",
+        "DOI": "10.1109/JSEN.2022.3193060",
+        "article-title": "Characterizing deep neural networks on edge computing systems for object classification in 3D point clouds",
+        "volume": "22",
+        "author": "C Wisultschew",
+        "year": "2022",
+        "journal-title": "IEEE Sens J"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0292345.ref006",
+        "first-page": "238",
+        "article-title": "Exploring applications of STT-RAM in GPU architectures",
+        "volume": "68",
+        "author": "XX Liu",
+        "year": "2021",
+        "journal-title": "IEEE T Circuits-I"
+      },
+      {
+        "issue": "6",
+        "key": "pone.0292345.ref007",
+        "doi-asserted-by": "crossref",
+        "first-page": "679",
+        "DOI": "10.1109/TPAMI.1986.4767851",
+        "article-title": "A computational approach to edge detection",
+        "volume": "8",
+        "author": "J. Canny",
+        "year": "1986",
+        "journal-title": "IEEE T Pattern Anal"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0292345.ref008",
+        "first-page": "355",
+        "article-title": "Edge computing in IoT-enabled honeybee monitoring for the detection of varroa destructor",
+        "volume": "32",
+        "author": "A Wachowicz",
+        "year": "2022",
+        "journal-title": "INT J Ap Mat Com-Pol"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0292345.ref009",
+        "first-page": "744",
+        "article-title": "Lightweight neural architecture search for temporal convolutional networks at the edge",
+        "volume": "72",
+        "author": "M Risso",
+        "year": "2023",
+        "journal-title": "IEEE T Comput"
+      },
+      {
+        "issue": "5",
+        "key": "pone.0292345.ref010",
+        "first-page": "45",
+        "article-title": "FPGA-based real-time edge detection and its implementation for deep-space images",
+        "volume": "33",
+        "author": "S Weizhong",
+        "year": "2020",
+        "journal-title": "electronic science and technology"
+      },
+      {
+        "issue": "12",
+        "key": "pone.0292345.ref011",
+        "first-page": "208",
+        "article-title": "Implementation of SDSo C acceleration algorithm for edge detection algorithm in machine vision",
+        "volume": "55",
+        "author": "W Jin",
+        "year": "2019",
+        "journal-title": "Computer Engineering and Applications"
+      },
+      {
+        "issue": "6",
+        "key": "pone.0292345.ref012",
+        "first-page": "8",
+        "article-title": "Implemention and optimization of Canny operator on DSP",
+        "volume": "37",
+        "author": "X Keqiang",
+        "year": "2014",
+        "journal-title": "Modern Electronics Technique"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0292345.ref013",
+        "first-page": "47",
+        "article-title": "The parallel canny algorithm based on TBB",
+        "volume": "6",
+        "author": "L Xiangjiao",
+        "year": "2014",
+        "journal-title": "Journal of Nanyang Institute of Technology"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0292345.ref014",
+        "first-page": "140",
+        "article-title": "Real-time image edge detection based on GPU",
+        "volume": "31",
+        "author": "Z Yue",
+        "year": "2009",
+        "journal-title": "Electronic Measurement Technology"
+      },
+      {
+        "issue": "7",
+        "key": "pone.0292345.ref015",
+        "doi-asserted-by": "crossref",
+        "first-page": "714",
+        "DOI": "10.3788/YJYXS20163107.0714",
+        "article-title": "Fast Canny algorithm based on GPU+CPU",
+        "volume": "31",
+        "author": "T Bin",
+        "year": "2016",
+        "journal-title": "Chinese Journal of Liquid Crystals and Displays"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0292345.ref016",
+        "first-page": "346",
+        "article-title": "GPU implementation of machine vision algorithm based on OpenCL",
+        "volume": "40",
+        "author": "W Jin",
+        "year": "2019",
+        "journal-title": "Computer Engineering and Design"
+      },
+      {
+        "issue": "06",
+        "key": "pone.0292345.ref017",
+        "doi-asserted-by": "crossref",
+        "first-page": "957",
+        "DOI": "10.31577/cai_2022_4_957",
+        "article-title": "Canny edge detection analysis based on parallel algorithm, constructed complexity scale and CUDA",
+        "volume": "41",
+        "author": "LI Mochurad",
+        "year": "2022",
+        "journal-title": "Computing and Informatics"
+      },
+      {
+        "key": "pone.0292345.ref018",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Horvath M, Michael B, Shadi A. Canny edge detection on GPU using CUDA. IEEE 13th Annual Computing and Communication Workshop and Conference (CCWC). 2023; 0419–0425. https://dx.doi.org/10.1109/CCWC57344.2023.10099273",
+        "DOI": "10.1109/CCWC57344.2023.10099273"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0292345.ref019",
+        "doi-asserted-by": "crossref",
+        "first-page": "397",
+        "DOI": "10.1007/s10586-019-02929-x",
+        "article-title": "Canny edge detection and Hough transform for high resolution video streams using Hadoop and Spark",
+        "volume": "23",
+        "author": "B Iqbal",
+        "year": "2020",
+        "journal-title": "Cluster Comput"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0292345.ref020",
+        "first-page": "1",
+        "article-title": "Implementing a parallel image edge detection algorithm based on the Otsu-Canny operator on the Hadoop platform",
+        "author": "JF Cao",
+        "year": "2018",
+        "journal-title": "Comput Intel Neurosc"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0292345.ref021",
+        "first-page": "262",
+        "article-title": "Real-time image edge detection of the improved Canny algorithm",
+        "volume": "34",
+        "author": "H Xiaoli",
+        "year": "2015",
+        "journal-title": "Journal of Inner Mongolia University of Science and Technology"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0292345.ref022",
+        "doi-asserted-by": "crossref",
+        "first-page": "957",
+        "DOI": "10.1007/s11554-016-0582-2",
+        "article-title": "FPGA implementation of cost-effective robust Canny edge detection algorithm",
+        "volume": "16",
+        "author": "D Sangeetha",
+        "year": "2019",
+        "journal-title": "J Real-Time Image Pr"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0292345.ref023",
+        "doi-asserted-by": "crossref",
+        "first-page": "1037",
+        "DOI": "10.1109/TCSVT.2016.2640038",
+        "article-title": "Energy efficient Canny edge detector for advanced mobile vision applications",
+        "volume": "28",
+        "author": "J Lee",
+        "year": "2018",
+        "journal-title": "IEEE T Circ Syst Vid"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0292345.ref024",
+        "first-page": "93",
+        "article-title": "Improved Canny edge detection algorithm and implementation in FPGA",
+        "volume": "32",
+        "author": "Z Suwen",
+        "year": "2010",
+        "journal-title": "Infrared Technology"
+      },
+      {
+        "issue": "11",
+        "key": "pone.0292345.ref025",
+        "first-page": "1410",
+        "article-title": "A Fast image segmentation algorithm fully based on edge information",
+        "volume": "24",
+        "author": "N Shengxiao",
+        "year": "2012",
+        "journal-title": "Journal of Computer-Aided Design and Computer Graphics"
+      },
+      {
+        "issue": "11",
+        "key": "pone.0292345.ref026",
+        "doi-asserted-by": "crossref",
+        "first-page": "3262",
+        "DOI": "10.1109/TCSVT.2017.2746753",
+        "article-title": "Fast and resource-efficient hardware implementation of modified line segment detector",
+        "volume": "28",
+        "author": "Z Fuqiang",
+        "year": "2018",
+        "journal-title": "IEEE T Circ Syst Vid"
+      },
+      {
+        "issue": "S1",
+        "key": "pone.0292345.ref027",
+        "first-page": "1",
+        "article-title": "A novel method for segmenting brain tumor using modified watershed algorithm in MRI image with FPGA",
+        "volume": "198",
+        "author": "V Sivakumar",
+        "year": "2020",
+        "journal-title": "Biosystems"
+      },
+      {
+        "issue": "12",
+        "key": "pone.0292345.ref028",
+        "first-page": "1",
+        "article-title": "Optimization identification and simulation about household registration management personal fingerprint image",
+        "volume": "11",
+        "author": "Z. Hongye",
+        "year": "2020",
+        "journal-title": "Heilongjiang Science"
+      },
+      {
+        "issue": "6",
+        "key": "pone.0292345.ref029",
+        "first-page": "207",
+        "article-title": "Identification method of welding perpendicularity for components based on DSP+FPGA",
+        "volume": "25",
+        "author": "C Rongbao",
+        "year": "2017",
+        "journal-title": "Computer Measurement and Control"
+      },
+      {
+        "issue": "11",
+        "key": "pone.0292345.ref030",
+        "first-page": "85",
+        "article-title": "Contour extraction of moving objects in video sequences based on GPU",
+        "volume": "39",
+        "author": "Hanjun Jin",
+        "year": "2016",
+        "journal-title": "Electronic Measurement Technology"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0292345.ref031",
+        "first-page": "368",
+        "article-title": "A method of multi-ship target detection and tracking by on-orbit satellite",
+        "volume": "37",
+        "author": "J Tengzhang",
+        "year": "2020",
+        "journal-title": "Journal of University of Chinese Academy of Sciences"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0292345.ref032",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.1007/s00764-023-00226-3",
+        "article-title": "High dynamic range in videodensitometry-a comparative study to classic videoscanning on Gentiana extracts",
+        "volume": "36",
+        "author": "S Gadowski",
+        "year": "2023",
+        "journal-title": "JPC-J Planar Chromat"
+      },
+      {
+        "issue": "10",
+        "key": "pone.0292345.ref033",
+        "first-page": "1",
+        "article-title": "A hierarchical parallel implementation for heterogeneous computing. Application to algebra-based CFD simulations on hybrid supercomputers",
+        "volume": "214",
+        "author": "X Alvarez-Farre",
+        "year": "2021",
+        "journal-title": "Comput Fluids"
+      },
+      {
+        "issue": "5",
+        "key": "pone.0292345.ref034",
+        "doi-asserted-by": "crossref",
+        "first-page": "893",
+        "DOI": "10.1007/s11554-022-01230-2",
+        "article-title": "A GPU-accelerated light-field super-resolution framework based on mixed noise model and weighted regularization",
+        "volume": "19",
+        "author": "TH Tran",
+        "year": "2022",
+        "journal-title": "J Real-Time Image Pr"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0292345.ref035",
+        "doi-asserted-by": "crossref",
+        "first-page": "1702",
+        "DOI": "10.1109/JBHI.2018.2869421",
+        "article-title": "OpenCLIPER: An OpenCL-based C++ framework for overhead-reduced medical image processing and reconstruction on heterogeneous devices",
+        "volume": "23",
+        "author": "F Simmross-Wattenberg",
+        "year": "2019",
+        "journal-title": "IEEE J Biomed Health"
+      },
+      {
+        "issue": "10",
+        "key": "pone.0292345.ref036",
+        "doi-asserted-by": "crossref",
+        "first-page": "2047",
+        "DOI": "10.1587/transinf.2020PCP0002",
+        "article-title": "Algorithm-hardware co-design of real-time edge detection for deep-space autonomous optical navigation",
+        "volume": "E103D",
+        "author": "H Xiao",
+        "year": "2020",
+        "journal-title": "IEICE T Inf Syst"
+      },
+      {
+        "issue": "10",
+        "key": "pone.0292345.ref037",
+        "first-page": "1",
+        "article-title": "Development of a CNN edge detection model of noised X-ray images for enhanced performance of non-destructive testing",
+        "volume": "174",
+        "author": "X Zimu",
+        "year": "2021",
+        "journal-title": "Measurement"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0292345.ref038",
+        "first-page": "535",
+        "article-title": "High-efficient low-cost VLSI implementation for Canny edge detection",
+        "volume": "36",
+        "author": "DHE Lee",
+        "year": "2020",
+        "journal-title": "J Inf Sci Eng"
+      },
+      {
+        "issue": "01",
+        "key": "pone.0292345.ref039",
+        "doi-asserted-by": "crossref",
+        "first-page": "19",
+        "DOI": "10.1080/13682199.2022.2161996",
+        "article-title": "Blind image deblurring using GLCM and negans obtuse mono proximate distance",
+        "volume": "70",
+        "author": "SJ Lakshmi",
+        "year": "2023",
+        "journal-title": "Imaging Sci J"
+      },
+      {
+        "issue": "03",
+        "key": "pone.0292345.ref040",
+        "doi-asserted-by": "crossref",
+        "first-page": "3141",
+        "DOI": "10.32604/iasc.2023.027219",
+        "article-title": "A mixed method for feature extraction based on resonance filtering",
+        "volume": "35",
+        "author": "X Zhang",
+        "year": "2022",
+        "journal-title": "intelligent automation and soft computing"
+      }
+    ],
+    "container-title": [
+      "PLOS ONE"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dx.plos.org/10.1371/journal.pone.0292345",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          5
+        ]
+      ],
+      "date-time": "2024-01-05T13:29:37Z",
+      "timestamp": 1704461377000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dx.plos.org/10.1371/journal.pone.0292345"
+      }
+    },
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Ayesha",
+        "family": "Maqbool",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "editor"
+          }
+        ]
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          5
+        ]
+      ]
+    },
+    "references-count": 40,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            5
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1371/journal.pone.0292345",
+    "relation": {},
+    "ISSN": [
+      "1932-6203"
+    ],
+    "issn-type": [
+      {
+        "value": "1932-6203",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          5
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,605 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          17
+        ]
+      ],
+      "date-time": "2026-10-17T03:25:28Z",
+      "timestamp": 1792207528688,
+      "version": "4.4.0"
+    },
+    "reference-count": 26,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2023-07-01T00:00:00Z",
+          "timestamp": 1688169600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2023-07-01T00:00:00Z",
+          "timestamp": 1688169600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              28
+            ]
+          ],
+          "date-time": "2025-03-28T00:00:00Z",
+          "timestamp": 1743120000000
+        },
+        "content-version": "am",
+        "delay-in-days": 636,
+        "URL": "http://www.elsevier.com/open-access/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2023-07-01T00:00:00Z",
+          "timestamp": 1688169600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2023-07-01T00:00:00Z",
+          "timestamp": 1688169600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2023-07-01T00:00:00Z",
+          "timestamp": 1688169600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2023-07-01T00:00:00Z",
+          "timestamp": 1688169600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2023-07-01T00:00:00Z",
+          "timestamp": 1688169600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001691",
+        "name": "Japan Society for the Promotion of Science",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "21K17868"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "21K17868"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001691",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Journal of Parallel and Distributed Computing"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.jpdc.2023.03.004",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          21
+        ]
+      ],
+      "date-time": "2023-03-21T14:16:55Z",
+      "timestamp": 1679408215000
+    },
+    "page": "160-170",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 40,
+    "special_numbering": "C",
+    "title": [
+      "Multi-directional Sobel operator kernel on GPUs"
+    ],
+    "prefix": "10.1016",
+    "volume": "177",
+    "author": [
+      {
+        "given": "Qiong",
+        "family": "Chang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6933-6491",
+        "authenticated-orcid": false,
+        "given": "Xiang",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yun",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jun",
+        "family": "Miyazaki",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0040",
+        "series-title": "3C Tecnología. G losas De innovaci on Aplicadas a La Pyme",
+        "first-page": "195",
+        "article-title": "Modified Sobel mask to locate knee joint boundaries",
+        "author": "Abdullah",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "487",
+        "DOI": "10.1016/j.procs.2022.03.063",
+        "article-title": "Comparative Analysis of Eight Direction Sobel Edge Detection Algorithm for Brain Tumor MRI Images",
+        "volume": "201",
+        "author": "Ajai",
+        "year": "2022",
+        "journal-title": "Proc. Comput. Sci."
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0190",
+        "series-title": "2022 13th Asian Control Conference (ASCC)",
+        "article-title": "Pose-aware object recognition on a mobile platform via learned geometric representations",
+        "author": "Beleznai",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0030",
+        "doi-asserted-by": "crossref",
+        "first-page": "651",
+        "DOI": "10.1016/j.procs.2016.06.029",
+        "article-title": "Blood cell detection using thresholding estimation based watershed transformation with Sobel filter in frequency domain",
+        "volume": "89",
+        "author": "Biswas",
+        "year": "2016",
+        "journal-title": "Proc. Comput. Sci."
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0180",
+        "series-title": "2018 IEEE 29th International Conference on Application-specific Systems, Architectures and Processors (ASAP)",
+        "article-title": "Real-Time High-Quality Stereo Matching System on a GPU",
+        "author": "Chang",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0170",
+        "series-title": "Proceedings of the High Performance Computing Symposium",
+        "article-title": "Fast convolution Kernels on Pascal GPU with High Memory Efficiency",
+        "author": "Chang",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0090",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.sysarc.2021.102366",
+        "article-title": "Efficient stereo matching on embedded GPUs with zero-means cross correlation",
+        "volume": "123",
+        "author": "Chang",
+        "year": "2022",
+        "journal-title": "J. Syst. Archit."
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0070",
+        "doi-asserted-by": "crossref",
+        "first-page": "442",
+        "DOI": "10.1016/j.conbuildmat.2016.05.120",
+        "article-title": "Innovation of aggregate angularity characterization using gradient approach based upon the traditional and modified Sobel operation",
+        "volume": "120",
+        "author": "Chen",
+        "year": "2016",
+        "journal-title": "Constr. Build. Mater."
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.jpdc.2023.03.004_br0270",
+        "doi-asserted-by": "crossref",
+        "first-page": "5703",
+        "DOI": "10.1109/TII.2019.2950255",
+        "article-title": "FPGA-based design for real-time crack detection based on particle filter",
+        "volume": "16",
+        "author": "Chisholm",
+        "year": "2019",
+        "journal-title": "IEEE Trans. Ind. Inform."
+      },
+      {
+        "issue": "2–3",
+        "key": "10.1016/j.jpdc.2023.03.004_br0120",
+        "doi-asserted-by": "crossref",
+        "first-page": "105",
+        "DOI": "10.1504/IJAMC.2014.060506",
+        "article-title": "Efficient implementation of Sobel edge detection algorithm on CPU, GPU and FPGA",
+        "volume": "5",
+        "author": "Chouchene",
+        "year": "2014",
+        "journal-title": "Int. J. Adv. Media Commun."
+      },
+      {
+        "issue": "15",
+        "key": "10.1016/j.jpdc.2023.03.004_br0240",
+        "doi-asserted-by": "crossref",
+        "first-page": "53",
+        "DOI": "10.15623/ijret.2014.0315011",
+        "article-title": "Performance analysis of Sobel edge filter on heterogeneous system using OpenCL",
+        "volume": "3",
+        "author": "Dore",
+        "year": "2014",
+        "journal-title": "Int. J. Res. Eng. Technol."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jpdc.2023.03.004_br0220",
+        "doi-asserted-by": "crossref",
+        "first-page": "33",
+        "DOI": "10.4103/2228-7477.199155",
+        "article-title": "A new parallel approach for accelerating the gpu-based execution of edge detection algorithms",
+        "volume": "7",
+        "author": "Emrani",
+        "year": "2017",
+        "journal-title": "J. Med. Signals Sensors"
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0060",
+        "doi-asserted-by": "crossref",
+        "first-page": "44",
+        "DOI": "10.1016/j.mfglet.2020.07.002",
+        "article-title": "Flank angle measurement based on improved Sobel operator",
+        "volume": "25",
+        "author": "Jing",
+        "year": "2020",
+        "journal-title": "Manuf. Lett."
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0110",
+        "series-title": "2012 6th International Conference on New Trends in Information Science, Service Science and Data Mining (ISSDM2012)",
+        "article-title": "Sobel Mask Operations Using Shared Memory in CUDA Environment",
+        "author": "Jo",
+        "year": "2012"
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0080",
+        "doi-asserted-by": "crossref",
+        "first-page": "78",
+        "DOI": "10.1016/j.jpdc.2018.10.012",
+        "article-title": "Efficient parallel optimizations of a high-performance SIFT on GPUs",
+        "volume": "124",
+        "author": "Li",
+        "year": "2019",
+        "journal-title": "J. Parallel Distrib. Comput."
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0100",
+        "series-title": "Proceedings of the International Conference on Image Processing, Computer Vision, and Pattern Recognition (IPCV). The Steering Committee of The World Congress in Computer Science, Computer Engineering and Applied Computing (WorldComp)",
+        "article-title": "An Improved Parallel Eight Direction Prewitt Edge Detection Algorithm",
+        "author": "Mohamed",
+        "year": "2013"
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0160",
+        "unstructured": "NVIDIA corporation, NVIDIA CUDA C programming guide, 2022, Version 11.7.0."
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0010",
+        "series-title": "2014 IEEE Geoscience and Remote Sensing Symposium",
+        "article-title": "Bohai front detection based on multi-scale Sobel algorithm",
+        "author": "Ping",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0230",
+        "series-title": "2020 9th International Conference on Modern Circuits and Systems Technologies (MOCAST)",
+        "article-title": "A Heterogeneous Implementation of the Sobel Edge Detection Filter Using OpenCL",
+        "author": "Sanida",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0260",
+        "series-title": "Brazilian Technology Symposium",
+        "article-title": "Performance Measurements of Sobel Edge Detection Implemented in an FPGA Architecture and Software",
+        "author": "Sato",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0150",
+        "series-title": "A 3x3 isotropic gradient operator for image processing",
+        "first-page": "271",
+        "author": "Sobel",
+        "year": "1968"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.jpdc.2023.03.004_br0210",
+        "doi-asserted-by": "crossref",
+        "first-page": "171",
+        "DOI": "10.18201/ijisae.2021473636",
+        "article-title": "Fire Detection in Images Using Framework Based on Image Processing, Motion Detection and Convolutional Neural Network",
+        "volume": "9",
+        "author": "Taspinar",
+        "year": "2021",
+        "journal-title": "Int. J. Intell. Syst. Appl. Eng."
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0200",
+        "series-title": "2020 Fourth IEEE International Conference on Robotic Computing (IRC)",
+        "article-title": "Real-Time clustering and LiDAR-camera fusion on embedded platforms for self-driving cars",
+        "author": "Verucchi",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0130",
+        "first-page": "1",
+        "article-title": "Image Sobel edge extraction algorithm accelerated by OpenCL",
+        "author": "Xiao",
+        "year": "2022",
+        "journal-title": "J. Supercomput."
+      },
+      {
+        "key": "10.1016/j.jpdc.2023.03.004_br0250",
+        "series-title": "2017 IEEE 7th Annual International Conference on CYBER Technology in Automation, Control, and Intelligent Systems (CYBER)",
+        "article-title": "Implementation of Sobel Edge Detection on FPGA Based on OpenCL",
+        "author": "You",
+        "year": "2017"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jpdc.2023.03.004_br0140",
+        "first-page": "41",
+        "article-title": "Fast Sobel edge detection algorithm based on GPU",
+        "volume": "36",
+        "author": "Zuo",
+        "year": "2009",
+        "journal-title": "Opto-Electron. Eng."
+      }
+    ],
+    "container-title": [
+      "Journal of Parallel and Distributed Computing"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0743731523000400?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0743731523000400?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          9
+        ]
+      ],
+      "date-time": "2025-10-09T22:38:49Z",
+      "timestamp": 1760049529000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0743731523000400"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          7
+        ]
+      ]
+    },
+    "references-count": 26,
+    "alternative-id": [
+      "S0743731523000400"
+    ],
+    "URL": "https://doi.org/10.1016/j.jpdc.2023.03.004",
+    "relation": {},
+    "ISSN": [
+      "0743-7315"
+    ],
+    "issn-type": [
+      {
+        "value": "0743-7315",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          7
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Multi-directional Sobel operator kernel on GPUs",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Journal of Parallel and Distributed Computing",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.jpdc.2023.03.004",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2023 Elsevier Inc. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

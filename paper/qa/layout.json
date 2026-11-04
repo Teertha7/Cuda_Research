@@ -1,0 +1,360 @@
+[
+  {
+    "page": 1,
+    "width_pt": 612.0,
+    "height_pt": 792.0,
+    "characters": 5193,
+    "blocks_outside_page": [],
+    "fonts": [
+      [
+        4,
+        "cff",
+        "Type1",
+        "IHAIZV+NimbusRomNo9L-Regu",
+        "F0",
+        "WinAnsiEncoding"
+      ],
+      [
+        5,
+        "cff",
+        "Type1",
+        "BZIVMZ+NimbusRomNo9L-MediItal",
+        "F1",
+        "WinAnsiEncoding"
+      ],
+      [
+        6,
+        "cff",
+        "Type1",
+        "IXFAWU+NimbusRomNo9L-Medi",
+        "F2",
+        "WinAnsiEncoding"
+      ],
+      [
+        7,
+        "cff",
+        "Type1",
+        "TQTHRL+CMR9",
+        "F3",
+        ""
+      ],
+      [
+        8,
+        "cff",
+        "Type1",
+        "YEUUOC+CMSY9",
+        "F4",
+        ""
+      ],
+      [
+        9,
+        "cff",
+        "Type1",
+        "AKHCZK+CMR10",
+        "F5",
+        ""
+      ],
+      [
+        10,
+        "cff",
+        "Type1",
+        "VDVGTR+CMSY10",
+        "F6",
+        ""
+      ]
+    ]
+  },
+  {
+    "page": 2,
+    "width_pt": 612.0,
+    "height_pt": 792.0,
+    "characters": 5609,
+    "blocks_outside_page": [],
+    "fonts": [
+      [
+        4,
+        "cff",
+        "Type1",
+        "IHAIZV+NimbusRomNo9L-Regu",
+        "F0",
+        "WinAnsiEncoding"
+      ],
+      [
+        15,
+        "cff",
+        "Type1",
+        "CAFSZL+CMMI10",
+        "F7",
+        ""
+      ],
+      [
+        9,
+        "cff",
+        "Type1",
+        "AKHCZK+CMR10",
+        "F5",
+        ""
+      ],
+      [
+        10,
+        "cff",
+        "Type1",
+        "VDVGTR+CMSY10",
+        "F6",
+        ""
+      ],
+      [
+        16,
+        "cff",
+        "Type1",
+        "DDIEWW+CMMI7",
+        "F8",
+        ""
+      ],
+      [
+        17,
+        "cff",
+        "Type1",
+        "FKPJSN+CMR7",
+        "F9",
+        ""
+      ],
+      [
+        18,
+        "cff",
+        "Type1",
+        "PVTTLK+NimbusRomNo9L-ReguItal",
+        "F10",
+        "WinAnsiEncoding"
+      ],
+      [
+        19,
+        "cff",
+        "Type1",
+        "JAGKKY+NimbusMonL-Regu",
+        "F11",
+        "WinAnsiEncoding"
+      ]
+    ]
+  },
+  {
+    "page": 3,
+    "width_pt": 612.0,
+    "height_pt": 792.0,
+    "characters": 4621,
+    "blocks_outside_page": [],
+    "fonts": [
+      [
+        18,
+        "cff",
+        "Type1",
+        "PVTTLK+NimbusRomNo9L-ReguItal",
+        "F10",
+        "WinAnsiEncoding"
+      ],
+      [
+        4,
+        "cff",
+        "Type1",
+        "IHAIZV+NimbusRomNo9L-Regu",
+        "F0",
+        "WinAnsiEncoding"
+      ],
+      [
+        9,
+        "cff",
+        "Type1",
+        "AKHCZK+CMR10",
+        "F5",
+        ""
+      ],
+      [
+        10,
+        "cff",
+        "Type1",
+        "VDVGTR+CMSY10",
+        "F6",
+        ""
+      ],
+      [
+        19,
+        "cff",
+        "Type1",
+        "JAGKKY+NimbusMonL-Regu",
+        "F11",
+        "WinAnsiEncoding"
+      ],
+      [
+        23,
+        "cff",
+        "Type1",
+        "NOMARO+CMEX10",
+        "F12",
+        ""
+      ],
+      [
+        15,
+        "cff",
+        "Type1",
+        "CAFSZL+CMMI10",
+        "F7",
+        ""
+      ],
+      [
+        16,
+        "cff",
+        "Type1",
+        "DDIEWW+CMMI7",
+        "F8",
+        ""
+      ],
+      [
+        17,
+        "cff",
+        "Type1",
+        "FKPJSN+CMR7",
+        "F9",
+        ""
+      ],
+      [
+        25,
+        "ttf",
+        "Type0",
+        "GUKRUO+DejaVuSans",
+        "F1",
+        "Identity-H"
+      ]
+    ]
+  },
+  {
+    "page": 4,
+    "width_pt": 612.0,
+    "height_pt": 792.0,
+    "characters": 2772,
+    "blocks_outside_page": [],
+    "fonts": [
+      [
+        4,
+        "cff",
+        "Type1",
+        "IHAIZV+NimbusRomNo9L-Regu",
+        "F0",
+        "WinAnsiEncoding"
+      ],
+      [
+        59,
+        "cff",
+        "Type1",
+        "KPXLOM+CMR8",
+        "F13",
+        ""
+      ],
+      [
+        60,
+        "cff",
+        "Type1",
+        "UTACNV+CMSY8",
+        "F14",
+        ""
+      ],
+      [
+        18,
+        "cff",
+        "Type1",
+        "PVTTLK+NimbusRomNo9L-ReguItal",
+        "F10",
+        "WinAnsiEncoding"
+      ],
+      [
+        45,
+        "ttf",
+        "Type0",
+        "BJVHEW+DejaVuSans",
+        "F1",
+        "Identity-H"
+      ],
+      [
+        62,
+        "ttf",
+        "Type0",
+        "ERVZFJ+DejaVuSans",
+        "F1",
+        "Identity-H"
+      ],
+      [
+        79,
+        "ttf",
+        "Type0",
+        "DQUARC+DejaVuSans",
+        "F1",
+        "Identity-H"
+      ],
+      [
+        96,
+        "ttf",
+        "Type0",
+        "DNETQN+DejaVuSans",
+        "F1",
+        "Identity-H"
+      ]
+    ]
+  },
+  {
+    "page": 5,
+    "width_pt": 612.0,
+    "height_pt": 792.0,
+    "characters": 6471,
+    "blocks_outside_page": [],
+    "fonts": [
+      [
+        4,
+        "cff",
+        "Type1",
+        "IHAIZV+NimbusRomNo9L-Regu",
+        "F0",
+        "WinAnsiEncoding"
+      ],
+      [
+        114,
+        "cff",
+        "Type1",
+        "FZDNHS+CMMI8",
+        "F15",
+        ""
+      ],
+      [
+        18,
+        "cff",
+        "Type1",
+        "PVTTLK+NimbusRomNo9L-ReguItal",
+        "F10",
+        "WinAnsiEncoding"
+      ]
+    ]
+  },
+  {
+    "page": 6,
+    "width_pt": 612.0,
+    "height_pt": 792.0,
+    "characters": 3755,
+    "blocks_outside_page": [],
+    "fonts": [
+      [
+        4,
+        "cff",
+        "Type1",
+        "IHAIZV+NimbusRomNo9L-Regu",
+        "F0",
+        "WinAnsiEncoding"
+      ],
+      [
+        18,
+        "cff",
+        "Type1",
+        "PVTTLK+NimbusRomNo9L-ReguItal",
+        "F10",
+        "WinAnsiEncoding"
+      ]
+    ]
+  }
+]

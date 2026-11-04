@@ -1,0 +1,16 @@
+note: Running TeX ...
+note: downloading t1lmr.fd
+note: downloading ec-lmr10.tfm
+warning: main.tex:33: Underfull \hbox (badness 1509) in paragraph at lines 32--33
+warning: main.tex:135: Underfull \vbox (badness 3815) has occurred while \output is active
+note: Running BibTeX on main.aux ...
+note: Rerunning TeX because bibtex was run ...
+warning: main.tex:33: Underfull \hbox (badness 1509) in paragraph at lines 32--33
+warning: main.tex:135: Underfull \vbox (badness 3815) has occurred while \output is active
+note: Running xdvipdfmx ...
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Writing `main.log` (10.6474609375 KiB)
+note: Writing `main.blg` (379 B)
+note: Writing `main.pdf` (135.1240234375 KiB)
+note: Writing `main.bbl` (9.0595703125 KiB)
+note: Writing `main.aux` (4.8671875 KiB)

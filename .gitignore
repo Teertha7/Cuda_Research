@@ -1,0 +1,9 @@
+tools/cuda/
+tools/downloads/
+tools/python/
+build/
+__pycache__/
+paper/*.aux
+paper/*.log
+paper/*.bbl
+paper/*.blg

@@ -1,0 +1,360 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          24
+        ]
+      ],
+      "date-time": "2026-10-24T05:19:50Z",
+      "timestamp": 1792819190685,
+      "version": "4.5.0"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 25,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2007,
+              10,
+              21
+            ]
+          ],
+          "date-time": "2007-10-21T00:00:00Z",
+          "timestamp": 1192924800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          10,
+          21
+        ]
+      ]
+    },
+    "DOI": "10.1145/1297027.1297033",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          11,
+          15
+        ]
+      ],
+      "date-time": "2007-11-15T09:30:20Z",
+      "timestamp": 1195119020000
+    },
+    "page": "57-76",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 318,
+    "title": [
+      "Statistically rigorous java performance evaluation"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Andy",
+        "family": "Georges",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Ghent University, Ghent, Belgium"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dries",
+        "family": "Buytaert",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Ghent University, Ghent, Belgium"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lieven",
+        "family": "Eeckhout",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Ghent University, Ghent, Belgium"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2007,
+          10,
+          21
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_1_1_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/353171.353175"
+      },
+      {
+        "key": "e_1_3_2_1_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/582419.582432"
+      },
+      {
+        "key": "e_1_3_2_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/949305.949328"
+      },
+      {
+        "key": "e_1_3_2_1_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/512429.512442"
+      },
+      {
+        "key": "e_1_3_2_1_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1005686.1005693"
+      },
+      {
+        "key": "e_1_3_2_1_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/998675.999420"
+      },
+      {
+        "key": "e_1_3_2_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1167473.1167488"
+      },
+      {
+        "key": "e_1_3_2_1_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/512429.512452"
+      },
+      {
+        "key": "e_1_3_2_1_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/949305.949336"
+      },
+      {
+        "key": "e_1_3_2_1_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/949305.949321"
+      },
+      {
+        "key": "e_1_3_2_1_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1134760.1134776"
+      },
+      {
+        "key": "e_1_3_2_1_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1028976.1028998"
+      },
+      {
+        "issue": "2",
+        "key": "e_1_3_2_1_13_1",
+        "first-page": "181",
+        "volume": "52",
+        "author": "Hintze J.L.",
+        "year": "1998",
+        "journal-title": "Violin Plots: A Box Plot-Density Trace Synergism In The American Statistician"
+      },
+      {
+        "key": "e_1_3_2_1_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1028976.1028983"
+      },
+      {
+        "key": "e_1_3_2_1_15_1",
+        "unstructured": "R. A. Johnson and D.W. Wichern Applied Multivariate Statistical Analysis Prentice Hall 2002   R. A. Johnson and D.W. Wichern Applied Multivariate Statistical Analysis Prentice Hall 2002"
+      },
+      {
+        "key": "e_1_3_2_1_16_1",
+        "volume-title": "Cambridge University Press",
+        "author": "Lilja D. J.",
+        "year": "2000"
+      },
+      {
+        "key": "e_1_3_2_1_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1167473.1167487"
+      },
+      {
+        "key": "e_1_3_2_1_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1133956.1133960"
+      },
+      {
+        "key": "e_1_3_2_1_19_1",
+        "unstructured": "J. Neter M. H. Kutner W. Wasserman and C. J. Nachtsheim Applied Linear Statistical Models WCB/McGraw-Hill 1996.  J. Neter M. H. Kutner W. Wasserman and C. J. Nachtsheim Applied Linear Statistical Models WCB/McGraw-Hill 1996."
+      },
+      {
+        "key": "e_1_3_2_1_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/949305.949335"
+      },
+      {
+        "key": "e_1_3_2_1_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1133956.1133961"
+      },
+      {
+        "key": "e_1_3_2_1_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1133956.1133964"
+      },
+      {
+        "key": "e_1_3_2_1_23_1",
+        "unstructured": "Standard Performance Evaluation Corporation. SPECjvm98 Benchmarks. http://www.spec.org/jvm98.  Standard Performance Evaluation Corporation. SPECjvm98 Benchmarks. http://www.spec.org/jvm98."
+      },
+      {
+        "key": "e_1_3_2_1_24_1",
+        "first-page": "57",
+        "volume-title": "VM",
+        "author": "Sweeney P. F.",
+        "year": "2004"
+      },
+      {
+        "key": "e_1_3_2_1_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1133956.1133979"
+      }
+    ],
+    "event": {
+      "name": "OOPSLA07: ACM SIGPLAN Object Oriented Programming Systems and Applications Conference",
+      "location": "Montreal Quebec Canada",
+      "acronym": "OOPSLA07",
+      "sponsor": [
+        "SIGPLAN ACM Special Interest Group on Programming Languages",
+        "ACM Association for Computing Machinery"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the 22nd annual ACM SIGPLAN conference on Object-oriented programming systems, languages and applications"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/1297027.1297033",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/1297027.1297033",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T10:58:26Z",
+      "timestamp": 1750244306000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/1297027.1297033"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          10,
+          21
+        ]
+      ]
+    },
+    "references-count": 25,
+    "alternative-id": [
+      "10.1145/1297027.1297033",
+      "10.1145/1297027"
+    ],
+    "URL": "https://doi.org/10.1145/1297027.1297033",
+    "relation": {
+      "is-identical-to": [
+        {
+          "id-type": "doi",
+          "id": "10.1145/1297105.1297033",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          10,
+          21
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2007-10-21",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

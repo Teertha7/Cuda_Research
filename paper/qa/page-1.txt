@@ -1,0 +1,95 @@
+A Performance Characterization of CPU–GPU Edge
+Detection using OpenMP and CUDA
+Author information pending
+Afﬁliation and contact information pending
+Research draft: human review required before submission
+Abstract—Accelerating an edge-detection kernel does not nec-
+essarily reduce host-visible image-processing latency. We charac-
+terize sequential C++, OpenMP, CUDA, shared-memory Sobel,
+and row-partitioned CPU–GPU Sobel on an Intel Core i7-
+13700HX and NVIDIA RTX 4060 Laptop GPU. A custom
+Canny variant provides a contrasting CPU workload with global
+hysteresis. Three procedural grayscale families at four resolutions
+yield 3780 retained observations across 252 conﬁgurations, with
+output validation outside every timed interval. At 4096 × 4096,
+pooled median Sobel latency is 37.318 ms sequentially, 5.996 ms
+with eight OpenMP threads, and 9.839 ms for baseline CUDA
+including staging and transfers. Shared-memory tiling increases
+measured kernel time in the tested conﬁgurations. Hybrid results
+depend on resolution and measurement context; a simple ﬁtted
+partition model has 6.13% mean absolute percentage error on
+the held-out largest resolution. These are bounded, single-session
+characterization results, not a novel scheduler or a claim of
+general GPU superiority. The accompanying artifact preserves
+individual timings, source hashes, analysis scripts, and explicit
+algorithm and timing contracts.
+Index Terms—edge detection, Sobel, Canny, OpenMP, CUDA,
+heterogeneous computing, performance characterization
+I. INTRODUCTION
+Edge detection offers a useful contrast between regular
+local computation and multi-stage processing with global
+connectivity. A Sobel output depends on a small neigh-
+borhood, making spatial partitioning straightforward. Canny
+adds smoothing, nonmaximum suppression and hysteresis,
+so distributing individual stages or image regions introduces
+different correctness obligations. Canny’s original formulation
+emphasizes detection and localization rather than a particular
+parallel implementation [1].
+For a discrete GPU, a short convolution can ﬁnish quickly
+while host staging, transfers and synchronization dominate
+application-visible latency. The CUDA programming model
+exposes parallelism and memory hierarchy [2]; it does not
+guarantee that ofﬂoading every image is proﬁtable. Multicore
+CPU execution is an essential comparison, rather than relying
+only on a sequential baseline. Benchmark diversity and com-
+munication accounting are central concerns in heterogeneous
+evaluation [3].
+We ask how image size, CPU thread count, CUDA launch
+conﬁguration and CPU row fraction affect latency under an
+identical Sobel contract. The study contributes a reproducible
+implementation and measurement artifact, an explicit compar-
+ison of kernel and pipeline timing, and a held-out diagnostic
+model of candidate row allocations. It does not claim a new
+edge detector, a new CPU–GPU partitioning principle, or an
+exhaustive optimization search. Prior work already addresses
+adaptive mapping and cooperative image processing. Our
+scope is a controlled course-project characterization on one
+commodity laptop.
+II. RELATED WORK
+Luo and Duraiswami implement complete CUDA Canny,
+including hysteresis, and compare against CPU software [4].
+Emrani et al. evaluate several detectors and replace a breadth-
+ﬁrst procedure with a parallel approach [5]. Mochurad studies
+CUDA Canny with image-size and noise-related analysis [6].
+Song et al. compare serial, OpenMP, CUDA and OpenCL
+Canny and investigate access and launch organization [7].
+These works preclude a novelty claim based simply on GPU
+edge detection or comparing programming models. Canny
+variants also differ in smoothing, thresholding and connec-
+tivity; published speedups are not directly transferable to our
+implementation.
+Chang et al. optimize a four-direction 5 × 5 Sobel op-
+erator using warp primitives and prefetching on two GPU
+platforms [8]. That operator differs from our two-direction
+3 × 3 L1-magnitude workload. Stencil auto-tuning [9] and
+Halide’s separation of image algorithms from schedules [10]
+establish that locality transformations and execution sched-
+ules are longstanding optimization topics. Shared memory is
+therefore an experimentally evaluated candidate here, not an
+asserted contribution.
+Qilin uses adaptive CPU–GPU mapping [11]. StarPU
+supplies heterogeneous task scheduling and data manage-
+ment [12]; SKMD partitions OpenCL kernels while accounting
+for transfers and device performance [13]. Cooperative CUDA
+execution [14], Fluidic Kernels [15], and performance-aware
+image-analysis scheduling [16] further establish this ﬁeld.
+A survey organizes cooperative CPU–GPU techniques [17].
+Particularly close recent work by Huang et al. models stage-
+level CPU/GPU Canny conﬁgurations with explicit transfer
+costs and latency objectives [18]. Our small row-split model
+is substantially narrower and is not a replacement for these
+systems.
+Rooﬂine relates performance to computation and data move-
+ment [19], but our measurements do not include the counters
+required for a quantitative rooﬂine diagnosis. Performance-
+evaluation work warns about setup bias [20] and the need to

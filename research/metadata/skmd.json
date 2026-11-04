@@ -1,0 +1,499 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          3
+        ]
+      ],
+      "date-time": "2025-12-03T17:42:58Z",
+      "timestamp": 1764783778871,
+      "version": "3.41.0"
+    },
+    "reference-count": 37,
+    "publisher": "Association for Computing Machinery (ACM)",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              8,
+              31
+            ]
+          ],
+          "date-time": "2015-08-31T00:00:00Z",
+          "timestamp": 1440979200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "funder": [
+      {
+        "name": "National Science Foundation",
+        "award": [
+          "CNS-0964478 and SHF-1217917"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "CNS-0964478 and SHF-1217917"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Defense Advanced Research Projects Agency under the Power Efficiency Revolution for Embedded Computing Technologies (PERFECT) program"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "ACM Trans. Comput. Syst."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          9,
+          11
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Heterogeneous computing on CPUs and GPUs has traditionally used fixed roles for each device: the GPU handles data parallel work by taking advantage of its massive number of cores while the CPU handles non data-parallel work, such as the sequential code or data transfer management. This work distribution can be a poor solution as it underutilizes the CPU, has difficulty generalizing beyond the single CPU-GPU combination, and may waste a large fraction of time transferring data. Further, CPUs are performance competitive with GPUs on many workloads, thus simply partitioning work based on the fixed roles may be a poor choice. In this article, we present the single-kernel multiple devices (SKMD) system, a framework that transparently orchestrates collaborative execution of a single data-parallel kernel across multiple asymmetric CPUs and GPUs. The programmer is responsible for developing a single data-parallel kernel in OpenCL, while the system automatically partitions the workload across an arbitrary set of devices, generates kernels to execute the partial workloads, and efficiently merges the partial outputs together. The goal is performance improvement by maximally utilizing all available resources to execute the kernel. SKMD handles the difficult challenges of exposed data transfer costs and the performance variations GPUs have with respect to input size. On real hardware, SKMD achieves an average speedup of 28% on a system with one multicore CPU and two asymmetric GPUs compared to a fastest device execution strategy for a set of popular OpenCL kernels.</jats:p>",
+    "DOI": "10.1145/2798725",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          9,
+          1
+        ]
+      ],
+      "date-time": "2015-09-01T13:41:09Z",
+      "timestamp": 1441114869000
+    },
+    "page": "1-27",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 40,
+    "title": [
+      "SKMD"
+    ],
+    "prefix": "10.1145",
+    "volume": "33",
+    "author": [
+      {
+        "given": "Janghaeng",
+        "family": "Lee",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Michigan, MI, USA"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Mehrzad",
+        "family": "Samadi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Michigan, MI, USA"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Yongjun",
+        "family": "Park",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Hongik University, Seoul, Korea"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Scott",
+        "family": "Mahlke",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Michigan, MI, USA"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          8,
+          31
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_1_1_1",
+        "unstructured": "AMD. 2012. Accelerated Parallel Processing (APP) SDK. http://developer.amd.com/tools-and-sdks/opencl-zone/amd-accelerated-parallel-processing-app-sdk/.  AMD. 2012. Accelerated Parallel Processing (APP) SDK. http://developer.amd.com/tools-and-sdks/opencl-zone/amd-accelerated-parallel-processing-app-sdk/."
+      },
+      {
+        "key": "e_1_2_1_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PACT.2011.15"
+      },
+      {
+        "key": "e_1_2_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1854273.1854318"
+      },
+      {
+        "key": "e_1_2_1_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1383422.1383447"
+      },
+      {
+        "key": "e_1_2_1_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MICRO.2007.12"
+      },
+      {
+        "key": "e_1_2_1_6_1",
+        "unstructured": "M. R. Garey and D. S. Johnson. 1990. Computers and Intractability; A Guide to the Theory of NP-Completeness. W. H. Freeman & Co. New York NY.   M. R. Garey and D. S. Johnson. 1990. Computers and Intractability; A Guide to the Theory of NP-Completeness. W. H. Freeman & Co. New York NY."
+      },
+      {
+        "key": "e_1_2_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1854273.1854302"
+      },
+      {
+        "key": "e_1_2_1_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1555754.1555775"
+      },
+      {
+        "key": "e_1_2_1_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1950365.1950409"
+      },
+      {
+        "key": "e_1_2_1_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ISPASS.2012.6189201"
+      },
+      {
+        "key": "e_1_2_1_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/2190025.2190061"
+      },
+      {
+        "key": "e_1_2_1_12_1",
+        "volume-title": "Proceedings of the USENIX Annual Technical Conference (USENIX ATC’12)",
+        "author": "Kato Shinpei",
+        "year": "2012",
+        "unstructured": "Shinpei Kato , Michael McThrow , Carlos Maltzahn , and Scott Brandt . 2012 . Gdev: First-class GPU resource management in the operating system . In Proceedings of the USENIX Annual Technical Conference (USENIX ATC’12) . 401--412. Shinpei Kato, Michael McThrow, Carlos Maltzahn, and Scott Brandt. 2012. Gdev: First-class GPU resource management in the operating system. In Proceedings of the USENIX Annual Technical Conference (USENIX ATC’12). 401--412."
+      },
+      {
+        "key": "e_1_2_1_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MM.2011.89"
+      },
+      {
+        "key": "e_1_2_1_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/2492708.2493051"
+      },
+      {
+        "key": "e_1_2_1_15_1",
+        "unstructured": "KHRONOS. 2014. OpenCL—The open standard for parallel programming of heterogeneous systems. http://www.khronos.org.  KHRONOS. 2014. OpenCL—The open standard for parallel programming of heterogeneous systems. http://www.khronos.org."
+      },
+      {
+        "key": "e_1_2_1_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1941553.1941591"
+      },
+      {
+        "key": "e_1_2_1_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1375581.1375596"
+      },
+      {
+        "key": "e_1_2_1_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/977395.977673"
+      },
+      {
+        "key": "e_1_2_1_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2628071.2628075"
+      },
+      {
+        "key": "e_1_2_1_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/2523721.2523756"
+      },
+      {
+        "key": "e_1_2_1_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1815961.1815996"
+      },
+      {
+        "key": "e_1_2_1_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1815961.1816021"
+      },
+      {
+        "key": "e_1_2_1_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1346281.1346318"
+      },
+      {
+        "key": "e_1_2_1_24_1",
+        "volume-title": "Retrieved",
+        "author": "LLVM.",
+        "year": "2014",
+        "unstructured": "LLVM. 2014 . libclc . Retrieved July 23, 2015 from http://libclc.llvm.org. LLVM. 2014. libclc. Retrieved July 23, 2015 from http://libclc.llvm.org."
+      },
+      {
+        "key": "e_1_2_1_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1669112.1669121"
+      },
+      {
+        "key": "e_1_2_1_26_1",
+        "volume-title": "Introduction to linear regression analysis",
+        "author": "Montgomery Douglas C.",
+        "unstructured": "Douglas C. Montgomery , Elizabeth A. Peck , and G. Geoffrey Vining . 2001. Introduction to linear regression analysis ( 3 rd ed.). Wiley , New York, NY . Douglas C. Montgomery, Elizabeth A. Peck, and G. Geoffrey Vining. 2001. Introduction to linear regression analysis (3rd ed.). Wiley, New York, NY.",
+        "edition": "3"
+      },
+      {
+        "key": "e_1_2_1_27_1",
+        "volume-title": "Retrieved",
+        "author": "NVIDIA.",
+        "year": "2012",
+        "unstructured": "NVIDIA. 2012 . CUDA Toolkit 4.2 . Retrieved July 23, 2015 from https://developer.nvidia.com/cuda-toolkit-42-archive. NVIDIA. 2012. CUDA Toolkit 4.2. Retrieved July 23, 2015 from https://developer.nvidia.com/cuda-toolkit-42-archive."
+      },
+      {
+        "key": "e_1_2_1_28_1",
+        "volume-title": "Retrieved",
+        "author": "NVIDIA.",
+        "year": "2014",
+        "unstructured": "NVIDIA. 2014 a. CUDA C Programming Guide . Retrieved July 23, 2015 from http://docs.nvidia.com/cuda. NVIDIA. 2014a. CUDA C Programming Guide. Retrieved July 23, 2015 from http://docs.nvidia.com/cuda."
+      },
+      {
+        "key": "e_1_2_1_29_1",
+        "volume-title": "Retrieved",
+        "author": "NVIDIA.",
+        "year": "2014",
+        "unstructured": "NVIDIA. 2014 b. PTX: Parallel Thread Execution ISA . Retrieved July 23, 2015 from http://docs.nvidia.com/cuda/parallel-thread-execution. NVIDIA. 2014b. PTX: Parallel Thread Execution ISA. Retrieved July 23, 2015 from http://docs.nvidia.com/cuda/parallel-thread-execution."
+      },
+      {
+        "key": "e_1_2_1_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/7902.7904"
+      },
+      {
+        "key": "e_1_2_1_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1022643204877"
+      },
+      {
+        "key": "e_1_2_1_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2043556.2043579"
+      },
+      {
+        "key": "e_1_2_1_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2517349.2522715"
+      },
+      {
+        "volume-title": "Proceedings of the 13th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming. 16--30",
+        "author": "Stratton John A.",
+        "key": "e_1_2_1_34_1",
+        "unstructured": "John A. Stratton , Sam S. Stone , and Wen-Mei W. Hwu . 2008. MCUDA: An efficient implementation of CUDA kernels for multi-core CPUs . In Proceedings of the 13th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming. 16--30 . John A. Stratton, Sam S. Stone, and Wen-Mei W. Hwu. 2008. MCUDA: An efficient implementation of CUDA kernels for multi-core CPUs. In Proceedings of the 13th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming. 16--30."
+      },
+      {
+        "key": "e_1_2_1_35_1",
+        "volume-title": "Proceedings of the USENIX Annual Technical Conference (USENIX ATC’14)",
+        "author": "Suzuki Yusuke",
+        "year": "2014",
+        "unstructured": "Yusuke Suzuki , Shinpei Kato , Hiroshi Yamada , and Kenji Kono . 2014 . GPUvm: Why not virtualizing GPUs at the hypervisor? . In Proceedings of the USENIX Annual Technical Conference (USENIX ATC’14) . 109--120. Yusuke Suzuki, Shinpei Kato, Hiroshi Yamada, and Kenji Kono. 2014. GPUvm: Why not virtualizing GPUs at the hypervisor?. In Proceedings of the USENIX Annual Technical Conference (USENIX ATC’14). 109--120."
+      },
+      {
+        "key": "e_1_2_1_36_1",
+        "volume-title": "Engineering A Compiler",
+        "author": "Torczon Linda",
+        "unstructured": "Linda Torczon and Keith Cooper . 2011. Engineering A Compiler ( 2 nd ed.). Morgan Kaufmann Publishers Inc ., Burlington, MA. Linda Torczon and Keith Cooper. 2011. Engineering A Compiler (2nd ed.). Morgan Kaufmann Publishers Inc., Burlington, MA.",
+        "edition": "2"
+      },
+      {
+        "key": "e_1_2_1_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2591971.2592002"
+      }
+    ],
+    "container-title": [
+      "ACM Transactions on Computer Systems"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/2798725",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/2798725",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T05:07:18Z",
+      "timestamp": 1750223238000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/2798725"
+      }
+    },
+    "subtitle": [
+      "Single Kernel on Multiple Devices for Transparent CPU-GPU Collaboration"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          8,
+          31
+        ]
+      ]
+    },
+    "references-count": 37,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            11
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1145/2798725"
+    ],
+    "URL": "https://doi.org/10.1145/2798725",
+    "relation": {},
+    "ISSN": [
+      "0734-2071",
+      "1557-7333"
+    ],
+    "issn-type": [
+      {
+        "type": "print",
+        "value": "0734-2071"
+      },
+      {
+        "type": "electronic",
+        "value": "1557-7333"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          8,
+          31
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2014-07-01",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2015-06-01",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2015-08-31",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

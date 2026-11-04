@@ -1,0 +1,363 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2026-10-10T04:33:42Z",
+      "timestamp": 1791606822045,
+      "version": "4.3.4"
+    },
+    "reference-count": 16,
+    "publisher": "Association for Computing Machinery (ACM)",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2009,
+              2,
+              28
+            ]
+          ],
+          "date-time": "2009-02-28T00:00:00Z",
+          "timestamp": 1235779200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "SIGPLAN Not."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          2,
+          28
+        ]
+      ]
+    },
+    "abstract": "<jats:p>This paper presents a surprising result: changing a seemingly innocuous aspect of an experimental setup can cause a systems researcher to draw wrong conclusions from an experiment. What appears to be an innocuous aspect in the experimental setup may in fact introduce a significant bias in an evaluation. This phenomenon is called measurement bias in the natural and social sciences.</jats:p>\n          <jats:p>Our results demonstrate that measurement bias is significant and commonplace in computer system evaluation. By significant we mean that measurement bias can lead to a performance analysis that either over-states an effect or even yields an incorrect conclusion. By commonplace we mean that measurement bias occurs in all architectures that we tried (Pentium 4, Core 2, and m5 O3CPU), both compilers that we tried (gcc and Intel's C compiler), and most of the SPEC CPU2006 C programs. Thus, we cannot ignore measurement bias. Nevertheless, in a literature survey of 133 recent papers from ASPLOS, PACT, PLDI, and CGO, we determined that none of the papers with experimental results adequately consider measurement bias.</jats:p>\n          <jats:p>Inspired by similar problems and their solutions in other sciences, we describe and demonstrate two methods, one for detecting (causal analysis) and one for avoiding (setup randomization) measurement bias.</jats:p>",
+    "DOI": "10.1145/1508284.1508275",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          3,
+          10
+        ]
+      ],
+      "date-time": "2009-03-10T12:17:12Z",
+      "timestamp": 1236687432000
+    },
+    "page": "265-276",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 66,
+    "title": [
+      "Producing wrong data without doing anything obviously wrong!"
+    ],
+    "prefix": "10.1145",
+    "volume": "44",
+    "author": [
+      {
+        "given": "Todd",
+        "family": "Mytkowicz",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Colorado, Boulder, CO, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amer",
+        "family": "Diwan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Colorado, Boulder, CO, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Matthias",
+        "family": "Hauswirth",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Lugano, Lugano, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peter F.",
+        "family": "Sweeney",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IBM Research, Hawthorne, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2009,
+          3,
+          7
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_1_1_1",
+        "first-page": "7",
+        "volume-title": "Variability in architectural simulations of multi-threaded workloads",
+        "author": "Alameldeen Alaa R.",
+        "year": "2003",
+        "unstructured": "Alaa R. Alameldeen and David A. Wood . Variability in architectural simulations of multi-threaded workloads . In IEEE HPCA ,pages 7 -- 18 , 2003 . Alaa R. Alameldeen and David A. Wood. Variability in architectural simulations of multi-threaded workloads. In IEEE HPCA,pages 7--18, 2003."
+      },
+      {
+        "key": "e_1_2_1_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MM.2006.82"
+      },
+      {
+        "key": "e_1_2_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1167473.1167488"
+      },
+      {
+        "key": "e_1_2_1_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1005686.1005693"
+      },
+      {
+        "key": "e_1_2_1_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/370049.370424"
+      },
+      {
+        "key": "e_1_2_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1297027.1297033"
+      },
+      {
+        "key": "e_1_2_1_8_1",
+        "volume-title": "Intel 64 and IA-32 Architectures Software Developer's Manual",
+        "unstructured": "Intel. Intel 64 and IA-32 Architectures Software Developer's Manual Volume 3B: System Programming Guide. http://www.intel.com/products/processor/manuals/. Order number: 253669--027US, July 2008 . Intel. Intel 64 and IA-32 Architectures Software Developer's Manual Volume 3B: System Programming Guide. http://www.intel.com/products/processor/manuals/. Order number: 253669--027US, July 2008."
+      },
+      {
+        "key": "e_1_2_1_9_1",
+        "volume-title": "Contradicted and initially stronger effects in highly cited clinical research. The journal of the American Medical Association (JAMA), 294:218--228",
+        "author": "Ioannidis John P. A.",
+        "year": "2005",
+        "unstructured": "John P. A. Ioannidis . Contradicted and initially stronger effects in highly cited clinical research. The journal of the American Medical Association (JAMA), 294:218--228 , 2005 . John P. A. Ioannidis. Contradicted and initially stronger effects in highly cited clinical research. The journal of the American Medical Association (JAMA), 294:218--228, 2005."
+      },
+      {
+        "key": "e_1_2_1_10_1",
+        "volume-title": "Statistical Analysis: An Interdisciplinary Introduction to Univariate &amp",
+        "author": "Kachigan Sam Kash",
+        "year": "1986",
+        "unstructured": "Sam Kash Kachigan . Statistical Analysis: An Interdisciplinary Introduction to Univariate &amp ; Multivariate Methods. Radius Press , 1986 . Sam Kash Kachigan. Statistical Analysis: An Interdisciplinary Introduction to Univariate &amp; Multivariate Methods. Radius Press, 1986."
+      },
+      {
+        "key": "e_1_2_1_11_1",
+        "first-page": "484",
+        "volume-title": "Proceedings of the 2005 International Symposium on Performance Evaluation of Computer and Telecommunication Systems (SPECTS 2005",
+        "author": "Kalibera Tomas",
+        "year": "2005",
+        "unstructured": "Tomas Kalibera , Lubomir Bulej , and Petr Tuma . Benchmark precision and random initial state . In Proceedings of the 2005 International Symposium on Performance Evaluation of Computer and Telecommunication Systems (SPECTS 2005 ), pages 484 -- 490 , San Diego, CA, USA , 2005 . SCS. Tomas Kalibera, Lubomir Bulej, and Petr Tuma. Benchmark precision and random initial state. In Proceedings of the 2005 International Symposium on Performance Evaluation of Computer and Telecommunication Systems (SPECTS 2005), pages 484--490, San Diego, CA, USA, 2005. SCS."
+      },
+      {
+        "key": "e_1_2_1_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IPCCC.2001.918667"
+      },
+      {
+        "key": "e_1_2_1_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/spe.v36:8"
+      },
+      {
+        "key": "e_1_2_1_14_1",
+        "volume-title": "Proceedings of the Los Alamos Computer Science Institute Symposium (LACSI'02)",
+        "author": "Maxwell M.",
+        "year": "2002",
+        "unstructured": "M. Maxwell , P. Teller , L. Salayandia , and S. Moore . Accuracy of performance monitoring hardware . In Proceedings of the Los Alamos Computer Science Institute Symposium (LACSI'02) , October 2002 . M. Maxwell, P. Teller, L. Salayandia, and S.Moore. Accuracy of performance monitoring hardware. In Proceedings of the Los Alamos Computer Science Institute Symposium (LACSI'02), October 2002."
+      },
+      {
+        "key": "e_1_2_1_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/645458.653464"
+      },
+      {
+        "key": "e_1_2_1_16_1",
+        "volume-title": "Models, Reasoning, and Inference",
+        "author": "Pearl Judea",
+        "year": "2000",
+        "unstructured": "Judea Pearl . Causality : Models, Reasoning, and Inference . Cambridge University Press , 1 st edition, 2000 . Standard Performance Evaluation Corporation. SPEC CPU2006 Benchmarks. http://www.spec.org/cpu2006/. Judea Pearl. Causality: Models, Reasoning, and Inference. Cambridge University Press, 1st edition, 2000. Standard Performance Evaluation Corporation. SPEC CPU2006 Benchmarks. http://www.spec.org/cpu2006/.",
+        "edition": "1"
+      },
+      {
+        "key": "e_1_2_1_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MASCOTS.2007.58"
+      }
+    ],
+    "container-title": [
+      "ACM SIGPLAN Notices"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/1508284.1508275",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/1508284.1508275",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T13:29:42Z",
+      "timestamp": 1750253382000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/1508284.1508275"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          2,
+          28
+        ]
+      ]
+    },
+    "references-count": 16,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            2,
+            28
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1145/1508284.1508275"
+    ],
+    "URL": "https://doi.org/10.1145/1508284.1508275",
+    "relation": {
+      "is-identical-to": [
+        {
+          "id-type": "doi",
+          "id": "10.1145/1508244.1508275",
+          "asserted-by": "subject"
+        }
+      ]
+    },
+    "ISSN": [
+      "0362-1340",
+      "1558-1160"
+    ],
+    "issn-type": [
+      {
+        "value": "0362-1340",
+        "type": "print"
+      },
+      {
+        "value": "1558-1160",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          2,
+          28
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2009-03-07",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

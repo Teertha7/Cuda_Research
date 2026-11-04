@@ -1,0 +1,21 @@
+{
+  "ObservationCount": "3780",
+  "ConfigurationCount": "252",
+  "SeqLarge": "37.318",
+  "OmpLarge": "5.996",
+  "CudaLarge": "9.839",
+  "TileLarge": "9.542",
+  "ModelError": "6.13",
+  "CannySeq": "1083.075",
+  "CannySixteen": "203.268",
+  "HtoDLarge": "1.334",
+  "KernelLarge": "0.531",
+  "DtoHLarge": "2.746",
+  "TileKernelLarge": "0.767",
+  "HybridHalf": "6.528",
+  "HybridGpu": "9.119",
+  "HybridCpu": "6.819",
+  "RegretMax": "89.35",
+  "OverlapCount": "5",
+  "OverlapMax": "0.0556"
+}

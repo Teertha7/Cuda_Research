@@ -1,0 +1,313 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          25
+        ]
+      ],
+      "date-time": "2026-10-25T22:52:46Z",
+      "timestamp": 1792968766283,
+      "version": "4.5.0"
+    },
+    "reference-count": 11,
+    "publisher": "Association for Computing Machinery (ACM)",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2008,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2008-03-01T00:00:00Z",
+          "timestamp": 1204329600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Queue"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2008,
+          3
+        ]
+      ]
+    },
+    "abstract": "<jats:p>The advent of multicore CPUs and manycore GPUs means that mainstream processor chips are now parallel systems. Furthermore, their parallelism continues to scale with Moore’s law. The challenge is to develop mainstream application software that transparently scales its parallelism to leverage the increasing number of processor cores, much as 3D graphics applications transparently scale their parallelism to manycore GPUs with widely varying numbers of cores.</jats:p>",
+    "DOI": "10.1145/1365490.1365500",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2008,
+          4,
+          29
+        ]
+      ],
+      "date-time": "2008-04-29T09:01:12Z",
+      "timestamp": 1209459672000
+    },
+    "page": "40-53",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1576,
+    "title": [
+      "Scalable Parallel Programming with CUDA"
+    ],
+    "prefix": "10.1145",
+    "volume": "6",
+    "author": [
+      {
+        "given": "John",
+        "family": "Nickolls",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "NVIDIA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ian",
+        "family": "Buck",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NVIDIA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Garland",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NVIDIA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kevin",
+        "family": "Skadron",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Virginia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2008,
+          3
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_1_1_1",
+        "unstructured": "NVIDIA. 2007. CUDA Technology; http://www.nvidia.com/CUDA.  NVIDIA. 2007. CUDA Technology; http://www.nvidia.com/CUDA."
+      },
+      {
+        "key": "e_1_2_1_2_1",
+        "unstructured": "NVIDIA. 2007. CUDA Programming Guide 1.1; http://developer.download.nvidia.com/compute/cuda/1_1/NVIDIA_CUDA_Programming_Guide_1.1.pdf.  NVIDIA. 2007. CUDA Programming Guide 1.1; http://developer.download.nvidia.com/compute/cuda/1_1/NVIDIA_CUDA_Programming_Guide_1.1.pdf."
+      },
+      {
+        "key": "e_1_2_1_4_1",
+        "unstructured": "See  reference 3.  See reference 3."
+      },
+      {
+        "key": "e_1_2_1_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1186562.1015800"
+      },
+      {
+        "key": "e_1_2_1_6_1",
+        "volume-title": "The First Workshop on General-Purpose Processing on Graphics Processing Units (October).",
+        "author": "Stone S.S.",
+        "year": "2007",
+        "unstructured": "Stone , S.S. , Yi , H. , Hwu , W.W. , Haldar , J.P. , Sutton , B.P. , Liang , Z.-P. 2007 . How GPUs can improve the quality of magnetic resonance imaging . The First Workshop on General-Purpose Processing on Graphics Processing Units (October). Stone, S.S., Yi, H., Hwu, W.W., Haldar, J.P., Sutton, B.P., Liang, Z.-P. 2007. How GPUs can improve the quality of magnetic resonance imaging. The First Workshop on General-Purpose Processing on Graphics Processing Units (October)."
+      },
+      {
+        "key": "e_1_2_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.20829"
+      },
+      {
+        "key": "e_1_2_1_8_1",
+        "unstructured": "Nyland L. Harris M. Prins J. 2007. Fast n-body simulation with CUDA. In GPU Gems 3. H. Nguyen ed. Addison-Wesley.  Nyland L. Harris M. Prins J. 2007. Fast n-body simulation with CUDA. In GPU Gems 3 . H. Nguyen ed. Addison-Wesley."
+      },
+      {
+        "key": "e_1_2_1_9_1",
+        "volume-title": "Matrix Computations",
+        "author": "Golub G.H.",
+        "unstructured": "Golub , G.H. , and Van Loan , C.F. 1996. Matrix Computations , 3 rd edition. Johns Hopkins University Press . Golub, G.H., and Van Loan, C.F. 1996. Matrix Computations, 3rd edition. Johns Hopkins University Press.",
+        "edition": "3"
+      },
+      {
+        "key": "e_1_2_1_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/2401945.2401989"
+      },
+      {
+        "key": "e_1_2_1_11_1",
+        "volume-title": "Proceedings of Graphics Hardware (August): 97--106",
+        "author": "Sengupta S.",
+        "year": "2007",
+        "unstructured": "Sengupta , S. , Harris , M. , Zhang , Y. , Owens , J.D. 2007 . Scan primitives for GPU computing . In Proceedings of Graphics Hardware (August): 97--106 . Sengupta, S., Harris, M., Zhang, Y., Owens, J.D. 2007. Scan primitives for GPU computing. In Proceedings of Graphics Hardware (August): 97--106."
+      },
+      {
+        "key": "e_1_2_1_12_1",
+        "unstructured": "See  Reference 3.  See Reference 3."
+      }
+    ],
+    "container-title": [
+      "Queue"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/1365490.1365500",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/1365490.1365500",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T09:57:39Z",
+      "timestamp": 1750240659000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/1365490.1365500"
+      }
+    },
+    "subtitle": [
+      "Is CUDA the parallel programming model that application developers have been waiting for?"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2008,
+          3
+        ]
+      ]
+    },
+    "references-count": 11,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2008,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1145/1365490.1365500"
+    ],
+    "URL": "https://doi.org/10.1145/1365490.1365500",
+    "relation": {},
+    "ISSN": [
+      "1542-7730",
+      "1542-7749"
+    ],
+    "issn-type": [
+      {
+        "value": "1542-7730",
+        "type": "print"
+      },
+      {
+        "value": "1542-7749",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2008,
+          3
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2008-03-01",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

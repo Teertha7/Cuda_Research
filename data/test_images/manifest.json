@@ -1,0 +1,32 @@
+[
+  {
+    "file": "data\\test_images\\flat.pgm",
+    "sha256": "37960dd74dbb8a701373a9ce6cb77621af342788147007c33236ee2a8306e910",
+    "origin": "Original procedural fixture",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "data\\test_images\\vertical_step.pgm",
+    "sha256": "7ef74a60808fdaa0048f8587d9d6ded6475df6b16c238b8dba058ff854460f9d",
+    "origin": "Original procedural fixture",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "data\\test_images\\diagonal_step.pgm",
+    "sha256": "286c05233f1a5d2f764a400ca06c1d6edb8283f3576056914b36d36cae5cd643",
+    "origin": "Original procedural fixture",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "data\\test_images\\noise.pgm",
+    "sha256": "62b8a980ad69697b05fb7eae1ed3b0e0df78f8d65f1a2f0500230e4000fce377",
+    "origin": "Original procedural fixture",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "data\\test_images\\weak_connected.pgm",
+    "sha256": "1492f77e116d72ad33fff4f1e5247683679a56fea617f4eef0453285177edd0c",
+    "origin": "Original procedural fixture",
+    "license": "CC0-1.0"
+  }
+]

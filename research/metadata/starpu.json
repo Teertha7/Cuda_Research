@@ -1,0 +1,317 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          9
+        ]
+      ],
+      "date-time": "2026-10-09T15:37:29Z",
+      "timestamp": 1791560249517,
+      "version": "4.3.4"
+    },
+    "reference-count": 17,
+    "publisher": "Wiley",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2010,
+              11,
+              4
+            ]
+          ],
+          "date-time": "2010-11-04T00:00:00Z",
+          "timestamp": 1288828800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Concurrency and Computation"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          2
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    In the field of HPC, the current hardware trend is to design multiprocessor architectures featuring heterogeneous technologies such as specialized coprocessors (e.g. Cell/BE) or data‐parallel accelerators (e.g. GPUs). Approaching the theoretical performance of these architectures is a complex issue. Indeed, substantial efforts have already been devoted to efficiently offload parts of the computations. However, designing an execution model that unifies all computing units and associated embedded memory remains a main challenge. We therefore designed StarPU, an original runtime system providing a high‐level, unified execution model tightly coupled with an expressive data management library. The main goal of StarPU is to provide numerical kernel designers with a convenient way to generate parallel tasks over heterogeneous hardware on the one hand, and easily develop and tune powerful scheduling algorithms on the other hand. We have developed several strategies that can be selected seamlessly at run‐time, and we have analyzed their efficiency on several algorithms running simultaneously over multiple cores and a GPU. In addition to substantial improvements regarding execution times, we have obtained consistent\n                    <jats:italic>superlinear</jats:italic>\n                    parallelism by actually\n                    <jats:italic>exploiting</jats:italic>\n                    the heterogeneous nature of the machine. We eventually show that our dynamic approach competes with the highly optimized MAGMA library and overcomes the limitations of the corresponding static scheduling in a portable way. Copyright © 2010 John Wiley &amp; Sons, Ltd.\n                  </jats:p>",
+    "DOI": "10.1002/cpe.1631",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          6
+        ]
+      ],
+      "date-time": "2010-11-06T06:48:55Z",
+      "timestamp": 1289026135000
+    },
+    "page": "187-198",
+    "source": "Crossref",
+    "is-referenced-by-count": 952,
+    "title": [
+      "StarPU: a unified platform for task scheduling on heterogeneous multicore architectures"
+    ],
+    "prefix": "10.1002",
+    "volume": "23",
+    "author": [
+      {
+        "given": "Cédric",
+        "family": "Augonnet",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Samuel",
+        "family": "Thibault",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Raymond",
+        "family": "Namyst",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pierre‐André",
+        "family": "Wacrenier",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          4
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_8_2_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "AugonnetC NamystR.A unified runtime system for heterogeneous multicore architectures. Proceedings of the International Euro‐Par Workshops HPPC'08 Las Palmas de Gran Canaria Spain August 2008.",
+        "DOI": "10.1007/978-3-642-00955-6_22"
+      },
+      {
+        "key": "e_1_2_8_3_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "AugonnetC ThibaultS NamystR NijhuisM.Exploiting the Cell/BE architecture with the StarPU unified runtime system. SAMOS Workshop Samos Greece July 2009.",
+        "DOI": "10.1007/978-3-642-03138-0_36"
+      },
+      {
+        "key": "e_1_2_8_4_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/71.993206"
+      },
+      {
+        "key": "e_1_2_8_5_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPDS.2004.1271181"
+      },
+      {
+        "key": "e_1_2_8_6_2",
+        "unstructured": "Clint WhaleyR DongarraJ.Automatically tuned linear algebra software. Ninth SIAM Conference on Parallel Processing for Scientific Computing San Jose CA U.S.A. 1999."
+      },
+      {
+        "key": "e_1_2_8_7_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "AugonnetC ThibaultS NamystR.Automatic calibration of performance models on heterogeneous multicore architectures. Proceedings of the International Euro‐Par Workshops HPPC'09 Delft The Netherlands August 2009.",
+        "DOI": "10.1007/978-3-642-14122-5_9"
+      },
+      {
+        "key": "e_1_2_8_8_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SC.2008.5214359"
+      },
+      {
+        "key": "e_1_2_8_9_2",
+        "unstructured": "TomovS DongarraJ BaboulinM.Towards dense linear algebra for hybrid GPU accelerated manycore systems. Technical Report January2009."
+      },
+      {
+        "key": "e_1_2_8_10_2",
+        "unstructured": "WesolowskiL.An application programming interface for general purpose graphics processing units in an asynchronous runtime system. Master's Thesis 2008."
+      },
+      {
+        "key": "e_1_2_8_11_2",
+        "unstructured": "KunzmanD ZhengG BohmE KaléLV.Charm ++ offload API and the cell processor. Proceedings of the PMUP Workshop Seattle WA U.S.A. September 2006."
+      },
+      {
+        "key": "e_1_2_8_12_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1383422.1383447"
+      },
+      {
+        "key": "e_1_2_8_13_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "AyguadeE BadiaRM CabreraD DuranA GonzalezM IgualF JimenezD LabartaJ MartorellX MayoR PerezJM Quintana‐OrtíES.A proposal to extend the openmp tasking model for heterogeneous architectures. IWOMP '09: Proceedings of the 5th International Workshop on OpenMP Berlin Heidelberg 2009 154–167.",
+        "DOI": "10.1007/978-3-642-02303-3_13"
+      },
+      {
+        "key": "e_1_2_8_14_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "AyguadéE BadiaRM IgualFD LabartaJ MayoR Quintana‐OrtíES.An extension of the StarSs programming model for platforms with multiple GPUs. Proceedings of the 15th Euro‐Par Conference Delft The Netherlands August 2009.",
+        "DOI": "10.1007/978-3-642-03869-3_79"
+      },
+      {
+        "key": "e_1_2_8_15_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "BellensP PérezJM BadiaRM LabartaJ.Exploiting locality on the Cell/B.E. through bypassing. SAMOS Samos Greece 2009;318–328.",
+        "DOI": "10.1007/978-3-642-03138-0_35"
+      },
+      {
+        "key": "e_1_2_8_16_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1094342009106195"
+      },
+      {
+        "key": "e_1_2_8_17_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "TeodoroG SachettoR SertelO GurcanM MeiraJrW CatalyurekU FerreiraR.Coordinating the use of GPU and CPU for improving performance of compute intensive applications. Proceedings of the IEEE International Conference on Cluster Computing New Orleans LA U.S.A. 2009.",
+        "DOI": "10.1109/CLUSTR.2009.5289193"
+      },
+      {
+        "key": "e_1_2_8_18_2",
+        "unstructured": "DolbeauR BihanS BodinF.HMPP A hybrid multi‐core parallel programming environment. Technical Report CAPS entreprise 2007."
+      }
+    ],
+    "container-title": [
+      "Concurrency and Computation: Practice and Experience"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fcpe.1631",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpe.1631",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          27
+        ]
+      ],
+      "date-time": "2025-02-27T11:55:15Z",
+      "timestamp": 1740657315000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://onlinelibrary.wiley.com/doi/10.1002/cpe.1631"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          4
+        ]
+      ]
+    },
+    "references-count": 17,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/cpe.1631"
+    ],
+    "URL": "https://doi.org/10.1002/cpe.1631",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "1532-0626",
+      "1532-0634"
+    ],
+    "issn-type": [
+      {
+        "value": "1532-0626",
+        "type": "print"
+      },
+      {
+        "value": "1532-0634",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          4
+        ]
+      ]
+    }
+  }
+}

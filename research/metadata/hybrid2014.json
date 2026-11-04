@@ -1,0 +1,397 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2026-10-07T23:00:16Z",
+      "timestamp": 1791414016204,
+      "version": "4.3.3"
+    },
+    "reference-count": 27,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              5,
+              22
+            ]
+          ],
+          "date-time": "2013-05-22T00:00:00Z",
+          "timestamp": 1369180800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Int J Parallel Prog"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1007/s10766-013-0252-y",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          5,
+          21
+        ]
+      ],
+      "date-time": "2013-05-21T10:22:24Z",
+      "timestamp": 1369131744000
+    },
+    "page": "384-404",
+    "source": "Crossref",
+    "is-referenced-by-count": 27,
+    "title": [
+      "Boosting CUDA Applications with CPU–GPU Hybrid Computing"
+    ],
+    "prefix": "10.1007",
+    "volume": "42",
+    "author": [
+      {
+        "given": "Changmin",
+        "family": "Lee",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Won Woo",
+        "family": "Ro",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jean-Luc",
+        "family": "Gaudiot",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          5,
+          22
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "252_CR1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Acar, U.A., Blelloch, G.E., Blumofe, R.D.: The data locality of work stealing. In: Proceedings of the Twelfth Annual ACM Symposium on Parallel Algorithms and Architectures, SPAA ’00, pp. 1–12. ACM, New York, NY, USA (2000)",
+        "DOI": "10.1145/341800.341801"
+      },
+      {
+        "key": "252_CR2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bakhoda, A., Yuan, G., Fung, W., Wong, H., Aamodt, T.: Analyzing cuda workloads using a detailed gpu simulator. In: Performance Analysis of Systems and Software, 2009. ISPASS 2009. IEEE International Symposium on, pp. 163–174 (2009). doi: 10.1109/ISPASS.2009.4919648",
+        "DOI": "10.1109/ISPASS.2009.4919648"
+      },
+      {
+        "key": "252_CR3",
+        "unstructured": "Bell, N., Garland, M.: Cusp: Generic parallel algorithms for sparse matrix and graph computations (2010). http://cusp-library.googlecode.com"
+      },
+      {
+        "key": "252_CR4",
+        "doi-asserted-by": "crossref",
+        "first-page": "720",
+        "DOI": "10.1145/324133.324234",
+        "volume": "46",
+        "author": "RD Blumofe",
+        "year": "1999",
+        "unstructured": "Blumofe, R.D., Leiserson, C.E.: Scheduling multithreaded computations by work stealing. J. ACM 46, 720–748 (1999)",
+        "journal-title": "J. ACM"
+      },
+      {
+        "key": "252_CR5",
+        "first-page": "1",
+        "volume": "18",
+        "author": "AR Brodtkorb",
+        "year": "2010",
+        "unstructured": "Brodtkorb, A.R., Dyken, C., Hagen, T.R., Hjelmervik, J.M., Storaasli, O.O.: State-of-the-art in heterogeneous computing. Sci. Program. 18, 1–33 (2010)",
+        "journal-title": "Sci. Program."
+      },
+      {
+        "key": "252_CR6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Che, S., Boyer, M., Meng, J., Tarjan, D., Sheaffer, J., Lee, S.H., Skadron, K.: Rodinia: a benchmark suite for heterogeneous computing. In: Workload Characterization, 2009. IISWC 2009. IEEE International Symposium on, pp. 44–54 (2009). doi: 10.1109/IISWC.2009.5306797",
+        "DOI": "10.1109/IISWC.2009.5306797"
+      },
+      {
+        "key": "252_CR7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cifuentes, C., Malhotra, V.M.: Binary translation: static, dynamic, retargetable? In: Proceedings of the 1996 International Conference on Software Maintenance, ICSM ’96, pp. 340–349. IEEE Computer Society, Washington, DC, USA (1996)",
+        "DOI": "10.1109/ICSM.1996.565037"
+      },
+      {
+        "key": "252_CR8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Diamos, G.F., Kerr, A.R., Yalamanchili, S., Clark, N.: Ocelot: a dynamic optimization framework for bulk-synchronous applications in heterogeneous systems. In: Proceedings of the 19th International Conference on Parallel Architectures and Compilation Techniques, PACT ’10, pp. 353–364. ACM, New York, NY, USA (2010)",
+        "DOI": "10.1145/1854273.1854318"
+      },
+      {
+        "key": "252_CR9",
+        "doi-asserted-by": "crossref",
+        "first-page": "58",
+        "DOI": "10.1145/1839676.1839694",
+        "volume": "53",
+        "author": "M Garland",
+        "year": "2010",
+        "unstructured": "Garland, M., Kirk, D.B.: Understanding throughput-oriented architectures. Commun. ACM 53, 58–66 (2010)",
+        "journal-title": "Commun. ACM"
+      },
+      {
+        "key": "252_CR10",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gummaraju, J., Morichetti, L., Houston, M., Sander, B., Gaster, B.R., Zheng, B.: Twin peaks: a software platform for heterogeneous computing on general-purpose and graphics processors. In: Proceedings of the 19th International Conference on Parallel Architectures and Compilation Techniques, PACT ’10, pp. 205–216. ACM, New York, NY, USA (2010)",
+        "DOI": "10.1145/1854273.1854302"
+      },
+      {
+        "key": "252_CR11",
+        "unstructured": "Juric, M.: Cuda md5 hashing. http://majuric.org/software/cudamd5"
+      },
+      {
+        "key": "252_CR12",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kerr, A., Diamos, G., Yalamanchili, S.: A characterization and analysis of ptx kernels. In: Proceedings of the 2009 IEEE International Symposium on Workload Characterization (IISWC), IISWC ’09, pp. 3–12. IEEE Computer Society, Washington, DC, USA (2009)",
+        "DOI": "10.1109/IISWC.2009.5306801"
+      },
+      {
+        "issue": "11",
+        "key": "252_CR13",
+        "doi-asserted-by": "crossref",
+        "first-page": "32",
+        "DOI": "10.1109/MC.2005.379",
+        "volume": "38",
+        "author": "R Kumar",
+        "year": "2005",
+        "unstructured": "Kumar, R., Tullsen, D., Jouppi, N., Ranganathan, P.: Heterogeneous chip multiprocessors. Computer 38(11), 32–38 (2005)",
+        "journal-title": "Computer"
+      },
+      {
+        "key": "252_CR14",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lattner, C., Adve, V.: Llvm: A compilation framework for lifelong program analysis & transformation. In: Proceedings of the International Symposium on Code Generation and Optimization: Feedback-Directed and Runtime Optimization, CGO ’04, pp. 75. IEEE Computer Society, Washington, DC, USA (2004)",
+        "DOI": "10.1109/CGO.2004.1281665"
+      },
+      {
+        "key": "252_CR15",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lee, J., Kim, J., Seo, S., Kim, S., Park, J., Kim, H., Dao, T.T., Cho, Y., Seo, S.J., Lee, S.H., Cho, S.M., Song, H.J., Suh, S.B., Choi, J.D.: An opencl framework for heterogeneous multicores with local memory. In: Proceedings of the 19th International Conference on Parallel Architectures and Compilation Techniques, PACT ’10, pp. 193–204. ACM, New York, NY, USA (2010)",
+        "DOI": "10.1145/1854273.1854301"
+      },
+      {
+        "key": "252_CR16",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Linderman, M.D., Collins, J.D., Wang, H., Meng, T.H.: Merge: a programming model for heterogeneous multi-core systems. In: Proceedings of the 13th International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS XIII, pp. 287–296. ACM, New York, NY, USA (2008)",
+        "DOI": "10.1145/1346281.1346318"
+      },
+      {
+        "key": "252_CR17",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Luk, C.K., Hong, S., Kim, H.: Qilin: Exploiting parallelism on heterogeneous multiprocessors with adaptive mapping. In: Microarchitecture, 2009. MICRO-42. 42nd Annual IEEE/ACM International Symposium on, pp. 45–55 (2009)",
+        "DOI": "10.1145/1669112.1669121"
+      },
+      {
+        "issue": "2",
+        "key": "252_CR18",
+        "doi-asserted-by": "crossref",
+        "first-page": "56",
+        "DOI": "10.1109/MM.2010.41",
+        "volume": "30",
+        "author": "J Nickolls",
+        "year": "2010",
+        "unstructured": "Nickolls, J., Dally, W.: The gpu computing era. Micro IEEE 30(2), 56–69 (2010)",
+        "journal-title": "Micro IEEE"
+      },
+      {
+        "key": "252_CR19",
+        "unstructured": "NVIDIA: Cuda parallel computing platform. http://developer.nvidia.com/category/zone/cuda-zone"
+      },
+      {
+        "key": "252_CR20",
+        "unstructured": "NVIDIA: Ptx: Parallel thread execution isa. http://developer.nvidia.com/cuda/nvidia-gpu-computing-documentation"
+      },
+      {
+        "key": "252_CR21",
+        "unstructured": "OpenCL: The open standard for parallel programming of heterogeneous systems. http://www.khronos.org/opencl"
+      },
+      {
+        "key": "252_CR22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ravi, V.T., Ma, W., Chiu, D., Agrawal, G.: Compiler and runtime support for enabling generalized reduction computations on heterogeneous parallel configurations. In: Proceedings of the 24th ACM International Conference on Supercomputing, ICS ’10, pp. 137–146. ACM, New York, NY, USA (2010)",
+        "DOI": "10.1145/1810085.1810106"
+      },
+      {
+        "key": "252_CR23",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Saha, B., Zhou, X., Chen, H., Gao, Y., Yan, S., Rajagopalan, M., Fang, J., Zhang, P., Ronen, R., Mendelson, A.: Programming model for a heterogeneous x86 platform. In: Proceedings of the 2009 ACM SIGPLAN Conference on Programming Language Design and Implementation, PLDI ’09, pp. 431–440. ACM, New York, NY, USA (2009)",
+        "DOI": "10.1145/1542476.1542525"
+      },
+      {
+        "key": "252_CR24",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Seiler, L., Carmean, D., Sprangle, E., Forsyth, T., Abrash, M., Dubey, P., Junkins, S., Lake, A., Sugerman, J., Cavin, R., Espasa, R., Grochowski, E., Juan, T., Hanrahan, P.: Larrabee: a many-core x86 architecture for visual computing. In: ACM SIGGRAPH 2008 papers, SIGGRAPH ’08, pp. 18:1–18:15. ACM, New York, NY, USA (2008)",
+        "DOI": "10.1145/1360612.1360617"
+      },
+      {
+        "key": "252_CR25",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Stratton, J., Stone, S., Hwu, W.m.: Mcuda: An efficient implementation of cuda kernels for multi-core cpus. In: Amaral, J. (ed.) Languages and Compilers for Parallel Computing, Lecture Notes in Computer Science, vol. 5335, pp. 16–30. Springer, Berlin (2008)",
+        "DOI": "10.1007/978-3-540-89740-8_2"
+      },
+      {
+        "key": "252_CR26",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tian, C., Feng, M., Gupta, R.: Supporting speculative parallelization in the presence of dynamic data structures. In: Proceedings of the 2010 ACM SIGPLAN Conference on Programming Language Design and Implementation, PLDI ’10, pp. 62–73. ACM, New York, NY, USA (2010)",
+        "DOI": "10.1145/1806596.1806604"
+      },
+      {
+        "key": "252_CR27",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang, P.H., Collins, J.D., Chinya, G.N., Jiang, H., Tian, X., Girkar, M., Yang, N.Y., Lueh, G.Y., Wang, H.: Exochi: architecture and programming environment for a heterogeneous multi-core multithreaded system. In: Proceedings of the 2007 ACM SIGPLAN Conference on Programming Language Design and Implementation, PLDI ’07, pp. 156–166. ACM, New York, NY, USA (2007)",
+        "DOI": "10.1145/1250734.1250753"
+      }
+    ],
+    "container-title": [
+      "International Journal of Parallel Programming"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s10766-013-0252-y.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1007/s10766-013-0252-y/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s10766-013-0252-y",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          30
+        ]
+      ],
+      "date-time": "2025-04-30T10:45:09Z",
+      "timestamp": 1746009909000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://link.springer.com/10.1007/s10766-013-0252-y"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          5,
+          22
+        ]
+      ]
+    },
+    "references-count": 27,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2014,
+            4
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "252"
+    ],
+    "URL": "https://doi.org/10.1007/s10766-013-0252-y",
+    "relation": {},
+    "ISSN": [
+      "0885-7458",
+      "1573-7640"
+    ],
+    "issn-type": [
+      {
+        "value": "0885-7458",
+        "type": "print"
+      },
+      {
+        "value": "1573-7640",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          5,
+          22
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "run_id": "20261026T153339790016Z",
+  "utc_start": "2026-10-26T15:33:39.790789+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "cpu": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+  "logical_cpus": 24,
+  "executable_sha256": "a32c7c50e314b566e22f23bd3d4bfce1effb59698a994e1b47db42d06e9ec4e1",
+  "gpu": {
+    "returncode": 0,
+    "stdout": "name, memory.total [MiB], compute_cap, driver_version\nNVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 8.9, 576.02\n",
+    "stderr": ""
+  },
+  "protocol": {
+    "repeats": 15,
+    "warmups": 3,
+    "sizes": [
+      512,
+      1024,
+      2048,
+      4096
+    ],
+    "algorithms": [
+      "sobel",
+      "canny"
+    ]
+  },
+  "random_seed": 3129,
+  "omp_environment": {
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_NUM_THREADS": "8",
+    "OMP_WAIT_POLICY": "PASSIVE"
+  },
+  "timing_scope": "steady workspace; includes host staging, transfers, kernel, CPU region, synchronization and merge; excludes process/context startup, workspace allocation, input generation and validation",
+  "source_sha256": {
+    "src\\cuda.cu": "868104faf62d68d82a85d008cc0aff18923c4636d941ff4c05715d99ca6fb859",
+    "src\\edge.cpp": "84e52204f3ab7bc0f4dc2ad06a163af3445ad7fc4b8888566c846e6f63ba522d",
+    "src\\edge.hpp": "1968312680d09e2c7981c41997eae46025d8c900a34a374459201d76c649131c",
+    "src\\main.cpp": "dd1ddbf2be257d0a1f9d2509276784ac03fda4024aa50044e5f7f71b48f46e69"
+  }
+}

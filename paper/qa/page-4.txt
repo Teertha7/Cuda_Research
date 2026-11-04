@@ -1,0 +1,111 @@
+1
+2
+4
+8
+16
+OpenMP threads
+1
+2
+3
+4
+5
+6
+7
+Speedup vs sequential (4096 square)
+Sobel
+Canny
+Fig. 2. Median of three per-family speedups at 4096 × 4096. The baseline
+is the same family’s sequential implementation.
+0
+5
+10
+15
+Image size (megapixels)
+0.0
+0.2
+0.4
+0.6
+0.8
+CUDA kernel interval (ms)
+Global 16x16
+Tiled 16x16
+Tiled 32x8
+Tiled 32x16
+Fig. 3.
+Device event intervals for global and tiled Sobel. Quartile bars
+summarize all three families. Tiling is a candidate whose measured kernel
+performance is unfavorable here.
+and tile-loading/barrier overhead are possible explanations for
+kernel behavior, but counters were not collected to establish a
+bottleneck.
+C. Partitions and prediction
+Within the hybrid wrapper, pooled best tested CPU fractions
+are 1.0, 0.75, 1.0 and 0.5 as width increases. At width 4096,
+the half-CPU split has a 6.528 ms median, versus 9.119 ms at
+the GPU endpoint and 6.819 ms at the CPU endpoint. How-
+ever, independently measured eight-thread OpenMP is 5.996
+ms. The small within-wrapper gain over its CPU endpoint
+therefore does not establish superiority over a well-performing
+CPU-only execution (Fig. 4). Endpoint differences across
+separate processes expose sensitivity to execution context.
+The initial throughput estimate does not always select the
+best tested fraction. Across the recorded family–size combi-
+0
+20
+40
+60
+80
+100
+Rows assigned to CPU (%)
+0
+2
+4
+6
+8
+Steady-workspace latency (ms)
+Square width
+512
+1024
+2048
+4096
+Fig. 4. Pooled hybrid-wrapper medians across CPU fractions. Endpoint paths
+and separately timed standalone implementations must be distinguished.
+0
+2
+4
+6
+8
+10
+Measured held-out latency (ms)
+0
+2
+4
+6
+8
+10
+Predicted latency (ms)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+CPU fraction
+Fig. 5. Largest-resolution medians were excluded from ﬁtting. Dashed line
+denotes exact prediction; color identiﬁes CPU fraction.
+nations, nearest-grid selection has regret from 0 to 89.35%
+relative to the lowest observed candidate median. This is a
+retrospective diagnostic, subject to selection bias and mea-
+surement noise, not out-of-sample policy performance.
+5 hybrid observations have an overlap lower bound greater
+than 0.01 ms; the largest bound is 0.0556 ms. This supports
+limited interval overlap in those observations. It does not
+establish overlap for every conﬁguration or explain latency
+improvements causally. A synchronized proﬁler trace would
+strengthen this validation.
+The ﬁtted model yields 6.13% held-out MAPE on the 15
+largest-resolution medians. Figure 5 shows individual predic-
+tions. The held-out set uses the same three synthetic families
+and hardware, so this result demonstrates size extrapolation
+within the study only. It does not establish a portable allocation
+model or justify selecting arbitrary unmeasured fractions.

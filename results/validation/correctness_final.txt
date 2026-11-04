@@ -1,0 +1,2 @@
+GPU=NVIDIA GeForce RTX 4060 Laptop GPU CC=8.9 bytes=8585216000
+PASS 984 equivalence checks plus 3 analytical checks

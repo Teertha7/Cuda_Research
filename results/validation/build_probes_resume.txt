@@ -1,0 +1,10 @@
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.42
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+overlap.cu
+tmpxft_000162e0_00000000-7_overlap.cudafe1.cpp
+edge.cpp
+   Creating library build\overlap.lib and object build\overlap.exp
+runtime_probe.cpp

@@ -1,0 +1,171 @@
+TABLE II
+LARGEST-RESOLUTION SOBEL LATENCY VARIABILITY (MS). Q1–Q3
+COMBINES IMAGE-FAMILY AND TIMING VARIATION.
+Conﬁguration
+Median
+Q1–Q3
+n
+Sequential
+37.318
+36.489–40.950
+45
+OpenMP 8
+5.996
+5.440–6.864
+45
+CUDA global
+9.839
+9.049–10.443
+45
+CUDA tiled 16x16
+9.542
+9.101–9.919
+45
+VII. DISCUSSION
+The primary ﬁnding is a difference between where arith-
+metic runs quickly and where an entire host-to-host image
+operation runs quickly. For a small regular stencil, device
+computation is only part of the pipeline. Keeping intermediate
+data resident on the GPU could change this balance, but it
+would answer a different question and is not measured here.
+Adding shared-memory trafﬁc and synchronization can cost
+more than the reuse it enables. The observed result should
+inform a future optimization choice, not be hidden by empha-
+sizing a favorable isolated wall-time sample. Similarly, col-
+laborative CPU–GPU execution should be compared against
+both endpoints under repeated controlled conditions. Merely
+demonstrating correctness and asynchronous submission is
+insufﬁcient to claim a practical gain.
+The model is useful as a compact description of this dataset,
+while the rate-estimate regret demonstrates the limits of ideal-
+ized divisible-work assumptions. The extensive scheduling lit-
+erature provides stronger general techniques; our study instead
+makes the timing scope and the limits of a small empirical
+model inspectable.
+VIII. THREATS TO VALIDITY AND LIMITATIONS
+This is one laptop and one session. The desktop GPU is
+shared, CPU placement is uncontrolled, and background ac-
+tivity, thermal state and power policy can affect measurements.
+Fifteen within-process repetitions characterize local variability
+without establishing cross-day reproducibility. Table II reports
+the largest-resolution spread so that small differences are not
+mistaken for robust improvements.
+Only synthetic images are measured. Natural-image gener-
+alization, different machines, energy, GPU-resident pipelines,
+cold-start latency and production-library baselines remain
+untested. CPU SIMD tuning is not explicitly optimized.
+OpenMP Canny retains a serial queue and includes intermedi-
+ate allocation costs; CUDA and hybrid Canny are not imple-
+mented. Exact comparison validates the speciﬁed algorithms,
+not perceptual edge quality or agreement with every library.
+Tests cannot prove absence of all memory errors, and Compute
+Sanitizer was not run.
+The model uses a small, structured dataset and conﬁguration
+medians. MAPE alone does not validate an allocation decision,
+and no statistically signiﬁcant or universally optimal partition
+is claimed. The review veriﬁes source existence and records
+reading depth, but is not an exhaustive systematic review.
+Author information and human validation remain required
+before submission.
+IX. CONCLUSION AND FUTURE WORK
+Under the speciﬁed host-to-host timing contract, OpenMP
+with eight threads outperforms baseline CUDA Sobel at the
+largest tested size, despite a short CUDA kernel interval.
+Shared-memory tiling worsens kernel time in all tested conﬁg-
+urations. Hybrid allocation depends on image size and execu-
+tion context; the evidence does not support a general advantage
+over CPU-only execution. A small model extrapolates to the
+held-out largest size with 6.13% MAPE, within a deliberately
+narrow scope.
+Next steps are independent measurement sessions, con-
+trolled power and afﬁnity, natural images with documented
+licenses, proﬁler-conﬁrmed overlap, allocation-inclusive la-
+tency, and GPU Canny with validated global connectivity.
+These extensions are required before broader performance or
+scheduling claims.
+AI ASSISTANCE DISCLOSURE
+OpenAI Codex assisted with implementation, experiment
+orchestration, analysis scripts and manuscript drafting. Mea-
+surements were produced by executed programs, not gener-
+ated timing values. This draft still requires human review of
+the code, evidence, authorship, and venue-speciﬁc disclosure
+requirements; no submission or acceptance is represented.
+REFERENCES
+[1] J. Canny, “A computational approach to edge detection,” IEEE
+Transactions on Pattern Analysis and Machine Intelligence, vol.
+PAMI-8,
+no.
+6,
+pp.
+679–698,
+1986.
+[Online].
+Available:
+https:
+//doi.org/10.1109/tpami.1986.4767851
+[2] J. Nickolls, I. Buck, M. Garland, and K. Skadron, “Scalable parallel
+programming with cuda: Is cuda the parallel programming model that
+application developers have been waiting for?” Queue, vol. 6, no. 2,
+pp. 40–53, 2008. [Online]. Available: https://doi.org/10.1145/1365490.
+1365500
+[3] S. Che, M. Boyer, J. Meng, D. Tarjan, J. W. Sheaffer, S.-H. Lee,
+and K. Skadron, “Rodinia: A benchmark suite for heterogeneous
+computing,” in 2009 IEEE International Symposium on Workload
+Characterization
+(IISWC),
+2009,
+pp.
+44–54.
+[Online].
+Available:
+https://doi.org/10.1109/iiswc.2009.5306797
+[4] Y. Luo and R. Duraiswami, “Canny edge detection on nvidia cuda,”
+in 2008 IEEE Computer Society Conference on Computer Vision and
+Pattern Recognition Workshops, 2008, pp. 1–8. [Online]. Available:
+https://doi.org/10.1109/cvprw.2008.4563088
+[5] Z. Emrani, S. Bateni, and H. Rabbani, “A new parallel approach for
+accelerating the gpu-based execution of edge detection algorithms,”
+Journal of Medical Signals & Sensors, vol. 7, no. 1, p. 33, 2017.
+[Online]. Available: https://doi.org/10.4103/2228-7477.199155
+[6] L. I. Mochurad, “Canny edge detection analysis based on parallel
+algorithm, constructed complexity scale and cuda,” Computing and
+Informatics, vol. 41, no. 4, pp. 957–980, 2022. [Online]. Available:
+https://doi.org/10.31577/cai\_2022\_4\_957
+[7] Y. Song, C. Li, S. Xiao, Q. Zhou, and H. Xiao, “A parallel
+canny edge detection algorithm based on opencl acceleration,” PLOS
+ONE,
+vol.
+19,
+no.
+1,
+p.
+e0292345,
+2024.
+[Online].
+Available:
+https://doi.org/10.1371/journal.pone.0292345
+[8] Q. Chang, X. Li, Y. Li, and J. Miyazaki, “Multi-directional sobel
+operator
+kernel
+on
+gpus,”
+Journal
+of
+Parallel
+and
+Distributed
+Computing,
+vol.
+177,
+pp.
+160–170,
+2023.
+[Online].
+Available:
+https://doi.org/10.1016/j.jpdc.2023.03.004
+[9] K. Datta, M. Murphy, V. Volkov, S. Williams, J. Carter, L. Oliker,
+D. Patterson, J. Shalf, and K. Yelick, “Stencil computation optimization
+and auto-tuning on state-of-the-art multicore architectures,” in 2008
+SC - International Conference for High Performance Computing,
+Networking, Storage and Analysis, 2008, pp. 1–12. [Online]. Available:
+https://doi.org/10.1109/sc.2008.5222004

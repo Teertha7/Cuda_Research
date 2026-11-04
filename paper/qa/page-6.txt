@@ -1,0 +1,131 @@
+[10] J. Ragan-Kelley, A. Adams, S. Paris, M. Levoy, S. Amarasinghe,
+and F. Durand, “Decoupling algorithms from schedules for easy
+optimization
+of
+image
+processing
+pipelines,”
+ACM
+Transactions
+on
+Graphics,
+vol.
+31,
+no.
+4,
+2012.
+[Online].
+Available:
+https:
+//people.csail.mit.edu/jrk/halide12/
+[11] C.-K. Luk, S. Hong, and H. Kim, “Qilin: Exploiting parallelism on
+heterogeneous multiprocessors with adaptive mapping,” in 42nd Annual
+IEEE/ACM International Symposium on Microarchitecture, 2009, pp.
+45–55. [Online]. Available: https://faculty.cc.gatech.edu/~hyesoon/qilin_
+luk.pdf
+[12] C. Augonnet, S. Thibault, R. Namyst, and P. Wacrenier, “Starpu:
+a uniﬁed platform for task scheduling on heterogeneous multicore
+architectures,” Concurrency and Computation: Practice and Experience,
+vol.
+23,
+no.
+2,
+pp.
+187–198,
+2011.
+[Online].
+Available:
+https:
+//doi.org/10.1002/cpe.1631
+[13] J. Lee, M. Samadi, Y. Park, and S. Mahlke, “Skmd: Single kernel
+on multiple devices for transparent cpu-gpu collaboration,” ACM
+Transactions on Computer Systems, vol. 33, no. 3, pp. 1–27, 2015.
+[Online]. Available: https://doi.org/10.1145/2798725
+[14] C. Lee, W. W. Ro, and J.-L. Gaudiot, “Boosting cuda applications
+with cpu–gpu hybrid computing,” International Journal of Parallel
+Programming, vol. 42, no. 2, pp. 384–404, 2014. [Online]. Available:
+https://doi.org/10.1007/s10766-013-0252-y
+[15] P.
+Pandit
+and
+R.
+Govindarajan,
+“Fluidic
+kernels:
+Cooperative
+execution of opencl programs on multiple heterogeneous devices,” in
+Proceedings of Annual IEEE/ACM International Symposium on Code
+Generation and Optimization, 2014, pp. 273–283. [Online]. Available:
+https://doi.org/10.1145/2544137.2544163
+[16] G. Teodoro, T. M. Kurc, T. Pan, L. A. Cooper, J. Kong, P. Widener,
+and J. H. Saltz, “Accelerating large scale image analyses on parallel,
+cpu-gpu equipped systems,” in 2012 IEEE 26th International Parallel
+and Distributed Processing Symposium, 2012, pp. 1093–1104. [Online].
+Available: https://doi.org/10.1109/ipdps.2012.101
+[17] R.
+K
+and
+N.
+N.
+Chiplunkar,
+“A
+survey
+on
+techniques
+for
+cooperative cpu-gpu computing,” Sustainable Computing: Informatics
+and
+Systems,
+vol.
+19,
+pp.
+72–85,
+2018.
+[Online].
+Available:
+https://doi.org/10.1016/j.suscom.2018.07.010
+[18] C. Huang, A. Iwaki, T. Hatano, and T. Shimada, “A decomposition-
+based method for stage-aware cpu/gpu conﬁguration selection under
+computation-latency slos in python image processing pipelines,” IEEE
+Access, vol. 14, pp. 123 398–123 424, 2026. [Online]. Available:
+https://doi.org/10.1109/access.2026.3721457
+[19] S. Williams, A. Waterman, and D. Patterson, “Rooﬂine: an insightful
+visual performance model for multicore architectures,” Communications
+of the ACM, vol. 52, no. 4, pp. 65–76, 2009. [Online]. Available:
+https://doi.org/10.1145/1498765.1498785
+[20] T. Mytkowicz, A. Diwan, M. Hauswirth, and P. F. Sweeney, “Producing
+wrong data without doing anything obviously wrong!” ACM SIGPLAN
+Notices, vol. 44, no. 3, pp. 265–276, 2009. [Online]. Available:
+https://doi.org/10.1145/1508284.1508275
+[21] A. Georges, D. Buytaert, and L. Eeckhout, “Statistically rigorous
+java performance evaluation,” in Proceedings of the 22nd annual
+ACM SIGPLAN conference on Object-oriented programming systems,
+languages and applications, 2007, pp. 57–76. [Online]. Available:
+https://doi.org/10.1145/1297027.1297033
+[22] OpenMP
+Architecture
+Review
+Board,
+OpenMP
+Application
+Programming
+Interface,
+2021,
+version
+5.2;
+implementation
+uses
+only
+legacy
+parallel-for
+constructs.
+[Online].
+Available:
+https://www.openmp.org/speciﬁcations/
+[23] NVIDIA, CUDA C++ Best Practices Guide, 2025, version 12.9.
+Accessed
+2026-10-26.
+[Online].
+Available:
+https://docs.nvidia.com/
+cuda/archive/12.9.0/cuda-c-best-practices-guide/index.html

@@ -1,0 +1,560 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          19
+        ]
+      ],
+      "date-time": "2026-08-19T05:27:45Z",
+      "timestamp": 1787117265698,
+      "version": "build-2736575974"
+    },
+    "reference-count": 66,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2026-01-01T00:00:00Z",
+          "timestamp": 1767225600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Access"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "DOI": "10.1109/access.2026.3721457",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          7
+        ]
+      ],
+      "date-time": "2026-08-07T19:05:23Z",
+      "timestamp": 1786129523000
+    },
+    "page": "123398-123424",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "A Decomposition-Based Method for Stage-Aware CPU/GPU Configuration Selection Under Computation-Latency SLOs in Python Image Processing Pipelines"
+    ],
+    "prefix": "10.1109",
+    "volume": "14",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0007-3004-4353",
+        "authenticated-orcid": false,
+        "given": "Che",
+        "family": "Huang",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "NTT Inc.",
+            "place": [
+              "Yokosuka-shi, Kanagawa, Japan"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0007-6373-983X",
+        "authenticated-orcid": false,
+        "given": "Ayako",
+        "family": "Iwaki",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NTT Inc.",
+            "place": [
+              "Yokosuka-shi, Kanagawa, Japan"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tomoya",
+        "family": "Hatano",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NTT Inc.",
+            "place": [
+              "Yokosuka-shi, Kanagawa, Japan"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tatsuya",
+        "family": "Shimada",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NTT Inc.",
+            "place": [
+              "Yokosuka-shi, Kanagawa, Japan"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/robotics7030047"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/tase.2014.2376492"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/11566489_8"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1089/tmj.2013.0367"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11548-025-03487-x"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/js9.0000000000002792"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/frobt.2020.578805"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fnins.2024.1416719"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/comst.2017.2682318"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jnca.2022.103366"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/rob.22384"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CoDIT.2019.8820388"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-95459-8_56"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2020.104129"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/frsip.2022.826967"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1177352.1177355"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.fraope.2025.100366"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/tpds.2010.115"
+      },
+      {
+        "issue": "4",
+        "key": "ref19",
+        "first-page": "313",
+        "article-title": "Performance evaluation of basic image processing algorithms in CPU, GPU, raspberry PI and FPGA",
+        "volume": "9",
+        "author": "Mounir",
+        "year": "2020",
+        "journal-title": "Int. J. Comput. Sci. Engineering"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ccgrid.2014.16"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-020-2649-2"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41592-019-0686-2"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7717/peerj.453"
+      },
+      {
+        "key": "ref24",
+        "first-page": "1",
+        "article-title": "CuPy: A NumPy-compatible library for NVIDIA GPU calculations",
+        "volume-title": "Proc. Workshop Mach. Learn. Syst. (LearningSys) 31st Annual Conf. Neural Inf. Process. Syst. (NeurIPS)",
+        "author": "Okuta"
+      },
+      {
+        "issue": "11",
+        "key": "ref25",
+        "first-page": "120",
+        "article-title": "The OpenCV library",
+        "volume": "25",
+        "author": "Bradski",
+        "year": "2000",
+        "journal-title": "Dr. Dobb’s J. Softw. Tools"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s40747-021-00483-x"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.comnet.2021.108177"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.comnet.2024.110791"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13677-022-00365-8"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cosrev.2024.100656"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/electronics14163184"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.sysarc.2020.101936"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IISWC.2015.15"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s24123957"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ags3.12611"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3132211.3134459"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/access.2020.3004571"
+      },
+      {
+        "key": "ref38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/bigdata55660.2022.10020573"
+      },
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/access.2021.3109904"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/access.2020.2981434"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/access.2020.3037965"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/access.2020.2977496"
+      },
+      {
+        "key": "ref43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2788396"
+      },
+      {
+        "key": "ref44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1155/2020/4839876"
+      },
+      {
+        "key": "ref45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11554-020-00994-9"
+      },
+      {
+        "key": "ref46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/pasj/psaa091"
+      },
+      {
+        "key": "ref47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/4235.585893"
+      },
+      {
+        "key": "ref48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2347736.2347755"
+      },
+      {
+        "key": "ref49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1143844.1143865"
+      },
+      {
+        "key": "ref50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artint.2013.10.003"
+      },
+      {
+        "key": "ref51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.aej.2018.03.006"
+      },
+      {
+        "key": "ref52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s40537-022-00623-1"
+      },
+      {
+        "key": "ref53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btz054"
+      },
+      {
+        "key": "ref54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2020.3047259"
+      },
+      {
+        "key": "ref55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ucc63386.2024.00018"
+      },
+      {
+        "key": "ref56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3431731"
+      },
+      {
+        "key": "ref57",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-031-30442-2_15"
+      },
+      {
+        "key": "ref58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-59612-5_2"
+      },
+      {
+        "key": "ref59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10844-024-00880-x"
+      },
+      {
+        "key": "ref60",
+        "volume-title": "Canny Edge Detection Algorithm",
+        "author": "Sevinç",
+        "year": "2026"
+      },
+      {
+        "key": "ref61",
+        "volume-title": "SciPy.Ndimage.Gaussian_Filter",
+        "year": "2026"
+      },
+      {
+        "key": "ref62",
+        "volume-title": "SciPy.Ndimage.Sobel",
+        "year": "2026"
+      },
+      {
+        "key": "ref63",
+        "volume-title": "NumPy.Hypot",
+        "year": "2026"
+      },
+      {
+        "key": "ref64",
+        "volume-title": "NumPy.Arctan2",
+        "year": "2026"
+      },
+      {
+        "key": "ref65",
+        "volume-title": "CuPy.Asarray",
+        "year": "2026"
+      },
+      {
+        "key": "ref66",
+        "volume-title": "CuPy.Asnumpy",
+        "year": "2026"
+      }
+    ],
+    "container-title": [
+      "IEEE Access"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/6287639/11323511/11644618.pdf?arnumber=11644618",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          19
+        ]
+      ],
+      "date-time": "2026-08-19T05:03:45Z",
+      "timestamp": 1787115825000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/11644618/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "references-count": 66,
+    "URL": "https://doi.org/10.1109/access.2026.3721457",
+    "relation": {},
+    "ISSN": [
+      "2169-3536"
+    ],
+    "issn-type": [
+      {
+        "value": "2169-3536",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    }
+  }
+}

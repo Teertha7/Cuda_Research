@@ -1,0 +1,111 @@
+characterize variability [21]. We therefore preserve all obser-
+vations and report descriptive summaries without statistical-
+signiﬁcance claims. The artifact contains a 21-publication
+review matrix, with full-text and abstract-only evidence dis-
+tinguished.
+III. PROBLEM FORMULATION AND RESEARCH QUESTIONS
+Let an image contain N = WH grayscale samples and
+let f ∈[0, 1] denote the fraction of rows assigned to the
+CPU. Our principal metric is steady-workspace wall latency:
+host input and output exist, reusable device and pinned buffers
+have been allocated, and processing includes staging, transfers,
+computation, synchronization and output merging. File I/O,
+image generation, context creation, allocation of the reusable
+workspace, and correctness comparison are excluded. This is
+not cold-start application latency.
+We investigate three questions. RQ1: how does OpenMP
+scaling differ between local Sobel and multi-stage Canny?
+RQ2: do shared-memory Sobel kernels improve kernel time
+or host-visible latency? RQ3: when do row partitions improve
+over device-only execution, and how well can a small model
+extrapolate to a larger image? The hypotheses are that over-
+head matters most for small inputs, that tiling need not help
+a small stencil, and that an allocation based on full-image
+rates need not minimize pipeline latency. These are hypotheses
+tested within the recorded conﬁgurations, not universal laws.
+For endpoint throughputs PC = N/TC and PG = N/TG,
+an initial estimate is
+f0 =
+PC
+PC + PG
+=
+TG
+TC + TG
+.
+(1)
+This balances ideal divisible work. Fixed costs, halos and
+contention violate its assumptions. We compare the nearest
+tested fraction with the observed best fraction retrospectively;
+neither is described as a global optimum.
+IV. SYSTEM DESIGN AND IMPLEMENTATION
+A. Algorithm contracts
+All measured inputs are 8-bit grayscale. Sobel uses the
+conventional horizontal mask [−1, 0, 1; −2, 0, 2; −1, 0, 1] and
+its transpose, with signed integer accumulation and unsigned
+16-bit output |Gx| + |Gy|. The outermost output border is
+zero. There is no clipping, normalization or threshold. Integer
+arithmetic makes exact cross-backend comparison appropriate.
+Our discrete Canny variant applies a 5×5 binomial smooth-
+ing ﬁlter formed from [1, 4, 6, 4, 1] and normalized by 256.
+Smoothing replicates boundary samples. Float Sobel gradients
+produce L2 magnitudes and directions. Nonmaximum suppres-
+sion quantizes directions into four bins, retains ties, and leaves
+the outer border zero. Absolute thresholds are 40 and 100. A
+global serial queue follows eight-connected weak pixels from
+strong seeds. No stage delegates to OpenCV. This contract is
+not claimed to reproduce every Canny library or the original
+multiscale detector.
+B. CPU and CUDA execution
+OpenMP parallelizes independent rows with static schedul-
+ing and conﬁgurable thread counts [22]. Dynamic adjustment
+is disabled. Canny’s smoothing, gradient and suppression
+loops are parallel; global hysteresis remains serial. Canny
+latency includes temporary allocations, unlike Sobel’s reusable
+arrays, so cross-algorithm latency differences are descriptive
+rather than an equal-work speedup comparison.
+Baseline CUDA assigns one output pixel to a thread. The
+tiled candidate cooperatively loads a block plus a one-pixel
+halo into shared memory. Every thread reaches the barrier
+before out-of-range threads return. Launches use 16 × 16,
+32 × 8, or 32 × 16 blocks. CUDA calls and launches are
+checked, and results are read after stream synchronization.
+Timing follows the distinction between device intervals and
+host wall time emphasized in CUDA guidance [23].
+Hybrid Sobel assigns the upper ⌊fH⌋rows to eight
+OpenMP threads and the lower rows to CUDA. The GPU
+receives one preceding halo row when needed; CPU and GPU
+outputs are disjoint. Pinned host staging enables asynchronous
+transfer submission in a nonblocking stream. CPU work starts
+after the GPU operations have been enqueued, then the host
+waits for completion and copies the lower result into the ﬁnal
+array. Fractions 0 and 1 exercise endpoint paths through the
+same hybrid wrapper.
+Asynchronous submission alone is not proof of overlap. We
+additionally record the conservative interval bound
+L = max(0, TC,region + TG,kernel −Twall).
+(2)
+Both intervals are enclosed by the wall interval. Positive values
+support temporal overlap of the CPU region and kernel; they
+do not measure sustained CPU instruction activity. Zero is in-
+conclusive because transfers and staging enlarge the enclosing
+interval. No proﬁler timeline was collected.
+V. EXPERIMENTAL METHODOLOGY
+A. Platform and inputs
+Experiments ran on Windows 11 Home Single Language,
+build 26200, with an Intel Core i7-13700HX reporting 16 cores
+and 24 logical processors, 16,886,128,640 bytes of physical
+RAM, and an RTX 4060 Laptop GPU reporting 8188 MiB and
+compute capability 8.9. The NVIDIA driver was 576.02. Code
+was built with CUDA 12.9.41 and MSVC toolset 14.44 using
+C++17, host optimization and OpenMP, targeting sm_89.
+No fast-math option was enabled. The GPU also served the
+Windows desktop under WDDM.
+Three original procedural families were generated directly
+at square widths 512, 1024, 2048 and 4096: ﬁxed-seed xorshift
+noise, a checker pattern with 17 × 23 cells, and a two-
+dimensional ramp with a wrap discontinuity. These represent
+controlled texture differences; they are not three natural-image
+populations. Repetition at different sizes is not treated as
+independent scene evidence. Small ﬂat, step and irregular-size
+inputs support correctness testing separately from performance
+measurement.

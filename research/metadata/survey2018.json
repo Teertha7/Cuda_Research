@@ -1,0 +1,997 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          21
+        ]
+      ],
+      "date-time": "2026-09-21T12:18:47Z",
+      "timestamp": 1789993127692,
+      "version": "4.0.1"
+    },
+    "reference-count": 82,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2018-09-01T00:00:00Z",
+          "timestamp": 1535760000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Sustainable Computing: Informatics and Systems"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.suscom.2018.07.010",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          3
+        ]
+      ],
+      "date-time": "2018-08-03T13:10:10Z",
+      "timestamp": 1533301810000
+    },
+    "page": "72-85",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 20,
+    "special_numbering": "C",
+    "title": [
+      "A survey on techniques for cooperative CPU-GPU computing"
+    ],
+    "prefix": "10.1016",
+    "volume": "19",
+    "author": [
+      {
+        "given": "Raju",
+        "family": "K",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Niranjan N.",
+        "family": "Chiplunkar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "2",
+        "key": "10.1016/j.suscom.2018.07.010_bib0005",
+        "doi-asserted-by": "crossref",
+        "first-page": "384",
+        "DOI": "10.1007/s10766-013-0252-y",
+        "article-title": "Boosting CUDA applications with CPU-GPU hybrid computing",
+        "volume": "42",
+        "author": "Lee",
+        "year": "2014",
+        "journal-title": "Int. J. Parallel Program."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0010",
+        "doi-asserted-by": "crossref",
+        "first-page": "273",
+        "DOI": "10.1145/2544137.2544163",
+        "article-title": "Fluidic kernels: cooperative execution of OpenCL programs on multiple heterogeneous devices",
+        "author": "Pandit",
+        "year": "2014",
+        "journal-title": "Proceedings of Annual IEEE/ACM International Symposium on Code Generation and Optimization"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.suscom.2018.07.010_bib0015",
+        "doi-asserted-by": "crossref",
+        "first-page": "9",
+        "DOI": "10.1145/2798725",
+        "article-title": "SKMD: single kernel on multiple devices for transparent CPU-GPU collaboration",
+        "volume": "33",
+        "author": "Lee",
+        "year": "2015",
+        "journal-title": "ACM Trans. Comput. Syst. (TOCS)"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.suscom.2018.07.010_bib0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "251",
+        "DOI": "10.1145/2858788.2688525",
+        "article-title": "JAWS: a JavaScript framework for adaptive CPU-GPU work sharing",
+        "volume": "50",
+        "author": "Piao",
+        "year": "2015",
+        "journal-title": "ACM SIGPLAN Notices"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0025",
+        "first-page": "1",
+        "article-title": "Dense linear algebra solvers for multicore with GPU accelerators",
+        "author": "Tomov",
+        "year": "2010",
+        "journal-title": "2010 IEEE International Symposium on Parallel & Distributed Processing, Workshops and Phd Forum (IPDPSW)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0030",
+        "doi-asserted-by": "crossref",
+        "first-page": "109",
+        "DOI": "10.1016/j.ultramic.2012.02.003",
+        "article-title": "Hybrid computing: CPU+ GPU co-processing and its application to tomographic reconstruction",
+        "volume": "115",
+        "author": "Agulleiro",
+        "year": "2012",
+        "journal-title": "J. Ultramicroscopy"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0035",
+        "doi-asserted-by": "crossref",
+        "first-page": "365",
+        "DOI": "10.1145/2304576.2304625",
+        "article-title": "Enabling and scaling matrix computations on heterogeneous multi-core and multi-GPU systems",
+        "author": "Song",
+        "year": "2012",
+        "journal-title": "Proceedings of the 26th ACM International Conference on Supercomputing"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0040",
+        "doi-asserted-by": "crossref",
+        "first-page": "746",
+        "DOI": "10.1016/j.cej.2012.07.049",
+        "article-title": "Discrete particle simulation of gas-solid two-phase flows with multi-scale CPU-GPU hybrid computation",
+        "volume": "207",
+        "author": "Xu",
+        "year": "2012",
+        "journal-title": "Chem. Eng. J."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.suscom.2018.07.010_bib0045",
+        "doi-asserted-by": "crossref",
+        "first-page": "189",
+        "DOI": "10.1016/j.parco.2013.03.001",
+        "article-title": "Efficient irregular wavefront propagation algorithms on hybrid CPU–GPU machines",
+        "volume": "39",
+        "author": "Teodoro",
+        "year": "2013",
+        "journal-title": "Parallel Comput."
+      },
+      {
+        "issue": "13",
+        "key": "10.1016/j.suscom.2018.07.010_bib0050",
+        "doi-asserted-by": "crossref",
+        "first-page": "1490",
+        "DOI": "10.1016/j.cma.2011.01.013",
+        "article-title": "A new era in scientific computing: domain decomposition methods in hybrid CPU–GPU architectures",
+        "volume": "200",
+        "author": "Papadrakakis",
+        "year": "2011",
+        "journal-title": "Comput. Methods Appl. Mech. Eng."
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.suscom.2018.07.010_bib0055",
+        "doi-asserted-by": "crossref",
+        "first-page": "1563",
+        "DOI": "10.1016/j.jpdc.2013.07.023",
+        "article-title": "Combining multi-core and GPU computing for solving combinatorial optimization problems",
+        "volume": "73",
+        "author": "Chakroun",
+        "year": "2013",
+        "journal-title": "J. Parallel Distrib. Comput."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.suscom.2018.07.010_bib0060",
+        "doi-asserted-by": "crossref",
+        "first-page": "70",
+        "DOI": "10.1016/j.parco.2014.03.001",
+        "article-title": "Adaptive block size for dense QR factorization in hybrid CPU-GPU systems via statistical modeling",
+        "volume": "40",
+        "author": "Chen",
+        "year": "2014",
+        "journal-title": "Parallel Comput."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0065",
+        "doi-asserted-by": "crossref",
+        "first-page": "176",
+        "DOI": "10.1016/j.compeleceng.2015.05.018",
+        "article-title": "Accelerating aerial image simulation using improved CPU/GPU collaborative computing",
+        "volume": "46",
+        "author": "Zhang",
+        "year": "2015",
+        "journal-title": "Comput. Electr. Eng."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.suscom.2018.07.010_bib0070",
+        "doi-asserted-by": "crossref",
+        "first-page": "492",
+        "DOI": "10.1002/cpe.3629",
+        "article-title": "Efficient CPU-GPU cooperative computing for solving the subset-sum problem",
+        "volume": "28",
+        "author": "Wan",
+        "year": "2016",
+        "journal-title": "Concurr. Comput. Pract. Exp."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0075",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.ultramic.2016.04.001",
+        "article-title": "STEM image simulation with hybrid CPU/GPU programming",
+        "volume": "166",
+        "author": "Yao",
+        "year": "2016",
+        "journal-title": "Ultramicroscopy"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0080",
+        "first-page": "2",
+        "article-title": "Hybrid CPU-GPU scheduling and execution of tree traversals",
+        "author": "Liu",
+        "year": "2016",
+        "journal-title": "Proceedings of the 2016 International Conference on Supercomputing"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0085",
+        "doi-asserted-by": "crossref",
+        "first-page": "47",
+        "DOI": "10.1016/j.endm.2017.03.007",
+        "article-title": "A hybrid CPU-GPU parallelization scheme of variable neighborhood search for inventory optimization problems",
+        "volume": "58",
+        "author": "Antoniadis",
+        "year": "2017",
+        "journal-title": "Electron. Notes Discret. Math."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0090",
+        "doi-asserted-by": "crossref",
+        "first-page": "74",
+        "DOI": "10.1109/SAAHPC.2012.12",
+        "article-title": "On improving the performance of multi-threaded CUDA applications with concurrent kernel execution by kernel reordering",
+        "author": "Wende",
+        "year": "2012",
+        "journal-title": "2012 Symposium on Application Accelerators in High Performance Computing (SAAHPC)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0095",
+        "doi-asserted-by": "crossref",
+        "first-page": "271",
+        "DOI": "10.1145/2228360.2228411",
+        "article-title": "A compiler and runtime for heterogeneous computing",
+        "author": "Auerbach",
+        "year": "2012",
+        "journal-title": "Proceedings of the 49th Annual Design Automation Conference"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0100",
+        "first-page": "40",
+        "article-title": "Runtime coordinated heterogeneous tasks in charm++",
+        "author": "Robson",
+        "year": "2016",
+        "journal-title": "Proceedings of the Second International Workshop on Extreme Scale Programming Models and Middleware"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0105",
+        "first-page": "610",
+        "article-title": "A CPU-GPGPU scheduler based on data transmission bandwidth of workload",
+        "author": "Huang",
+        "year": "2012",
+        "journal-title": "2012 13th International Conference on Parallel and Distributed Computing, Applications and Technologies (PDCAT)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0110",
+        "doi-asserted-by": "crossref",
+        "first-page": "1097",
+        "DOI": "10.1109/IPDPSW.2013.236",
+        "article-title": "Improving GPU performance prediction with data transfer modeling",
+        "author": "Boyer",
+        "year": "2013",
+        "journal-title": "2013 IEEE 27th International Parallel and Distributed Processing Symposium Workshops & PhD Forum (IPDPSW)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0115",
+        "doi-asserted-by": "crossref",
+        "first-page": "819",
+        "DOI": "10.1109/IPDPS.2014.89",
+        "article-title": "BigKernel--high performance CPU-GPU communication pipelining for big data-style applications",
+        "author": "Mokhtari",
+        "year": "2014",
+        "journal-title": "2014 IEEE 28th International Parallel and Distributed Processing Symposium"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0120",
+        "doi-asserted-by": "crossref",
+        "first-page": "211",
+        "DOI": "10.1109/ICICCT.2017.7975190",
+        "article-title": "Performance improvement of CUDA applications by reducing CPU-GPU data transfer overhead",
+        "author": "Sunitha",
+        "year": "2017",
+        "journal-title": "2017 International Conference on Inventive Communication and Computational Technologies (ICICCT)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0125",
+        "doi-asserted-by": "crossref",
+        "first-page": "258",
+        "DOI": "10.1016/j.jpdc.2017.06.015",
+        "article-title": "A tasks reordering model to reduce transfers overhead on GPUs",
+        "volume": "109",
+        "author": "Lázaro-Muñoz",
+        "year": "2017",
+        "journal-title": "J. Parallel Distrib. Comput."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0130",
+        "first-page": "16",
+        "article-title": "MCUDA: an efficient implementation of CUDA kernels for multi-core CPUs",
+        "volume": "2008",
+        "author": "Stratton",
+        "year": "2008",
+        "journal-title": "LCPC"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0135",
+        "doi-asserted-by": "crossref",
+        "first-page": "197",
+        "DOI": "10.1145/1383422.1383447",
+        "article-title": "Harmony: an execution model and runtime for heterogeneous many core systems",
+        "author": "Diamos",
+        "year": "2008",
+        "journal-title": "Proceedings of the 17th International Symposium on High Performance Distributed Computing"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0140",
+        "doi-asserted-by": "crossref",
+        "first-page": "35",
+        "DOI": "10.1109/SASP.2009.5226333",
+        "article-title": "FCUDA: enabling efficient compilation of CUDA kernels onto FPGAs",
+        "author": "Papakonstantinou",
+        "year": "2009",
+        "journal-title": "2009 IEEE 7th Symposium on Application Specific Processors, SASP’09"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0145",
+        "doi-asserted-by": "crossref",
+        "first-page": "353",
+        "DOI": "10.1145/1854273.1854318",
+        "article-title": "Ocelot: a dynamic optimization framework for bulk-synchronous applications in heterogeneous systems",
+        "author": "Diamos",
+        "year": "2010",
+        "journal-title": "Proceedings of the 19th International Conference on Parallel Architectures and Compilation Techniques"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0150",
+        "doi-asserted-by": "crossref",
+        "first-page": "205",
+        "DOI": "10.1145/1854273.1854302",
+        "article-title": "Twin peaks: a software platform for heterogeneous computing on general-purpose and graphics processors",
+        "author": "Gummaraju",
+        "year": "2010",
+        "journal-title": "Proceedings of the 19th International Conference on Parallel Architectures and Compilation Techniques"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0155",
+        "doi-asserted-by": "crossref",
+        "first-page": "217",
+        "DOI": "10.1145/1854273.1854303",
+        "article-title": "MapCG: writing parallel program portable between CPU and GPU",
+        "author": "Hong",
+        "year": "2010",
+        "journal-title": "Proceedings of the 19th International Conference on Parallel Architectures and Compilation Techniques"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.suscom.2018.07.010_bib0160",
+        "doi-asserted-by": "crossref",
+        "first-page": "187",
+        "DOI": "10.1002/cpe.1631",
+        "article-title": "StarPU: a unified platform for task scheduling on heterogeneous multicore architectures",
+        "volume": "23",
+        "author": "Augonnet",
+        "year": "2011",
+        "journal-title": "Concurr. Comput. Pract. Exp."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0165",
+        "doi-asserted-by": "crossref",
+        "first-page": "228",
+        "DOI": "10.1109/ICCSIT.2008.27",
+        "article-title": "Task scheduling of parallel processing in CPU-GPU collaborative environment",
+        "author": "Wang",
+        "year": "2008",
+        "journal-title": "International Conference on Computer Science and Information Technology, 2008. ICCSIT'08"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0170",
+        "doi-asserted-by": "crossref",
+        "first-page": "45",
+        "DOI": "10.1145/1669112.1669121",
+        "article-title": "Qilin: exploiting parallelism on heterogeneous multiprocessors with adaptive mapping",
+        "author": "Luk",
+        "year": "2009",
+        "journal-title": "Proceedings of the 42nd Annual IEEE/ACM International Symposium on Microarchitecture"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0175",
+        "first-page": "19",
+        "article-title": "Predictive runtime code scheduling for heterogeneous architectures",
+        "volume": "9",
+        "author": "Jiménez",
+        "year": "2009",
+        "journal-title": "HiPEAC"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0180",
+        "article-title": "Fine-grained Resource sharing for concurrent GPGPU kernels",
+        "author": "Gregg",
+        "year": "2012",
+        "journal-title": "Proceedings of the 4th USENIX Conference on Hot Topics in Parallelism (HotPar'12)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0185",
+        "doi-asserted-by": "crossref",
+        "first-page": "191",
+        "DOI": "10.1109/CLUSTER.2012.34",
+        "article-title": "Data partitioning on heterogeneous multicore and multi-GPU systems using functional performance models of data-parallel applications",
+        "author": "Zhong",
+        "year": "2012",
+        "journal-title": "2012 IEEE International Conference on Cluster Computing (CLUSTER)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0190",
+        "doi-asserted-by": "crossref",
+        "first-page": "84",
+        "DOI": "10.1145/2159430.2159440",
+        "article-title": "Enabling task-level scheduling on heterogeneous platforms",
+        "author": "Sun",
+        "year": "2012",
+        "journal-title": "Proceedings of the 5th Annual Workshop on General Purpose Processing With Graphics Processing Units"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.suscom.2018.07.010_bib0195",
+        "doi-asserted-by": "crossref",
+        "first-page": "281",
+        "DOI": "10.1145/2517327.2442545",
+        "article-title": "Automatic problem size sensitive task partitioning on heterogeneous parallel systems",
+        "volume": "48",
+        "author": "Grasso",
+        "year": "2013",
+        "journal-title": "ACM SIGPLAN Notices"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.suscom.2018.07.010_bib0200",
+        "doi-asserted-by": "crossref",
+        "first-page": "1522",
+        "DOI": "10.1109/TPDS.2013.257",
+        "article-title": "Kernelet: high-throughput GPU kernel executions with dynamic slicing and scheduling",
+        "volume": "25",
+        "author": "Zhong",
+        "year": "2014",
+        "journal-title": "IEEE Trans. Parallel Distrib. Syst."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0205",
+        "first-page": "39",
+        "article-title": "Partition strategies for C source programs to support CPU+GPU coordination computing",
+        "author": "Yao",
+        "year": "2013",
+        "journal-title": "International Conference on Information Science and Cloud Computing"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0210",
+        "first-page": "352",
+        "article-title": "Algorithm for cooperative CPU-GPU computing",
+        "author": "Aciu",
+        "year": "2013",
+        "journal-title": "15th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0215",
+        "first-page": "1",
+        "article-title": "Smart multi-task scheduling for OpenCL programs on CPU/GPU heterogeneous platforms",
+        "author": "Wen",
+        "year": "2014",
+        "journal-title": "21st International Conference on High Performance Computing (HiPC)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0220",
+        "first-page": "36",
+        "article-title": "Symbiotic scheduling of concurrent GPU kernels for performance and energy optimizations",
+        "author": "Li",
+        "year": "2014",
+        "journal-title": "Proceedings of the 11th ACM Conference on Computing Frontiers"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0225",
+        "doi-asserted-by": "crossref",
+        "first-page": "140",
+        "DOI": "10.1016/j.procs.2015.05.213",
+        "article-title": "Adaptive partitioning for irregular applications on heterogeneous CPU-GPU chips",
+        "volume": "51",
+        "author": "Vilches",
+        "year": "2015",
+        "journal-title": "Procedia Comput. Sci."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0230",
+        "doi-asserted-by": "crossref",
+        "first-page": "1259",
+        "DOI": "10.1109/FSKD.2016.7603359",
+        "article-title": "Performance Optimization for CPU-GPU Heterogeneous Parallel System",
+        "author": "Wang",
+        "year": "2016",
+        "journal-title": "2016 12th International Conference on Natural Computation, Fuzzy Systems and Knowledge Discovery (ICNC-FSKD)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0235",
+        "doi-asserted-by": "crossref",
+        "first-page": "25",
+        "DOI": "10.1016/j.future.2016.03.011",
+        "article-title": "A user mode CPU-GPU scheduling framework for hybrid workloads",
+        "volume": "63",
+        "author": "Wang",
+        "year": "2016",
+        "journal-title": "Future Gener. Comput. Syst."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0240",
+        "doi-asserted-by": "crossref",
+        "first-page": "122",
+        "DOI": "10.1109/ISPA.2010.22",
+        "article-title": "Power-efficient work distribution method for CPU-GPU heterogeneous system",
+        "author": "Wang",
+        "year": "2010",
+        "journal-title": "2010 International Symposium on Parallel and Distributed Processing With Applications (ISPA)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0245",
+        "first-page": "24",
+        "article-title": "PEACH: a model for performance and energy aware cooperative hybrid computing",
+        "author": "Ge",
+        "year": "2014",
+        "journal-title": "Proceedings of the 11th ACM Conference on Computing Frontiers"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.suscom.2018.07.010_bib0250",
+        "doi-asserted-by": "crossref",
+        "first-page": "2884",
+        "DOI": "10.1016/j.jpdc.2014.06.001",
+        "article-title": "An execution time and energy model for an energy-aware execution of a conjugate gradient method with CPU/GPU collaboration",
+        "volume": "74",
+        "author": "Lang",
+        "year": "2014",
+        "journal-title": "J. Parallel Distrib. Comput."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0255",
+        "first-page": "21",
+        "article-title": "Energy conservation for GPU-CPU architectures with dynamic workload division and frequency scaling",
+        "volume": "12",
+        "author": "Ma",
+        "year": "2016",
+        "journal-title": "Sustain. Comput. Inform. Syst."
+      },
+      {
+        "issue": "40",
+        "key": "10.1016/j.suscom.2018.07.010_bib0260",
+        "first-page": "60",
+        "article-title": "Power-aware heterogeneous computing through CPU-GPU hybridization",
+        "volume": "20",
+        "author": "Siehl",
+        "year": "2016",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0265",
+        "first-page": "1",
+        "article-title": "Energy efficient job scheduling with DVFS for CPU-GPU heterogeneous systems",
+        "author": "Chau",
+        "year": "2017",
+        "journal-title": "Proceedings of the Eighth International Conference on Future Energy Systems"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0270",
+        "first-page": "42",
+        "article-title": "Cooperative DVFS for energy-efficient HEVC decoding on embedded CPU-GPU architecture",
+        "author": "Gong",
+        "year": "2017",
+        "journal-title": "Proceedings of the 54th Annual Design Automation Conference"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.suscom.2018.07.010_bib0275",
+        "doi-asserted-by": "crossref",
+        "first-page": "91",
+        "DOI": "10.1145/167962.165874",
+        "article-title": "CHARM++: a portable concurrent object oriented system based on C++",
+        "volume": "28",
+        "author": "Kale",
+        "year": "1993",
+        "journal-title": "ACM Sigplan Notices"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0280",
+        "doi-asserted-by": "crossref",
+        "first-page": "75",
+        "DOI": "10.1109/CGO.2004.1281665",
+        "article-title": "LLVM: a compilation framework for lifelong program analysis & transformation",
+        "author": "Lattner",
+        "year": "2004",
+        "journal-title": "Proceedings of the International Symposium on Code Generation and Optimization: Feedback-Directed and Runtime Optimization"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0285",
+        "first-page": "710",
+        "article-title": "To distribute or not to distribute: the question of load balancing for performance or energy",
+        "author": "Stafford",
+        "year": "2017",
+        "journal-title": "European Conference on Parallel Processing"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0290",
+        "doi-asserted-by": "crossref",
+        "first-page": "141",
+        "DOI": "10.1109/SAAHPC.2011.29",
+        "article-title": "On the efficacy of a fused CPU+ GPU processor (or APU) for parallel computing",
+        "author": "Daga",
+        "year": "2011",
+        "journal-title": "2011 Symposium on Application Accelerators in High-Performance Computing (SAAHPC)"
+      },
+      {
+        "issue": "2-3",
+        "key": "10.1016/j.suscom.2018.07.010_bib0295",
+        "doi-asserted-by": "crossref",
+        "first-page": "175",
+        "DOI": "10.1007/s00450-012-0209-1",
+        "article-title": "Performance characterization of data-intensive kernels on AMD fusion architectures",
+        "volume": "28",
+        "author": "Lee",
+        "year": "2013",
+        "journal-title": "Computer Science-Research and Development"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0300",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1145/2212908.2212924",
+        "article-title": "The tradeoffs of fused memory hierarchies in heterogeneous computing architectures",
+        "author": "Spafford",
+        "year": "2012",
+        "journal-title": "Proceedings of the 9th Conference on Computing Frontiers"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0305",
+        "first-page": "25",
+        "article-title": "On the efficiency of the accelerated processing unit for scientific computing",
+        "author": "Said",
+        "year": "2016",
+        "journal-title": "Proceedings of the 24th High Performance Computing Symposium"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0310",
+        "doi-asserted-by": "crossref",
+        "first-page": "59",
+        "DOI": "10.1145/3092255.3092256",
+        "article-title": "Analyzing memory management methods on integrated CPU-GPU systems",
+        "author": "Dashti",
+        "year": "2017",
+        "journal-title": "Proceedings of the 2017 ACM SIGPLAN International Symposium on Memory Management"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0315",
+        "doi-asserted-by": "crossref",
+        "first-page": "240",
+        "DOI": "10.1109/SC.Companion.2012.40",
+        "article-title": "Exploiting coarse-grained parallelism in b+ tree searches on an apu",
+        "author": "Daga",
+        "year": "2012",
+        "journal-title": "High Performance Computing, Networking, Storage and Analysis (SCC), 2012 SC Companion"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0320",
+        "first-page": "12",
+        "article-title": "Implementation and evaluation of deep neural networks (DNN) on mainstream heterogeneous systems",
+        "author": "Gu",
+        "year": "2014",
+        "journal-title": "Proceedings of 5th Asia-Pacific Workshop on Systems"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0325",
+        "first-page": "613",
+        "article-title": "Efficient execution of erasure codes on AMD APU architecture",
+        "author": "Wyrzykowski",
+        "year": "2013",
+        "journal-title": "International Conference on Parallel Processing and Applied Mathematics"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0330",
+        "doi-asserted-by": "crossref",
+        "first-page": "339",
+        "DOI": "10.1109/ICPP.2013.43",
+        "article-title": "Parallel radix sort on the AMD fusion accelerated processing unit",
+        "author": "Delorme",
+        "year": "2013",
+        "journal-title": "2013 42nd International Conference on Parallel Processing (ICPP)"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.suscom.2018.07.010_bib0335",
+        "doi-asserted-by": "crossref",
+        "first-page": "889",
+        "DOI": "10.14778/2536206.2536216",
+        "article-title": "Revisiting co-processing for hash joins on the coupled CPU-GPU architecture",
+        "volume": "6",
+        "author": "He",
+        "year": "2013",
+        "journal-title": "Proceedings of the VLDB Endowment"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.suscom.2018.07.010_bib0340",
+        "doi-asserted-by": "crossref",
+        "first-page": "329",
+        "DOI": "10.14778/2735496.2735497",
+        "article-title": "In-cache query co-processing on coupled CPU-GPU architectures",
+        "volume": "8",
+        "author": "He",
+        "year": "2014",
+        "journal-title": "Proceedings of the VLDB Endowment"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0345",
+        "first-page": "43",
+        "article-title": "Hybrid strategy for stencil computations on the APU",
+        "author": "Eberhart",
+        "year": "2014",
+        "journal-title": "Proceedings of the 1st International Workshop on High-Performance Stencil Computations"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0350",
+        "first-page": "10",
+        "article-title": "Energy-efficient query processing on embedded CPU-GPU architectures",
+        "author": "Cheng",
+        "year": "2015",
+        "journal-title": "Proceedings of the 11th International Workshop on Data Management on New Hardware"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.suscom.2018.07.010_bib0355",
+        "doi-asserted-by": "crossref",
+        "first-page": "905",
+        "DOI": "10.1109/TPDS.2016.2586074",
+        "article-title": "Understanding co-running behaviors on integrated CPU/GPU architectures",
+        "volume": "28",
+        "author": "Zhang",
+        "year": "2017",
+        "journal-title": "Ieee Trans. Parallel Distrib. Syst."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0360",
+        "doi-asserted-by": "crossref",
+        "first-page": "39",
+        "DOI": "10.1109/ICPPW.2017.19",
+        "article-title": "Using the integrated GPU to improve CPU sort performance",
+        "author": "Lupescu",
+        "year": "2017",
+        "journal-title": "2017 46th International Conference on Parallel Processing Workshops (ICPPW)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0365",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1109/CGO.2017.7863726",
+        "article-title": "FinePar: irregularity-aware fine-grained workload partitioning on integrated architectures",
+        "author": "Zhang",
+        "year": "2017",
+        "journal-title": "2017 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0370",
+        "doi-asserted-by": "crossref",
+        "first-page": "967",
+        "DOI": "10.1109/IPDPS.2017.124",
+        "article-title": "Co-run scheduling with power cap on integrated CPU-GPU systems",
+        "author": "Zhu",
+        "year": "2017",
+        "journal-title": "2017 IEEE International Parallel and Distributed Processing Symposium (IPDPS)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0375",
+        "first-page": "426",
+        "article-title": "Understanding data partition for applications on CPU-GPU integrated processors",
+        "author": "Fang",
+        "year": "2017",
+        "journal-title": "International Conference on Mobile Ad-Hoc and Sensor Networks"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.suscom.2018.07.010_bib0380",
+        "doi-asserted-by": "crossref",
+        "first-page": "69",
+        "DOI": "10.1145/2788396",
+        "article-title": "A survey of CPU-GPU heterogeneous computing techniques",
+        "volume": "47",
+        "author": "Mittal",
+        "year": "2015",
+        "journal-title": "ACM Computing Surveys (CSUR)"
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0385",
+        "unstructured": "Insieme compiler and runtime infrastructure. Distributed and Parallel Systems Group, 2012. University of Innsbruck. URL http://insieme-compiler.org."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0390",
+        "unstructured": "Web Worker. URL http://www.w3.org/TR/workers."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0395",
+        "unstructured": "WebCL Standard. URL www.khronos.org/webcl/."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0400",
+        "unstructured": "CUDA C Programming Guide, Version 8.0, Nvidia Corporation (2017). URL www.nvidia.com."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0405",
+        "unstructured": "OpenCL Programming User Guide, rev 1.0, Advanced Micro Devices, Inc. (2013). URL www.amd.com."
+      },
+      {
+        "key": "10.1016/j.suscom.2018.07.010_bib0410",
+        "unstructured": "OpenMP Application Program Interface, Version 4.0 (2013). URL www.openmp.org."
+      }
+    ],
+    "container-title": [
+      "Sustainable Computing: Informatics and Systems"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2210537917303311?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2210537917303311?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          28
+        ]
+      ],
+      "date-time": "2022-08-28T15:05:26Z",
+      "timestamp": 1661699126000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2210537917303311"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          9
+        ]
+      ]
+    },
+    "references-count": 82,
+    "alternative-id": [
+      "S2210537917303311"
+    ],
+    "URL": "https://doi.org/10.1016/j.suscom.2018.07.010",
+    "relation": {},
+    "ISSN": [
+      "2210-5379"
+    ],
+    "issn-type": [
+      {
+        "value": "2210-5379",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          9
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "A survey on techniques for cooperative CPU-GPU computing",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Sustainable Computing: Informatics and Systems",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.suscom.2018.07.010",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2018 Elsevier Inc. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

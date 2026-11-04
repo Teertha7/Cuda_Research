@@ -1,0 +1,430 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          25
+        ]
+      ],
+      "date-time": "2026-10-25T01:43:05Z",
+      "timestamp": 1792892585764,
+      "version": "4.5.0"
+    },
+    "reference-count": 28,
+    "publisher": "Association for Computing Machinery (ACM)",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2009,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2009-04-01T00:00:00Z",
+          "timestamp": 1238544000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100006192",
+        "name": "Advanced Scientific Computing Research",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DE-AC02-05CH11231"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DE-AC02-05CH11231"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100006192",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100006132",
+        "name": "Office of Science",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DE-AC02-05CH11231"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DE-AC02-05CH11231"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100006132",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Commun. ACM"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          4
+        ]
+      ]
+    },
+    "abstract": "<jats:p>The Roofline model offers insight on how to improve the performance of software and hardware.</jats:p>",
+    "DOI": "10.1145/1498765.1498785",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          4,
+          6
+        ]
+      ],
+      "date-time": "2009-04-06T12:34:22Z",
+      "timestamp": 1239021262000
+    },
+    "page": "65-76",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 2132,
+    "title": [
+      "Roofline"
+    ],
+    "prefix": "10.1145",
+    "volume": "52",
+    "author": [
+      {
+        "given": "Samuel",
+        "family": "Williams",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Lawrence Berkeley National Laboratory, Berkeley, CA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrew",
+        "family": "Waterman",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of California, Berkeley"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David",
+        "family": "Patterson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of California, Berkeley"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2009,
+          4
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_2_1_1",
+        "unstructured": "Adve V. Analyzing the Behavior and Performance of Parallel Programs Ph.D. thesis University of Wisconsin 1993; www.cs.wisc.edu/techreports/1993/TR1201.pdf.   Adve V. Analyzing the Behavior and Performance of Parallel Programs Ph.D. thesis University of Wisconsin 1993; www.cs.wisc.edu/techreports/1993/TR1201.pdf."
+      },
+      {
+        "key": "e_1_2_2_2_1",
+        "unstructured": "AMD. Software Optimization Guide for AMD Family 10h Processors Publication 40546 Apr. 2008; www.amd.com/us-en/assets/content_type/white_papers_and_tech_docs/40546.pdf.  AMD. Software Optimization Guide for AMD Family 10h Processors Publication 40546 Apr. 2008; www.amd.com/us-en/assets/content_type/white_papers_and_tech_docs/40546.pdf."
+      },
+      {
+        "key": "e_1_2_2_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1465482.1465560"
+      },
+      {
+        "key": "e_1_2_2_6_1",
+        "unstructured": "Bird S. Waterman A. Klues K. Datta K. Liu R. Nishtala R. Williams S. Asanovi K. Demmel J. Patterson D. and Yelick K. A case for sensible performance counters. Submitted to the First USENIX Workshop on Hot Topics in Parallelism (Berkeley CA Mar. 30--31 2009); www.usenix.org/events/hotpar09/.  Bird S. Waterman A. Klues K. Datta K. Liu R. Nishtala R. Williams S. Asanovi K. Demmel J. Patterson D. and Yelick K. A case for sensible performance counters. Submitted to the First USENIX Workshop on Hot Topics in Parallelism (Berkeley CA Mar. 30--31 2009); www.usenix.org/events/hotpar09/."
+      },
+      {
+        "key": "e_1_2_2_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICPP.1994.30"
+      },
+      {
+        "key": "e_1_2_2_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0743-7315(88)90002-0"
+      },
+      {
+        "key": "e_1_2_2_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/197320.197366"
+      },
+      {
+        "key": "e_1_2_2_10_1",
+        "unstructured": "Chong J. Private communication on financial PDE solvers 2008.  Chong J. Private communication on financial PDE solvers 2008."
+      },
+      {
+        "key": "e_1_2_2_11_1",
+        "volume-title": "Presentation",
+        "author": "Colella P.",
+        "year": "2004"
+      },
+      {
+        "key": "e_1_2_2_12_1",
+        "volume-title": "Proceedings of the 2008 ACM/IEEE SC08 Conference (Austin, TX, Nov. 15--21)",
+        "author": "Datta K.",
+        "year": "2008"
+      },
+      {
+        "key": "e_1_2_2_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JPROC.2004.840848"
+      },
+      {
+        "key": "e_1_2_2_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSE.1982.235576"
+      },
+      {
+        "key": "e_1_2_2_15_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "2",
+        "DOI": "10.1109/JPROC.2004.840301",
+        "article-title": "The design and implementation of FFTW3",
+        "volume": "93",
+        "author": "Frigo M.",
+        "year": "2005",
+        "journal-title": "Proceedings of the IEEE: Special Issue on Program Generation, Optimization, and Platform Adaptation"
+      },
+      {
+        "key": "e_1_2_2_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1198555.1198768"
+      },
+      {
+        "key": "e_1_2_2_17_1",
+        "unstructured": "Hennessy J. and Patterson D. Computer Architecture: A Quantitative Approach Fourth Edition Morgan Kaufmann Publishers Boston MA. 2007.   Hennessy J. and Patterson D. Computer Architecture: A Quantitative Approach Fourth Edition Morgan Kaufmann Publishers Boston MA. 2007."
+      },
+      {
+        "key": "e_1_2_2_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MC.2008.209"
+      },
+      {
+        "key": "e_1_2_2_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/12.40842"
+      },
+      {
+        "key": "e_1_2_2_20_1",
+        "unstructured": "Lazowska E. Zahorjan J. Graham S. and Sevcik K. Quantitative System Performance: Computer System Analysis Using Queueing Network Models Prentice Hall Upper Saddle River NJ 1984.   Lazowska E. Zahorjan J. Graham S. and Sevcik K. Quantitative System Performance: Computer System Analysis Using Queueing Network Models Prentice Hall Upper Saddle River NJ 1984."
+      },
+      {
+        "key": "e_1_2_2_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/opre.9.3.383"
+      },
+      {
+        "key": "e_1_2_2_22_1",
+        "unstructured": "McCalpin J. STREAM: Sustainable Memory Bandwidth in High-Performance Computers 1995; www.cs.virginia.edu/stream.  McCalpin J. STREAM: Sustainable Memory Bandwidth in High-Performance Computers 1995; www.cs.virginia.edu/stream."
+      },
+      {
+        "key": "e_1_2_2_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1022594.1022596"
+      },
+      {
+        "key": "e_1_2_2_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TC.1986.1676712"
+      },
+      {
+        "key": "e_1_2_2_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1362622.1362686"
+      },
+      {
+        "key": "e_1_2_2_26_1",
+        "volume-title": "Proceedings of the ACM/IEEESC02 Conference (Baltimore, MD, Nov. 16--22)",
+        "author": "Vuduc R.",
+        "year": "2002"
+      },
+      {
+        "key": "e_1_2_2_27_1",
+        "volume-title": "Thesis",
+        "author": "Williams S.",
+        "year": "2008"
+      },
+      {
+        "key": "e_1_2_2_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IPDPS.2008.4536295"
+      },
+      {
+        "key": "e_1_2_2_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1362622.1362674"
+      },
+      {
+        "key": "e_1_2_2_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/223982.223990"
+      }
+    ],
+    "container-title": [
+      "Communications of the ACM"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/1498765.1498785",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/1498765.1498785",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T09:38:39Z",
+      "timestamp": 1750239519000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/1498765.1498785"
+      }
+    },
+    "subtitle": [
+      "an insightful visual performance model for multicore architectures"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          4
+        ]
+      ]
+    },
+    "references-count": 28,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            4
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1145/1498765.1498785"
+    ],
+    "URL": "https://doi.org/10.1145/1498765.1498785",
+    "relation": {},
+    "ISSN": [
+      "0001-0782",
+      "1557-7317"
+    ],
+    "issn-type": [
+      {
+        "value": "0001-0782",
+        "type": "print"
+      },
+      {
+        "value": "1557-7317",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2009-04-01",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

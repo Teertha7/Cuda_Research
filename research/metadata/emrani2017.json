@@ -1,0 +1,358 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          18
+        ]
+      ],
+      "date-time": "2026-08-18T05:29:12Z",
+      "timestamp": 1787030952592,
+      "version": "build-2736575974"
+    },
+    "reference-count": 35,
+    "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J Med Signals Sens"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "DOI": "10.4103/2228-7477.199155",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          9,
+          17
+        ]
+      ],
+      "date-time": "2019-09-17T05:06:30Z",
+      "timestamp": 1568696790000
+    },
+    "page": "33",
+    "source": "Crossref",
+    "is-referenced-by-count": 11,
+    "title": [
+      "A New Parallel Approach for Accelerating the GPU-Based Execution of Edge Detection Algorithms"
+    ],
+    "prefix": "10.4103",
+    "volume": "7",
+    "author": [
+      {
+        "given": "Zahra",
+        "family": "Emrani",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Soroosh",
+        "family": "Bateni",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hossein",
+        "family": "Rabbani",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "276",
+    "reference": [
+      {
+        "key": "key-10.4103/2228-7477.199155-1",
+        "first-page": "1370",
+        "volume-title": "A performance study of general purpose applications on graphics processors using CUDA",
+        "author": "Che",
+        "year": "2008",
+        "journal-title": "J Parallel Distrib Comput"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-2",
+        "first-page": "433",
+        "volume-title": "Performance comparison of graphics processors to reconfigurable logic: A case study",
+        "author": "Cope",
+        "year": "2010",
+        "journal-title": "IEEE Trans Comput"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-3",
+        "unstructured": "Moreland K, Angel E. The FFT on a GPU. Proceedings of the ACM SIGGRAPH/EUROGRAPHICS Conference on Graphics Hardware, 2003. p. 112-9."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-4",
+        "unstructured": "Strzodka R, Garbe C. Real-time motion estimation and visualization on graphics cards. Proceedings of the Conference on Visualization’04, 2004. p. 545-52."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-5",
+        "first-page": "685",
+        "volume-title": "Accelerate video decoding with generic GPU",
+        "author": "Shen",
+        "year": "2005",
+        "journal-title": "IEEE Trans Circuits Syst Video Technol"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-6",
+        "unstructured": "http://www.gpu4vision.org."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Fung J, Mann S. OpenVIDIA: Parallel GPU computer vision. Proceedings of the 13th Annual ACM International Conference on Multimedia, 2005. p. 849-52.",
+        "DOI": "10.1145/1101149.1101334"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Allusse Y, Horain P, Agarwal A, Saipriyadarshan C. GpuCV: An opensource GPU-accelerated framework for image processing and computer vision. Proceedings of the 16th ACM International Conference on Multimedia, 2008. p. 1089-92.",
+        "DOI": "10.1145/1459359.1459578"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-9",
+        "first-page": "255",
+        "volume-title": "MinGPU: A minimum GPU library for computer vision",
+        "author": "Babenko",
+        "year": "2008",
+        "journal-title": "J Real-Time Image Process"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-10",
+        "unstructured": "Zhuo Y, Wu X-L, Haldar JP, Hwu W-M, Liang Z-P, Sutton BP. Accelerating iterative field-compensated MR image reconstruction on GPUs. 2010 IEEE International Symposium on Biomedical Imaging: From Nano to Macro, IEEE, 2010. p. 820-3."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-11",
+        "first-page": "313",
+        "volume-title": "A CUDA-based reverse gridding algorithm for MR reconstruction",
+        "author": "Yang",
+        "year": "2013",
+        "journal-title": "Magn Reson Imaging"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-12",
+        "first-page": "1307",
+        "volume-title": "Accelerating advanced MRI reconstructions on GPUs",
+        "author": "Stone",
+        "year": "2008",
+        "journal-title": "J Parallel Distrib Comput"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-13",
+        "unstructured": "Kim K, Park S, Hong H, Shin YG. Fast 2D-3D registration using GPU-based preprocessing. Proceedings of 7th International Workshop on Enterprise Networking and Computing in Healthcare Industry, HEALTHCOM’05, 2005. p. 139-43."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-14",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hwu W, Nandakumar D, Haldar J, Atkinson IC, Sutton B, Liang Z-P et al. Accelerating MR image reconstruction on GPUs. IEEE International Symposium on Biomedical Imaging: From Nano to Macro, ISBI’09, 2009. p. 1283-86.",
+        "DOI": "10.1109/ISBI.2009.5193297"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-15",
+        "first-page": "712",
+        "volume-title": "Accelerating image registration of MRI by GPU-based parallel computation",
+        "author": "Huang",
+        "year": "2011",
+        "journal-title": "Magn Reson Imaging"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-16",
+        "unstructured": "Han X, Hibbard LS, Willcut V. GPU-accelerated, gradient-free MI deformable registration for atlas-based MR brain image segmentation. IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops, CVPR Workshops’09, 2009. p. 141-8."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-17",
+        "first-page": "1308",
+        "volume-title": "Roberts edge detection algorithm based on GPU",
+        "author": "Gong",
+        "year": "2014",
+        "journal-title": "J Chem Pharm Res"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-18",
+        "unstructured": "Sarkar S, Venugopalan V, Reddy K, Giering M, Ryde J, Jaitly N. Occlusion edge detection in RGB-D frames using deep convolutional networks. CoRRabs/1412.7007, 2014."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-19",
+        "first-page": "105",
+        "volume-title": "Efficient implementation of Sobel edge detection algorithm on CPU, GPU and FPGA",
+        "author": "Chouchene",
+        "year": "2014",
+        "journal-title": "Int J Adv Media Commun"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-20",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ogawa K, Ito Y, Nakano K. Efficient Canny edge detection using a GPU. IEEE First International Conference on Networking and Computing (ICNC), Higashi-Hiroshima, 2010. p. 279-80.",
+        "DOI": "10.1109/IC-NC.2010.13"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-21",
+        "unstructured": "Niu S, Yang J, Wang S, Chen G. Improvement and parallel implementation of canny edge detection algorithm based on GPU. IEEE 9th International Conference on ASIC (ASICON), October 25-28, 2011. p. 641-4."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-22",
+        "unstructured": "Roodt Y, Visser W, Clarke W. Image processing on the GPU: Implementing the Canny edge detection algorithm. International Symposium of the Pattern Recognition Association of South Africa, 2007. p. 1-6."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-23",
+        "unstructured": "Luo Y, Duraiswami R. Canny edge detection on NVIDIA CUDA. IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops, CVPRW’08, 2008. p. 1-8."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-24",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Canny J. A computational approach to edge detection. IEEE Transactions on Pattern Analysis and Machine Intelligence, 1986. p. 679-98.",
+        "DOI": "10.1109/TPAMI.1986.4767851"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-25",
+        "unstructured": "Sobel I, Feldman G. A 3×3 isotropic gradient operator for image processing. A Talk at the Stanford Artificial Project, 1968. p. 271-2."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-26",
+        "unstructured": "Sobel I. Camera models and machine perception. DTIC Document, 1970."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-27",
+        "unstructured": "Prewitt JM. Object Enhancement and Extraction, vol 75 New York: Academic Press 1970."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-28",
+        "unstructured": "Roberts L. In: Tippet J, editor. Machine Perception of Three Dimensional Solids, Optical and Electro-Optical Information Processing. Cambridge, MA: IT Press; 1965."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-29",
+        "unstructured": "Trucco E, Verri A. Introductory Techniques for 3-D Computer Vision, vol 93. Englewood Cliffs: Prentice Hall; 1998."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-30",
+        "unstructured": "Jain R, Kasturi R, Schunck BG. Machine Vision, vol 5 New York: McGraw-Hill 1995."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-31",
+        "first-page": "413",
+        "volume-title": "Image denoising employing local mixture models in sparse domains",
+        "author": "Rabbani",
+        "year": "2010",
+        "journal-title": "IET Image Processing"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-32",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Skiena S. The Algorithm Design Manual. Springer; 2008. p. 480 doi: 10.1007/978-1-84800-070-4_4",
+        "DOI": "10.1007/978-1-84800-070-4_4"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-33",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Leiserson CE, Schardl TB. A work-efficient parallel breadth-first search algorithm (or how to cope with the nondeterminism of reducers). ACM Symposium on Parallelism in Algorithms and Architectures, 2010.",
+        "DOI": "10.1145/1810479.1810534"
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-34",
+        "unstructured": "Lee CY. An algorithm for path connections and its applications. IRE Transactions on Electronic Computers; 1961. http://www.heidelbergengineering.com/us/wp-content/uploads/hra2-aquire-the-perfect-image.pdf."
+      },
+      {
+        "key": "key-10.4103/2228-7477.199155-35",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Danesh H, Kafieh R, Rabbani H, Hajizadeh F. Segmentation of choroidal boundary in enhanced depth imaging OCTs using a multiresolution texture based modeling in graph cuts. Computational and Mathematical Methods in Medicine, vol 2014, 2014.",
+        "DOI": "10.1155/2014/479268"
+      }
+    ],
+    "container-title": [
+      "Journal of Medical Signals &amp; Sensors"
+    ],
+    "original-title": [],
+    "language": "en",
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          9,
+          17
+        ]
+      ],
+      "date-time": "2019-09-17T05:29:24Z",
+      "timestamp": 1568698164000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://www.jmssjournal.net/text.asp?2017/7/1/33/199155"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "references-count": 35,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "199155"
+    ],
+    "URL": "https://doi.org/10.4103/2228-7477.199155",
+    "relation": {},
+    "ISSN": [
+      "2228-7477"
+    ],
+    "issn-type": [
+      {
+        "value": "2228-7477",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    }
+  }
+}

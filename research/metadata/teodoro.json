@@ -1,0 +1,373 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          16
+        ]
+      ],
+      "date-time": "2026-10-16T22:49:57Z",
+      "timestamp": 1792190997117,
+      "version": "4.4.0"
+    },
+    "reference-count": 28,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1109/ipdps.2012.101",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          8,
+          22
+        ]
+      ],
+      "date-time": "2012-08-22T14:48:59Z",
+      "timestamp": 1345646939000
+    },
+    "page": "1093-1104",
+    "source": "Crossref",
+    "is-referenced-by-count": 29,
+    "title": [
+      "Accelerating Large Scale Image Analyses on Parallel, CPU-GPU Equipped Systems"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "George",
+        "family": "Teodoro",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tahsin M.",
+        "family": "Kurc",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tony",
+        "family": "Pan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lee A.D.",
+        "family": "Cooper",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jun",
+        "family": "Kong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Patrick",
+        "family": "Widener",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joel H.",
+        "family": "Saltz",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IPDPSW.2010.5470941"
+      },
+      {
+        "key": "17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IPDPS.2009.5161039"
+      },
+      {
+        "key": "18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1851476.1851479"
+      },
+      {
+        "key": "15",
+        "article-title": "StarPU: A Unified Platform for Task Scheduling on Heterogeneous Multicore Architectures",
+        "author": "augonnet",
+        "year": "0",
+        "journal-title": "Proc of the 15th Int Euro-Par Conference on Parallel Processing 2009"
+      },
+      {
+        "key": "16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1383422.1383447"
+      },
+      {
+        "key": "13",
+        "year": "2007",
+        "journal-title": "Nvidia cuda sdk"
+      },
+      {
+        "key": "14",
+        "year": "2008",
+        "journal-title": "The OpenCL Specification version 1 0 29"
+      },
+      {
+        "key": "11",
+        "doi-asserted-by": "crossref",
+        "first-page": "279",
+        "DOI": "10.1016/0743-7315(89)90021-X",
+        "article-title": "Dynamic load balancing for distributed memory multiprocessors",
+        "volume": "7",
+        "author": "cybenko",
+        "year": "1989",
+        "journal-title": "J Parallel Distrib Comput"
+      },
+      {
+        "key": "12",
+        "article-title": "Multi-scale, integrative study of brain tumor: In silico brain tumor research center",
+        "author": "s",
+        "year": "0",
+        "journal-title": "Annual Symposium of American Medical Informatics Association 2010 Summit on Translational Bioinformatics (AMIA-TBI 2010) Mar 2010"
+      },
+      {
+        "key": "21",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-3-642-19595-2_10",
+        "article-title": "A programming language interface to describe transformations and code generation",
+        "author": "rudy",
+        "year": "2011",
+        "journal-title": "Proceedings of the 23rd International Conference on Languages and Compilers for Parallel Computing"
+      },
+      {
+        "key": "20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1504176.1504194"
+      },
+      {
+        "key": "22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPDS.2010.62"
+      },
+      {
+        "key": "23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1810085.1810106"
+      },
+      {
+        "key": "24",
+        "author": "reinders",
+        "year": "2007",
+        "journal-title": "Intel Threading Building Blocks"
+      },
+      {
+        "key": "25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/197405.197406"
+      },
+      {
+        "key": "26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00450-010-0146-9"
+      },
+      {
+        "key": "27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IV.2006.53"
+      },
+      {
+        "key": "28",
+        "year": "2011",
+        "journal-title": "NVIDIA Performance Primitives(NPP)"
+      },
+      {
+        "key": "3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1028976.1029006"
+      },
+      {
+        "key": "2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PROC.1979.11328"
+      },
+      {
+        "key": "10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1669112.1669121"
+      },
+      {
+        "key": "1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TBME.2010.2060338"
+      },
+      {
+        "key": "7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/114005.102808"
+      },
+      {
+        "key": "6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/BIBM.2007.15"
+      },
+      {
+        "key": "5",
+        "article-title": "The OpenCV Library",
+        "author": "bradski",
+        "year": "2000",
+        "journal-title": "Dr Dobb's Journal of Software Tools"
+      },
+      {
+        "key": "4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1353536.1346318"
+      },
+      {
+        "key": "9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPDS.2010.158"
+      },
+      {
+        "key": "8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCSE.2011.83"
+      }
+    ],
+    "event": {
+      "name": "2012 IEEE International Symposium on Parallel & Distributed Processing (IPDPS)",
+      "location": "Shanghai, China",
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            5,
+            21
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2012,
+            5,
+            25
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2012 IEEE 26th International Parallel and Distributed Processing Symposium"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx5/6266782/6267817/06267914.pdf?arnumber=6267914",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          7,
+          3
+        ]
+      ],
+      "date-time": "2019-07-03T01:44:23Z",
+      "timestamp": 1562118263000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/6267914/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          5
+        ]
+      ]
+    },
+    "references-count": 28,
+    "URL": "https://doi.org/10.1109/ipdps.2012.101",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          5
+        ]
+      ]
+    }
+  }
+}

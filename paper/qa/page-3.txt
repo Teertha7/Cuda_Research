@@ -1,0 +1,120 @@
+B. Validation and sampling
+The executed C++ suite passed 984 equivalence checks
+plus three analytical checks. It includes dimensions as small
+as 1 × 1, non-multiples of CUDA block dimensions, six
+CPU execution settings, three GPU block shapes and ﬁve
+partitions. Sobel is checked against an independent nested-
+mask implementation. Canny’s serial/OpenMP comparison
+checks consistency, supplemented by small-input oracle tests
+in the artifact; it is not a proof of all possible connectivity
+behavior. Every warm-up and retained benchmark output is
+also compared with its sequential reference.
+Each of 252 conﬁgurations runs in a separate process,
+performs three untimed warm-ups, and retains 15 consecutive
+observations. Conﬁguration order is shufﬂed once with seed
+3129. OpenMP thread counts are 1, 2, 4, 8 and 16; the
+sequential path has an inactive parallel region. Dynamic teams
+are disabled and passive waiting is requested through the
+environment. Afﬁnity and clock frequencies are not ﬁxed. En-
+vironment settings are not assumed to override every Microsoft
+runtime behavior.
+CUDA events delimit H2D, kernel and D2H intervals.
+steady_clock measures the complete processing interval.
+The raw CSV retains timings, conﬁguration, image family,
+repetition, correctness, run identiﬁer and warm-up count.
+A manifest records executable/source hashes and hardware
+metadata. No samples were removed, and no benchmark
+conﬁguration failed.
+We report medians and interquartile ranges (IQRs). Pooled
+conﬁguration plots contain 45 observations, 15 from each
+family; their spread combines content effects and temporal
+variation. Speedup plots ﬁrst divide per-family sequential
+medians by corresponding implementation medians and then
+summarize the three ratios. These need not equal ratios of
+pooled medians. There are no conﬁdence intervals or signif-
+icance assertions: consecutive samples in one session are not
+independent replicated experiments.
+C. Held-out model
+For hybrid-path conﬁguration medians, we ﬁt
+bT = a + bNMf + cNM(1 −f) + dNM min(f, 1 −f), (3)
+where NM = N/106. Least squares uses only widths 512,
+1024 and 2048 (45 family–fraction medians). All 15 medi-
+ans at width 4096 are withheld. Predictions are clipped to
+nonnegative values. This four-coefﬁcient descriptive model ap-
+proximates a piecewise-linear allocation curve; its coefﬁcients
+do not separately identify transfer or synchronization costs.
+MAPE is computed on the held-out conﬁguration medians,
+not on training observations.
+VI. RESULTS
+A. Latency and CPU scaling
+Table I reports pooled Sobel medians. At the largest size,
+eight-thread OpenMP is faster than baseline CUDA in this
+session. Figure 1 shows the trend with quartile bars; the
+TABLE I
+SOBEL STEADY-WORKSPACE LATENCY (MS). EACH CELL IS THE MEDIAN
+OF 45 OBSERVATIONS ACROSS THREE FAMILIES. COLUMN HEADINGS ARE
+SQUARE WIDTHS IN PIXELS.
+Conﬁguration
+512
+1024
+2048
+4096
+Sequential
+0.594
+2.376
+9.109
+37.318
+OpenMP 8
+0.193
+0.584
+1.676
+5.996
+CUDA global
+0.200
+0.623
+2.196
+9.839
+CUDA tiled 16x16
+0.202
+0.617
+2.293
+9.542
+0
+5
+10
+15
+Image size (megapixels)
+100
+101
+Steady-workspace latency (ms)
+Sequential
+OpenMP 8
+CUDA global
+CUDA tiled 16x16
+Fig. 1. Sobel pipeline latency. Error bars show pooled Q1–Q3, not conﬁdence
+intervals. All staging and transfers are included.
+artifact supplies per-family summaries and speedup plots. GPU
+kernel speed does not translate directly into lower host-visible
+latency.
+At 4096 × 4096, pooled Canny medians are 1083.075
+ms sequentially and 203.268 ms with 16 threads. Scaling
+is not monotonic across the measured thread settings. The
+global serial queue, allocation behavior, image content and
+operating-system scheduling are plausible contributors, but this
+experiment does not isolate their causal effects. Figure 2 uses
+per-family speedups to avoid equating a ratio of pooled timings
+with a pooled speedup.
+B. Tiling and data movement
+For baseline CUDA at the largest size, median event in-
+tervals are 1.334 ms H2D, 0.531 ms kernel and 2.746 ms
+D2H. The wall median is 9.839 ms. Differences include host
+staging, merging and runtime overhead; sums of separate
+medians need not equal the median of their sum. The tiled
+16 × 16 kernel takes 0.767 ms, compared with 0.531 ms
+for the global-memory kernel. Every tested tiled shape has a
+higher pooled kernel median than baseline at every measured
+resolution (Fig. 3).
+Some tiled pipeline medians are nevertheless slightly lower.
+Since their kernel work is slower and separately randomized
+runs have visible spread, these differences do not demonstrate
+a beneﬁcial tiling optimization. Cache reuse in the baseline

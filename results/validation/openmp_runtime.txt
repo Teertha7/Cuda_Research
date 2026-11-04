@@ -1,0 +1,6 @@
+MSVC=1944 OpenMP_macro=200203 max_processors=24
+requested=1 actual=1
+requested=2 actual=2
+requested=4 actual=4
+requested=8 actual=8
+requested=16 actual=16

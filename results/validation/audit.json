@@ -1,0 +1,1580 @@
+{
+  "utc": "2026-10-26T16:46:17.369679+00:00",
+  "passed": 313,
+  "total": 313,
+  "checks": [
+    {
+      "name": "raw observations",
+      "pass": true,
+      "detail": "3780"
+    },
+    {
+      "name": "all measured outputs match reference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no recorded benchmark failures",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "archived executable hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "252 configurations with 15 observations each",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "measured source unchanged: src\\cuda.cu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "measured source unchanged: src\\edge.cpp",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "measured source unchanged: src\\edge.hpp",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "measured source unchanged: src\\main.cpp",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "archived measured source: src\\cuda.cu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "archived measured source: src\\edge.cpp",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "archived measured source: src\\edge.hpp",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "archived measured source: src\\main.cpp",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 5",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 6",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 8",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 9",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 10",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 11",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 12",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 13",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 14",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 15",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 16",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 17",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 18",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 19",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 20",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 21",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 22",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 23",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 24",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 25",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 26",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 27",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 28",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 29",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 30",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 31",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 32",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 33",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 34",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 35",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 36",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 37",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 38",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 39",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 40",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 41",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 42",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 43",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 44",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 45",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 46",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 47",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 48",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 49",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 50",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 51",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 52",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 53",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 54",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 55",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 56",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 57",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 58",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 59",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 60",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 61",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 62",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 63",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 64",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 65",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 66",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 67",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 68",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 69",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 70",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 71",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 72",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 73",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 74",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 75",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 76",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 77",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 78",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 79",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 80",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 81",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 82",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 83",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 84",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 85",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 86",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 87",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 88",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 89",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 90",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 91",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 92",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 93",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 94",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 95",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 96",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 97",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 98",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 99",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 100",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 101",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 102",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 103",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 104",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 105",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 106",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 107",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 108",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 109",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 110",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 111",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 112",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 113",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 114",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 115",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 116",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 117",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 118",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 119",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 120",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 121",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 122",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 123",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 124",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 125",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 126",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 127",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 128",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 129",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 130",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 131",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 132",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 133",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 134",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 135",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 136",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 137",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 138",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 139",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 140",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 141",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 142",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 143",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 144",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 145",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 146",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 147",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 148",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 149",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 150",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 151",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 152",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 153",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 154",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 155",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 156",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 157",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 158",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 159",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 160",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 161",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 162",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 163",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 164",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 165",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 166",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 167",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 168",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 169",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 170",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 171",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 172",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 173",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 174",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 175",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 176",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 177",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 178",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 179",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 180",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 181",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 182",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 183",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 184",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 185",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 186",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 187",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 188",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 189",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 190",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 191",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 192",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 193",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 194",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 195",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 196",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 197",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 198",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 199",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 200",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 201",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 202",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 203",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 204",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 205",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 206",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 207",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 208",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 209",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 210",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 211",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 212",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 213",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 214",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 215",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 216",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 217",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 218",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 219",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 220",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 221",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 222",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 223",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 224",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 225",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 226",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 227",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 228",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 229",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 230",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 231",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 232",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 233",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 234",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 235",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 236",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 237",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 238",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 239",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 240",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 241",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 242",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 243",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 244",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 245",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 246",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 247",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 248",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 249",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 250",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "raw case integrity: 251",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "analysis raw hash matches",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "C++ test execution",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "independent oracle execution",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fresh rebuilt C++ tests",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fresh independent oracle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "real CUDA device execution",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all citations resolve",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "research and paper bibliographies identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: canny1986",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: song2024",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: chang2023",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: starpu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: skmd",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: hybrid2014",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: survey2018",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: rodinia",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: roofline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: fluidic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: teodoro",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: datta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: nickolls",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: recent2026",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: georges",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: luo2008",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: emrani2017",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: mochurad2022",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "DOI metadata: measurementbias",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "IEEEtran conference class",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no undefined citations or references",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no unresolved font warnings",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no overfull boxes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no TeX errors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure latency",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure speedup",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure scalability",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure tiling",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure breakdown",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure partition",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure crossover",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure prediction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "letter paper and no off-page text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "PDF exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "finite positive wall observations",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "speedup formula: OpenMP 8",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "speedup formula: CUDA global",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "speedup formula: CUDA tiled 16x16",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "tiling claim matches all measured pooled medians",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "claim macros generated from processed values",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "limitations": [
+    "One measurement session; no claim of statistical significance",
+    "No natural-image performance corpus",
+    "No profiler timeline or Compute Sanitizer run",
+    "No CUDA or heterogeneous Canny",
+    "Author information and submission-level human review pending",
+    "Some literature records are abstract-only; detailed hardware extraction incomplete"
+  ]
+}

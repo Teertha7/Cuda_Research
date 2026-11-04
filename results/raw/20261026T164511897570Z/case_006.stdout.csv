@@ -1,0 +1,3 @@
+algorithm,implementation,image,width,height,threads,cpu_fraction,block_x,block_y,repetition,h2d_ms,kernel_ms,d2h_ms,cpu_ms,e2e_ms,overlap_lower_bound_ms,correct
+sobel,tiled,0,64,64,0,0,16,16,0,0.007552000228,0.02531200089,0.0296640005,0,0.0802,0,1
+sobel,tiled,0,64,64,0,0,16,16,1,0.003776000114,0.03193600103,0.03200000152,0,0.0837,0,1

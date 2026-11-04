@@ -1,0 +1,353 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          25
+        ]
+      ],
+      "date-time": "2026-10-25T16:46:31Z",
+      "timestamp": 1792946791222,
+      "version": "4.5.0"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 27,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              2,
+              15
+            ]
+          ],
+          "date-time": "2014-02-15T00:00:00Z",
+          "timestamp": 1392422400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          2,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1145/2544137.2544163",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          16
+        ]
+      ],
+      "date-time": "2020-02-16T21:52:45Z",
+      "timestamp": 1581889965000
+    },
+    "page": "273-283",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 24,
+    "title": [
+      "Fluidic Kernels"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Prasanna",
+        "family": "Pandit",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Supercomputer Education and Research Centre, Indian Institute of Science, Bangalore, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "R.",
+        "family": "Govindarajan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Supercomputer Education and Research Centre, Indian Institute of Science, Bangalore, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          10,
+          16
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_1_1_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/cpe.1631"
+      },
+      {
+        "key": "e_1_3_2_1_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2400682.2400716"
+      },
+      {
+        "key": "e_1_3_2_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IPDPS.2012.58"
+      },
+      {
+        "key": "e_1_3_2_1_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SBAC-PAD.2012.28"
+      },
+      {
+        "key": "e_1_3_2_1_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/InPar.2012.6339595"
+      },
+      {
+        "key": "e_1_3_2_1_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/1987237.1987259"
+      },
+      {
+        "key": "e_1_3_2_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CGO.2013.6494993"
+      },
+      {
+        "key": "e_1_3_2_1_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1854273.1854302"
+      },
+      {
+        "key": "e_1_3_2_1_9_1",
+        "volume-title": "Intel Launches SDK for OpenCL Applications at SIGGRAPH",
+        "year": "2012",
+        "unstructured": "Intel. Intel Launches SDK for OpenCL Applications at SIGGRAPH 2012 , 2012. Intel. Intel Launches SDK for OpenCL Applications at SIGGRAPH 2012, 2012."
+      },
+      {
+        "key": "e_1_3_2_1_10_1",
+        "volume-title": "Conformant Products",
+        "author": "Khronos Group",
+        "year": "2012",
+        "unstructured": "Khronos Group . Conformant Products , 2012 . Khronos Group. Conformant Products, 2012."
+      },
+      {
+        "key": "e_1_3_2_1_11_1",
+        "unstructured": "Khronos Group. OpenCL 1.2 Specification 2012.  Khronos Group. OpenCL 1.2 Specification 2012."
+      },
+      {
+        "key": "e_1_3_2_1_12_1",
+        "volume-title": "OpenCL - The open standard for parallel programming of heterogeneous systems",
+        "author": "Khronos Group",
+        "year": "2013",
+        "unstructured": "Khronos Group . OpenCL - The open standard for parallel programming of heterogeneous systems , 2013 . Khronos Group. OpenCL - The open standard for parallel programming of heterogeneous systems, 2013."
+      },
+      {
+        "key": "e_1_3_2_1_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1941553.1941591"
+      },
+      {
+        "key": "e_1_3_2_1_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2304576.2304623"
+      },
+      {
+        "key": "e_1_3_2_1_15_1",
+        "volume-title": "Fast N-Body Simulation with CUDA",
+        "author": "Nyland L.",
+        "year": "2012",
+        "unstructured": "L. Nyland , M. Harris , J. Prins . Fast N-Body Simulation with CUDA , 2012 . L. Nyland, M. Harris, J. Prins. Fast N-Body Simulation with CUDA, 2012."
+      },
+      {
+        "key": "e_1_3_2_1_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PACT.2011.12"
+      },
+      {
+        "key": "e_1_3_2_1_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1854273.1854301"
+      },
+      {
+        "key": "e_1_3_2_1_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/2523721.2523756"
+      },
+      {
+        "key": "e_1_3_2_1_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1815961.1816021"
+      },
+      {
+        "key": "e_1_3_2_1_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1669112.1669121"
+      },
+      {
+        "key": "e_1_3_2_1_21_1",
+        "volume-title": "NEW TOP500 LIST: 4X MORE GPU SUPERCOMPUTERS",
+        "year": "2012",
+        "unstructured": "NVidia. NEW TOP500 LIST: 4X MORE GPU SUPERCOMPUTERS , 2012 . NVidia. NEW TOP500 LIST: 4X MORE GPU SUPERCOMPUTERS, 2012."
+      },
+      {
+        "key": "e_1_3_2_1_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1993498.1993517"
+      },
+      {
+        "key": "e_1_3_2_1_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1810085.1810106"
+      },
+      {
+        "key": "e_1_3_2_1_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IPDPS.2012.23"
+      },
+      {
+        "key": "e_1_3_2_1_25_1",
+        "volume-title": "SOCL -- OpenCL Frontend for StarPU",
+        "author": "Henry Sylvain",
+        "year": "2013",
+        "unstructured": "Sylvain Henry . SOCL -- OpenCL Frontend for StarPU , 2013 . Sylvain Henry. SOCL -- OpenCL Frontend for StarPU, 2013."
+      },
+      {
+        "key": "e_1_3_2_1_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/HPCA.2012.6168948"
+      },
+      {
+        "key": "e_1_3_2_1_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1950365.1950408"
+      }
+    ],
+    "event": {
+      "name": "CGO '14: 12th Annual IEEE/ACM International Symposium on Code Generation and Optimization",
+      "location": "Orlando FL USA",
+      "acronym": "CGO '14",
+      "sponsor": [
+        "SIGPLAN ACM Special Interest Group on Programming Languages",
+        "SIGMICRO ACM Special Interest Group on Microarchitectural Research and Processing"
+      ]
+    },
+    "container-title": [
+      "Proceedings of Annual IEEE/ACM International Symposium on Code Generation and Optimization"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/2544137.2544163",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/2544137.2544163",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T07:28:46Z",
+      "timestamp": 1750231726000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/2544137.2544163"
+      }
+    },
+    "subtitle": [
+      "Cooperative Execution of OpenCL Programs on Multiple Heterogeneous Devices"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          2,
+          15
+        ]
+      ]
+    },
+    "references-count": 27,
+    "alternative-id": [
+      "10.1145/2544137.2544163",
+      "10.1145/2581122"
+    ],
+    "URL": "https://doi.org/10.1145/2544137.2544163",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          2,
+          15
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2018-10-16",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

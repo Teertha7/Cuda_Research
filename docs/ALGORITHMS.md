@@ -1,0 +1,15 @@
+# Algorithm and timing contracts
+
+Inputs are custom-generated 8-bit grayscale; no hidden RGB conversion or OpenCV stage is used. Families: xorshift32 noise (fixed initial state 0x12345678), 17 by 23 pixel checker cells, and a two-dimensional ramp with a wrap discontinuity. Each resolution is generated directly, not resized. These are three controlled synthetic families, not independent natural scenes. Their generation is original project code and unrestricted for this study.
+
+Sobel: conventional 3x3 horizontal and vertical masks, signed integer accumulation, output `uint16_t(abs(gx)+abs(gy))`. No clipping, normalization, thresholding or square root. Outer image border is zero. This differs from L2-magnitude or 8-bit-clipped Sobel and must not be compared as identical work. CPU row partitions read the full immutable source. GPU lower rows receive one preceding halo row; output regions are disjoint.
+
+Canny variant: direct 5x5 binomial Gaussian approximation `[1,4,6,4,1]^T[1,4,6,4,1]/256`, replicated smoothing boundary, float Sobel gradients, L2 magnitude, four-direction quantized nonmaximum suppression (ties retained), absolute low/high thresholds 40/100, and global 8-connected hysteresis. Gradient/NMS outer border is zero. Smoothing, gradient and suppression use static OpenMP row schedules; the hysteresis queue is serial to preserve global connectivity. This is a documented discrete Canny variant, not bitwise equivalent to all Canny libraries or the full multiscale original paper. CUDA and heterogeneous Canny are not implemented.
+
+Sequential uses the same CPU loops with inactive OpenMP regions and one thread. OpenMP counts 1/2/4/8/16 are tested; dynamic adjustment is disabled. Hybrid currently fixes eight CPU threads. Threads are not pinned, so P/E-core placement and Windows scheduling can affect results.
+
+Sobel latency uses preallocated input/output/device/pinned workspaces; includes host staging into pinned memory, H2D, kernel, D2H, CPU work, stream synchronization, and output merge. Excludes input generation, correctness comparison, context creation, and workspace allocation. Canny latency includes its intermediate allocations, which is a limitation of cross-algorithm comparisons. Never call these timings cold-start process latency.
+
+CUDA events measure H2D, kernel, and D2H stream intervals. Wall-clock `steady_clock` measures pipeline latency. Events are read after stream completion. Hybrid CPU work begins after enqueuing device work; this alone does not prove overlap. A conservative overlap lower bound is `max(0, CPU_region_elapsed + kernel_event_elapsed - total_wall_elapsed)`; a positive value larger than clock uncertainty is evidence of overlapping intervals, not a timeline trace. Zero is inconclusive. CPU elapsed includes scheduling, not just active instructions. A profiler trace remains preferable.
+
+The shared-memory kernel is a candidate optimization, not presumed faster. It loads a halo cooperatively, synchronizes all block threads before any bounds return, and tests non-multiple dimensions. No fast-math flags are enabled.

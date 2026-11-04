@@ -1,0 +1,31 @@
+{
+  "raw_run": "20261026T153339790016Z",
+  "raw_sha256": "1a3bce5fba669bc3103f4bb3bfdfa54932706d59e26a26dde9be9f3bd856f2f7",
+  "observations": 3780,
+  "configurations": 252,
+  "all_correct": true,
+  "model_coefficients": [
+    0.05520777777777792,
+    0.37472895754167546,
+    0.5497163406284238,
+    -0.21842784871610912
+  ],
+  "model_holdout_n": 15,
+  "model_holdout_mape_percent": 6.131732055126429,
+  "overlap_positive_samples": 5,
+  "overlap_max_lower_bound_ms": 0.05563600292,
+  "latency_4096_ms": {
+    "Sequential": 37.3179,
+    "OpenMP 8": 5.996,
+    "CUDA global": 9.839,
+    "CUDA tiled 16x16": 9.5417
+  },
+  "canny_4096_ms": {
+    "0": 1083.0749,
+    "1": 1293.3405,
+    "2": 384.014,
+    "4": 467.6859,
+    "8": 356.0137,
+    "16": 203.2683
+  }
+}

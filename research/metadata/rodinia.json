@@ -1,0 +1,413 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          25
+        ]
+      ],
+      "date-time": "2026-10-25T18:49:08Z",
+      "timestamp": 1792954148468,
+      "version": "4.5.0"
+    },
+    "reference-count": 34,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1109/iiswc.2009.5306797",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          11,
+          5
+        ]
+      ],
+      "date-time": "2009-11-05T13:32:13Z",
+      "timestamp": 1257427933000
+    },
+    "page": "44-54",
+    "source": "Crossref",
+    "is-referenced-by-count": 2450,
+    "title": [
+      "Rodinia: A benchmark suite for heterogeneous computing"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Shuai",
+        "family": "Che",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Boyer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jiayuan",
+        "family": "Meng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David",
+        "family": "Tarjan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jeremy W.",
+        "family": "Sheaffer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sang-Ha",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kevin",
+        "family": "Skadron",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1065010.1065034"
+      },
+      {
+        "key": "17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IISWC.2005.1525999"
+      },
+      {
+        "key": "18",
+        "article-title": "recognition, mining and synthesis moves computers to the era of tera",
+        "author": "liang",
+        "year": "2005",
+        "journal-title": "Technology Intel Magazine"
+      },
+      {
+        "key": "33",
+        "year": "0",
+        "journal-title": "Parboil benchmark suite"
+      },
+      {
+        "key": "15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TC.2006.85"
+      },
+      {
+        "key": "34",
+        "doi-asserted-by": "crossref",
+        "first-page": "24",
+        "DOI": "10.1109/ISCA.1995.524546",
+        "article-title": "The SPLASH-2 programs: characterization and methodological considerations",
+        "author": "woo",
+        "year": "1995",
+        "journal-title": "Proceedings 22nd Annual International Symposium on Computer Architecture ISCA"
+      },
+      {
+        "key": "16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1147/rd.494.0589"
+      },
+      {
+        "key": "13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TVLSI.2006.876103"
+      },
+      {
+        "key": "14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/HPCA.2006.1598115"
+      },
+      {
+        "key": "11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MM.2007.56"
+      },
+      {
+        "key": "12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1152154.1152174"
+      },
+      {
+        "key": "21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1542275.1542313"
+      },
+      {
+        "key": "20",
+        "year": "0",
+        "journal-title": "Mediabench"
+      },
+      {
+        "key": "22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1365490.1365500"
+      },
+      {
+        "key": "23",
+        "year": "0",
+        "journal-title": "NVIDIA CUDA CUFFT Library"
+      },
+      {
+        "key": "24",
+        "year": "0",
+        "journal-title": "NVIDIA Monte-carlo Option Pricing"
+      },
+      {
+        "key": "25",
+        "first-page": "677",
+        "article-title": "fast n-body simulation with cuda",
+        "volume": "3",
+        "author": "nyland",
+        "year": "2007",
+        "journal-title": "GPU Gems"
+      },
+      {
+        "key": "26",
+        "year": "0",
+        "journal-title": "OpenCL"
+      },
+      {
+        "key": "27",
+        "year": "0",
+        "journal-title": "PAPI"
+      },
+      {
+        "key": "28",
+        "article-title": "nu-minebench 2.0.",
+        "author": "pisharath",
+        "year": "2005",
+        "journal-title": "Technical Report CUCIS-2005-08-01 Department of Electrical and Computer Engineering"
+      },
+      {
+        "key": "29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1345206.1345220"
+      },
+      {
+        "key": "3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IPDPS.2009.5160984"
+      },
+      {
+        "key": "2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1454115.1454128"
+      },
+      {
+        "key": "10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPDS.2010.158"
+      },
+      {
+        "key": "1",
+        "article-title": "the landscape of parallel computing research: a view from berkeley",
+        "author": "asanovic",
+        "year": "2006",
+        "journal-title": "Technical Report UCB/EECS-2006-183 EECS Department"
+      },
+      {
+        "key": "30",
+        "article-title": "scan primitives for gpu computing",
+        "author": "sengupta",
+        "year": "2007",
+        "journal-title": "Proceedings of the 22nd ACM SIG- GRAPH/EUROGRAPHICS Conference on Graphics Hardware"
+      },
+      {
+        "key": "7",
+        "year": "0",
+        "journal-title": "Neural Networks for Face Recognition"
+      },
+      {
+        "key": "6",
+        "year": "0",
+        "journal-title": "Embedded microprocessor benchmark consortium"
+      },
+      {
+        "key": "32",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-3-540-89740-8_2",
+        "article-title": "mcuda: cuda compilation techniques for multi-core cpu architectures",
+        "author": "stratton",
+        "year": "2008",
+        "journal-title": "Proceedings of the 21st Annual Workshop on Languages and Compilers for Parallel Computing (LCPC 2008)"
+      },
+      {
+        "key": "5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SASP.2008.4570793"
+      },
+      {
+        "key": "31",
+        "year": "0",
+        "journal-title": "The Standard Performance Evaluation Corporation (SPEC)"
+      },
+      {
+        "key": "4",
+        "doi-asserted-by": "crossref",
+        "first-page": "1370",
+        "DOI": "10.1016/j.jpdc.2008.05.014",
+        "article-title": "a performance study of general purpose applications on graphics processors using cuda",
+        "volume": "68",
+        "author": "che",
+        "year": "2008",
+        "journal-title": "Journal of Parallel and Distributed Computing"
+      },
+      {
+        "key": "9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-540-77220-0_21"
+      },
+      {
+        "key": "8",
+        "year": "0",
+        "journal-title": "PGI Fortran and C Accelerator Programming Model"
+      }
+    ],
+    "event": {
+      "name": "2009 IEEE International Symposium on Workload Characterization (IISWC)",
+      "location": "Austin, TX, USA",
+      "start": {
+        "date-parts": [
+          [
+            2009,
+            10,
+            4
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2009,
+            10,
+            6
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2009 IEEE International Symposium on Workload Characterization (IISWC)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx5/5289333/5306778/05306797.pdf?arnumber=5306797",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          17
+        ]
+      ],
+      "date-time": "2024-03-17T09:23:27Z",
+      "timestamp": 1710667407000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/5306797/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          10
+        ]
+      ]
+    },
+    "references-count": 34,
+    "URL": "https://doi.org/10.1109/iiswc.2009.5306797",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          10
+        ]
+      ]
+    }
+  }
+}

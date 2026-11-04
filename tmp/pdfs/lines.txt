@@ -1,0 +1,703 @@
+
+PAGE 1 612 792
+COL 0
+52.2 49.0 A Performance Characteriz
+80.2 123.0 Detection using Ope
+119.5 217.3 Teertha Chatterjee – 24
+132.5 217.3 Abir Chopra – 2409050
+145.5 217.3 Vatsal Choudhary – 24
+194.5 59.0 Abstract—Accelerating an edge-detection kernel does not nec-
+204.5 49.0 essarily reduce host-visible image-processing latency. We charac-
+214.5 49.0 terize sequential C++, OpenMP, CUDA, shared-memory Sobel,
+224.5 49.0 and row-partitioned CPU–GPU Sobel on an Intel Core i7-
+234.3 49.0 13700HX and NVIDIA RTX 4060 Laptop GPU. A custom Canny
+244.3 49.0 variant provides a contrasting CPU workload with global
+254.3 49.0 hysteresis. Three procedural grayscale families at four resolutions
+264.0 49.0 yield 3780 retained observations across 252 configurations, with
+274.0 49.0 output validation outside every timed interval. At 4096 × 4096,
+284.5 49.0 pooled median Sobel latency is 37.318 ms sequentially, 5.996 ms
+294.5 49.0 with eight OpenMP threads, and 9.839 ms for baseline CUDA
+304.3 49.0 including staging and transfers. Shared-memory tiling increases
+314.3 49.0 measured kernel time in the tested configurations. Hybrid results
+324.3 49.0 depend on resolution and measurement context; a simple fitted
+334.0 49.0 partition model has 6.13% mean absolute percentage error on the
+344.0 49.0 held-out largest resolution. These are bounded, single-session
+354.1 49.0 characterization results, not a novel scheduler or a claim of
+363.8 49.0 general GPU superiority. The accompanying artifact preserves
+373.8 49.0 individual timings, source hashes, analysis scripts, and explicit
+383.8 49.0 algorithm and timing contracts.
+393.8 59.0 Index Terms—edge detection, Sobel, Canny, OpenMP, CUDA,
+403.8 49.0 heterogeneous computing, performance characterization
+427.1 135.6 I. INTRODUCTION
+444.1 59.0 Edge detection shows a useful contract between regular
+455.8 49.0 localized computation and multi-stage processing with global
+467.8 49.0 connectivity. A Sobel output takes into account a small
+479.6 49.0 neighborhood which makes spatial partitioning simple. Canny
+491.6 49.0 adds smoothing by using nonmaximum suppression and
+503.6 49.0 hysteresis, so distributing individual stages or image regions
+515.3 49.0 introduces different correctness measures. Canny originally
+527.3 49.0 emphasizes more on detection and localization rather than
+539.3 49.0 parallel implementation [1].
+551.6 59.0 For a discrete GPU, a short convolution can be completed
+563.6 49.0 quickly while host staging, transfers and synchronization
+575.3 49.0 dominate application-visible latency. The CUDA based
+587.4 49.0 programming model shows parallelism and memory hierarchy
+599.4 49.0 [2]; it however does not guarantee that offloading every image
+611.1 49.0 will be profitable. Multicore CPU execution is a essential
+623.1 49.0 addition for comparison as relying on just sequential baseline
+635.1 49.0 is not enough. Benchmark diversity and communication
+647.1 49.0 accounting are main concerns in heterogeneous evaluation. [3]
+663.9 58.5 We question how image size, CPU thread count, CUDA
+675.9 46.0 launch configuration and CPU row fraction change latency
+687.6 46.0 under identical Sobel contract. The study uses a reproducible
+699.6 46.0 implementation and measurement artifact, a comparison
+711.6 46.0 between kernel and pipeline timing, and a held-out
+723.6 46.0 diagnostic model of candidate row allocations. It does not
+735.4 46.0 claim a new edge detector or a new CPU-GPU dividing
+747.4 46.0 principle or an optimized search model. Prior work already
+759.4 46.0 addresses adaptive mapping and cooperative image
+COL 1
+52.2 310.0 zation of CPU–GPU Edge
+80.2 310.0 enMP and CUDA
+119.5 310.0 40905082 – CSE C1 – 13
+132.5 310.0 059 – CSE C1 - 09
+145.5 310.0 40905248 – CSE C1 - 30
+188.7 312.1 processing. Our scope is a controlled course-project
+200.7 312.1 characterization limited to one commodity laptop.
+226.2 394.7 II. RELATED WORK
+246.2 321.9 Luo and Duraiswami implement a complete CUDA Canny,
+258.0 312.1 including hysteresis and compare it against CPU software [4].
+270.0 312.1 Emrani et al. compute several detectors and replace a breadth-
+282.0 312.1 first procedure with a parallel approach [5]. Mochurad studies
+293.8 312.1 CUDA Canny with image size and noise related analysis [6].
+305.8 312.1 Song et al. compare serial, OpenMP, CUDA and OpenCL
+317.8 312.1 Canny and investigate access and launch organization [7] These
+329.8 312.1 works rule out a novelty claim that is simply based on GPU
+341.5 312.1 edge detection or comparing programming models. Canny
+353.5 312.1 variants also show difference in smoothing, thresholding and
+365.5 312.1 connectivity; published speedups are not directly transferable
+377.3 312.1 to what we are implementing.
+389.5 322.1 Chang et al. optimize a four direction 5 x 5 Sobel operator
+401.5 312.1 using warp primitives and prefetching on two GPU platforms
+413.5 312.1 [8]. That operator differs from a bi-directional 3x3 L1
+425.6 312.1 magnitude workload that we optimize. Stencil auto-tuning [9]
+437.3 312.1 and Halide's separation of image algorithms from schedules
+449.3 312.1 [10] establish that localised transformation and execution
+461.3 312.1 schedules are widely discussed optimization topics. Shared
+473.3 312.1 memory is therefore not an asserted contribution , but an
+485.1 312.1 experimentally evaluated candidate.
+497.8 321.9 Qilin uses an adaptive CPU-GPU mapping [11]. StarPU
+509.8 312.1 provides a heterogenous task scheduling and data management
+521.8 312.1 [12]; SKMD partitions OpenCL kernels while keeping in mind
+533.6 312.1 for transfers and device performance [13]. Cooperative CUDA
+545.6 312.1 execution [14], Fluidic Kernels [15], and performance aware
+557.6 312.1 image analysis scheduling [16] further establish this field. A
+569.3 312.1 survey provides a comprehensive comparison of CPU-GPU
+581.3 312.1 techniques [17]. Particularly close recent work by Huang et al.
+593.4 312.1 models stage level CPU/GPU Canny configuration with
+605.4 312.1 explicit transfer costs and latency objectives [18]. Our small
+617.1 312.1 row split model is substantially narrower and is in no manner a
+629.1 312.1 replacement for these systems.
+641.9 321.9 Roofline relates performance with computation and
+653.9 312.1 movement of data [19]. but these measurements do not include
+665.6 312.1 the counters that are required for a quantitative roofline
+677.6 312.1 diagnosis. Performance evaluation work warns us about setup
+689.6 312.1 bias [20] and the need for
+
+PAGE 2 612 792
+COL 0
+50.9 49.0 characterize variability [21]. We therefore preserve all our
+62.7 49.0 observations and report detailed summaries without statistical
+74.7 49.0 significance claims. The artifact contains a complete 21-
+86.7 49.0 publication review matrix, with full text and abstract only
+98.4 49.0 evidence distinguished.
+123.0 49.5 III. PROBLEM FORMULATION AND RESEARCH QUESTIONS
+142.2 59.0 Let an image contain N = WH grayscale samples and let f ∈
+152.5 49.0 [0, 1] denote the fraction of rows assigned to the CPU. Our
+162.5 49.0 main metric is uniform workspace wall latency. This assumes
+172.5 49.0 that the host input and output already exist, and the reusable
+182.5 49.0 device and pinned buffers have already been allocated. The
+192.5 49.0 measured time includes staging, transfers, computation,
+202.2 49.0 synchronization, and output merging. File I/O, image
+212.2 49.0 generation, context creation, workspace allocation and
+222.2 49.0 correctness checks are not considered. Therefore, this is not the
+232.2 49.0 total application startup time.
+243.2 56.5 We investigate majorly three questions. RQ1: how is
+254.5 49.0 OpenMP scaling different from local Sobel and multi stage
+266.0 49.0 Canny? RQ2 examines whether shared memory Sobel kernels
+277.3 49.0 improve kernel time or latency? RQ3 looks at when row
+288.8 49.0 partitioning performs better than device only execution, and
+300.3 49.0 how well can a small model extrapolate to a larger image? We
+311.5 49.0 expect over head to have a better effect on small inputs,
+323.0 49.0 providing limited benefit for a small stencil, and that an
+334.3 49.0 allocation based on full image rates does not necessarily reduce
+345.8 49.0 pipeline latency. These hypotheses are tested only for the
+357.3 49.0 configuration, used in the study. For endpoint throughputs PC
+368.5 49.0 = N/TC and PG = N/TG, an initial estimate is
+395.1 151.6 P T
+398.7 158.6 C G
+402.3 115.0 f = = . (1)
+406.2 119.0 0
+411.4 138.8 P + P T + T
+415.0 146.3 C G C G
+422.3 36.0 This estimate takes the assumption that work can be divided
+433.8 36.0 according to ideal processing rates. However, fixed overheads,
+445.3 36.0 halo rows and resource contention can have an affect on the
+456.8 36.0 results. We compare the nearest tested fraction with the best
+468.3 36.0 fraction observed in the whole experiment, while not treating
+479.8 36.0 either as a global optimum.
+521.8 79.3 IV. SYSTEM DESIGN AND IMPLEMENTATION
+541.1 49.0 A. Algorithm contracts
+563.9 36.0 All inputs are 8-bit grayscale images. Sobel uses the conventional
+574.9 36.0 horizontal mask [−1, 0, 1; −2, 0, 2; −1, 0, 1] and its transpose,
+586.0 36.0 with signed integer accumulation and unsigned 16-bit output
+596.7 36.0 |Gx| + |Gy|.
+620.5 36.0 The outermost output border is set to zero, with no clipping,
+632.7 36.0 normalization or thresholding. Integer arithmetic allows exact
+645.0 36.0 comparison between CPU and GPU results.
+716.4 59.0 The Canny implementation uses a 5×5 smoothing filter
+726.4 49.0 formed from the binomial coefficients ([1,4,6,4,1]), normalized
+736.4 49.0 by 256. Boundary samples are replicated during smoothing.
+746.4 49.0 Sobel gradients are then calculated using floating-point
+756.2 49.0 arithmetic to obtain magnitudes and directions. Non-maximum
+766.2 49.0 suppression groups directions into four bins, retains ties and
+COL 1
+46.4 315.1 sets the outer border to zero. Absolute thresholds of 40 and 100
+56.4 315.1 are used. Finally, a global serial queue follows eight-connected
+66.4 315.1 weak pixels starting from strong pixels. No stage uses OpenCV.
+76.2 315.1 This implementation follows a specific Canny variant and does
+86.2 315.1 not aim to reproduce every library implementation or the original
+96.2 315.1 multiscale detector.
+
+PAGE 3 612 792
+COL 0
+47.4 46.0 B. CPU and CUDA execution wr
+60.3 302.1 dif
+71.5 36.0 OpenMP parallelizes independent rows using static scheduling Re
+83.8 36.0 and configurable thread counts [22]. Dynamic adjustment is ind
+95.8 36.0 disabled. In Canny, smoothing, gradient calculation and siz
+108.0 36.0 suppression are parallelized, while global hysteresis remains
+120.3 36.0 serial. Canny latency also includes temporary allocations, unlike
+132.5 36.0 Sobel, which uses reusable arrays. Therefore, latency differences
+144.8 36.0 between the two algorithms are descriptive rather than a direct
+157.0 36.0 comparison of equivalent workloads.
+181.3 46.0 The baseline CUDA implementation assigns one thread to
+193.8 46.0 each output pixel. The tiled version loads a block and its
+206.6 46.0 one-pixel halo into shared memory. All threads reach the
+219.3 46.0 synchronization barrier before out-of-range threads return.
+231.8 46.0 The tested block configurations are 16 × 16, 32 × 8 and 32 ×
+244.6 46.0 16. CUDA calls and launches are checked, and results are
+257.3 46.0 read after stream synchronization. Timing distinguishes
+269.9 46.0 device execution intervals from host-visible wall time,
+282.6 46.0 following CUDA guidance [23].
+306.1 55.8 Hybrid Sobel assigns the upper ⌊f H⌋ rows to eight
+317.1 46.0 OpenMP threads and the lower rows to CUDA. One
+327.6 46.0 preceding halo row is transferred when required, and CPU
+338.1 46.0 and GPU outputs occupy separate regions. Pinned host
+348.9 46.0 memory supports asynchronous transfer submission
+359.4 46.0 through a non-blocking stream. CPU processing starts after
+369.9 46.0 the GPU operations are queued, after which the host waits
+380.4 46.0 for completion and copies the GPU output into the final
+391.1 46.0 array. Fractions 0 and 1 use the same hybrid wrapper.
+415.3 55.8 Asynchronous submission alone is not proof of overlap.
+427.1 46.0 We additionally record the conservative interval bound
+446.4 84.0 L = max(0, T + T − T ). (2)
+450.6 142.1 C,region G,kernel wall
+459.6 55.8 Both intervals fall within the overall wall-clock interval. A
+470.1 46.0 positive value supports temporal overlap between the CPU
+480.6 46.0 region and GPU kernel, but does not prove continuous CPU
+491.4 46.0 activity. A zero value is inconclusive because transfers and
+501.9 46.0 staging also contribute to wall time. No profiler timeline was
+512.4 46.0 collected.
+549.6 95.0 V. EXPERIMENTAL METHODOLOGY
+565.8 46.0 A. Platform and inputs
+590.0 36.0 Experiments ran on Windows 11 Home Single Language, build
+602.2 36.0 26200, with an Intel Core i7-13700HX (16 cores, 24 logical
+614.5 36.0 processors), 16,886,128,640 bytes of RAM and an NVIDIA RTX
+626.5 36.0 4060 Laptop GPU with 8188 MiB of memory and compute
+638.7 36.0 capability 8.9. The NVIDIA driver was 576.02. The code was
+651.0 36.0 compiled using CUDA 12.9.41, MSVC 14.44 and C++17, with host
+663.2 36.0 optimization and OpenMP enabled. The target was sm_89, and
+675.5 36.0 fast-math was disabled. The GPU also handles the Windows
+687.7 36.0 desktop under WDDM.
+736.5 36.0 Three synthetic image families were generated at widths of 512,
+748.8 36.0 1024, 2048 and 4096: fixed-seed xorshift noise, a checker
+760.4 36.0 pattern with 17 × 23 cells, and a two-dimensional ramp with a
+COL 1
+48.0 310.0 rap discontinuity. These patterns provide controlled texture
+60.3 310.0 fferences but do not represent natural-image populations.
+72.3 310.0 epeating the same family at different sizes is not treated as
+84.5 310.0 dependent scene evidence. Additional flat, step and irregular-
+96.8 310.0 zed images were used for correctness testing.
+
+PAGE 4 612 792
+COL 0
+50.9 49.0 B. Validation and sampling
+74.8 36.0 The C++ suite passed 984 equivalence checks and three
+87.0 36.0 analytical checks. Testing covered dimensions as small as 1 × 1,
+99.3 36.0 non-multiples of CUDA block dimensions, six CPU settings, three
+111.5 36.0 GPU block shapes and five partition fractions. Sobel was checked
+123.8 36.0 against an independent nested-mask implementation. Serial and
+136.0 36.0 OpenMP Canny results were compared for consistency, with
+148.0 36.0 additional small-input oracle tests. These checks do not prove
+160.3 36.0 correctness for every possible connectivity case. Every warm-up
+172.5 36.0 and retained benchmark output was also compared with its
+184.8 36.0 sequential reference.
+209.1 36.0 Each of the 252 configurations ran in a separate process, with
+221.3 36.0 three untimed warm-ups followed by 15 timed observations.
+233.3 36.0 Configuration order was shuffled once using seed 3129. OpenMP
+245.6 36.0 thread counts were 1, 2, 4, 8 and 16; the sequential path used
+257.8 36.0 an inactive parallel region. Dynamic teams were disabled, and
+270.1 36.0 passive waiting was requested through the environment. CPU
+282.4 36.0 affinity and clock frequencies were not fixed, and runtime
+294.6 36.0 settings were not assumed to override all Microsoft runtime
+306.9 36.0 behaviour.
+330.9 36.0 CUDA events measured H2D transfers, kernel execution and D2H
+343.1 36.0 transfers, while steady_clock measured the complete processing
+355.4 36.0 interval. The raw CSV stores timings, configuration details, image
+367.6 36.0 family, repetition, correctness, run identifier and warm-up
+379.6 36.0 count. A manifest records executable and source hashes along
+391.9 36.0 with hardware information. No samples were removed, and no
+404.1 36.0 configuration failed.
+428.4 36.0 Results are reported using medians and interquartile ranges
+440.6 36.0 (IQRs). Pooled configuration plots contain 45 observations, with
+452.9 36.0 15 from each image family, so their spread reflects both content
+464.9 36.0 differences and timing variation. Speedup plots divide each
+477.1 36.0 family's sequential median by the corresponding
+489.4 36.0 implementation median before summarizing the three ratios.
+501.6 36.0 These values may differ from ratios calculated using pooled
+513.9 36.0 medians. No confidence intervals or significance claims are
+526.2 36.0 made because consecutive observations from one session are
+538.4 36.0 not independent replicated experiments.
+582.1 49.0 C. Held-out model
+597.9 59.0 For hybrid-path configuration medians, we fit
+614.9 56.0 T^ = a + bN f + cN (1 − f ) + dN min(f, 1 − f ), (3)
+621.3 110.3 M M M
+637.1 49.0 where N = N/106. Least squares uses only widths 512,
+641.1 86.3 M
+649.4 49.0 1024 and 2048 (45 family–fraction medians). All 15 medi-
+661.1 49.0 ans at width 4096 are withheld. Predictions are clipped to
+672.9 49.0 nonnegative values. This four-coefficient descriptive model ap-
+684.9 49.0 proximates a piecewise-linear allocation curve; its coefficients
+696.6 49.0 do not separately identify transfer or synchronization costs.
+708.4 49.0 MAPE is computed on the held-out configuration medians, not
+720.4 49.0 on training observations.
+740.9 145.8 VI. RESULTS
+756.9 49.0 A. Latency and CPU scaling
+COL 1
+47.4 325.1 Table I reports pooled Sobel medians. At the largest size, eight-
+59.4 315.1 thread OpenMP is faster than baseline CUDA in this session.
+71.2 315.1 Figure 1 shows the trend with quartile bars; the
+
+PAGE 5 612 792
+COL 0
+47.0 151.8 TABLE I
+56.0 58.8 SOBEL STEADY-WORKSPACE LATENCY (MS). EACH CELL IS THE
+65.0 56.5 MEDIAN OF 45 OBSERVATIONS ACROSS THREE FAMILIES. COLUMN
+74.0 96.3 HEADINGS ARE SQUARE WIDTHS IN PIXELS.
+92.3 75.8 Configuration 512 1024 2048 4096
+101.3 72.5 Sequential 0.594 2.376 9.109 37.318
+110.3 72.5 OpenMP 8 0.193 0.584 1.676 5.996
+119.3 72.5 CUDA global 0.200 0.623 2.196 9.839
+128.3 75.0 CUDA tiled 16x16 0.202 0.617 2.293 9.542
+197.2 66.3 101
+254.2 66.3 100
+316.8 93.0 0 5 10 15
+329.6 137.8 Image size (megapixels)
+357.6 46.0 Fig. 1. Sobel pipeline latency. Error bars show pooled Q1–Q3, not
+366.3 46.0 confidence intervals. All staging and transfers are included.
+398.3 46.0 artifact supplies per-family summaries and speedup plots.
+410.3 46.0 GPU kernel speed does not translate directly into lower host-
+422.3 46.0 visible latency.
+434.7 55.8 At 4096 × 4096, pooled Canny medians are 1083.075
+446.8 46.0 ms sequentially and 203.268 ms with 16 threads. Scaling
+458.6 46.0 is not monotonic across the measured thread settings. The
+470.3 46.0 global serial queue, allocation behavior, image content and
+482.3 46.0 operating-system scheduling are plausible contributors, but
+494.3 46.0 this experiment does not isolate their causal effects. Figure 2
+506.1 46.0 uses per-family speedups to avoid equating a ratio of pooled
+518.1 46.0 timings with a pooled speedup.
+540.6 46.0 B. Tiling and data movement
+557.3 55.8 For baseline CUDA at the largest size, median event in-
+569.3 46.0 tervals are 1.334 ms H2D, 0.531 ms kernel and 2.746 ms
+581.3 46.0 D2H. The wall median is 9.839 ms. Differences include host
+593.4 46.0 staging, merging and runtime overhead; sums of separate
+605.1 46.0 medians need not equal the median of their sum. The
+617.1 46.0 tiled
+629.2 46.0 16 × 16 kernel takes 0.767 ms, compared with 0.531 ms
+641.4 46.0 for the global-memory kernel. Every tested tiled shape has
+651.4 46.0 a
+662.9 46.0 higher pooled kernel median than baseline at every measured
+674.6 46.0 resolution (Fig. 3).
+687.1 55.8 Some tiled pipeline medians are nevertheless slightly
+699.1 46.0 lower. Since their kernel work is slower and separately
+710.9 46.0 randomized runs have visible spread, these differences do
+722.9 46.0 not demonstrate a beneficial tiling optimization. Cache
+734.9 46.0 reuse in the baseline
+COL 1
+170.2 319.6 )
+173.6 319.6 s
+177.3 319.6 m
+184.7 319.6 (
+191.7 319.6 y
+196.4 319.6 c
+200.9 319.6 n
+206.2 319.6 e
+211.0 319.6 t
+214.8 319.6 a
+219.9 319.6 l
+226.2 319.6 e
+231.1 319.6 c
+235.6 319.6 a
+240.6 319.6 p
+245.9 319.6 s
+249.5 319.6 k
+254.3 319.6 r
+257.7 319.6 o
+262.8 319.6 w
+269.8 319.6 -
+273.4 319.6 y
+277.8 319.6 d
+283.1 319.6 a
+288.2 319.6 e
+293.0 319.6 t
+296.7 319.6 S
+
+PAGE 6 612 792
+COL 0
+59.5 56.4 )
+62.9 56.4 e
+67.8 56.4 r a 7
+76.1 56.4 u
+81.0 56.4 q
+93.0 56.4 6
+86.1 56.4 s
+89.2 68.5 6
+98.0 56.4 9
+102.8 56.4 0
+107.5 56.4 4 ( 5
+119.2 56.4 la
+126.5 56.4 it
+129.9 56.4 n 4
+138.1 56.4 e
+143.1 56.4 u
+148.0 56.4 q e 3
+158.1 56.4 s
+165.1 56.4 s
+168.9 56.4 v 2
+176.8 56.4 p
+181.9 56.4 u
+186.8 56.4 d
+190.7 56.4 e 1
+197.1 56.4 e
+202.0 56.4 p
+207.0 56.4 S
+211.0 88.0 1 2 4 8 16
+223.2 153.1 OpenMP threads
+262.0 49.0 Fig. 2. Median of three per-family speedups at 4096 × 4096. The baseline
+271.1 49.0 is the same family’s sequential implementation.
+321.6 70.3 0.8
+332.3 56.5 )
+335.7 56.5 s
+339.1 56.5 m
+353.0 56.5 la
+360.7 56.5 v
+346.5 56.5 (
+354.1 70.3 0.6
+365.1 56.5 r
+368.9 56.5 e
+373.8 56.5 t
+377.7 56.5 n
+388.2 56.5 le
+382.5 56.5 i
+386.6 70.3 0.4
+395.9 56.5 n
+401.1 56.5 r
+404.7 56.5 e
+409.8 56.5 k
+417.3 56.5 A 0.2
+422.9 56.5 D
+428.5 56.5 U
+434.5 56.5 C
+451.6 70.3 0.0
+463.6 93.8 0 5 10 15
+476.4 139.6 Image size (megapixels)
+517.1 49.0 Fig. 3. Device event intervals for global and tiled Sobel. Quartile bars
+525.9 49.0 summarize all three families. Tiling is a candidate whose measured kernel
+534.9 49.0 performance is unfavorable here.
+565.8 49.0 and tile-loading/barrier overhead are possible explanations for
+577.8 49.0 kernel behavior, but counters were not collected to establish a
+589.9 49.0 bottleneck.
+609.4 49.0 C. Partitions and prediction
+624.9 59.0 Within the hybrid wrapper, pooled best tested CPU fractions
+636.9 49.0 are 1.0, 0.75, 1.0 and 0.5 as width increases. At width 4096, the
+648.9 49.0 half-CPU split has a 6.528 ms median, versus 9.119 ms at the
+660.9 49.0 GPU endpoint and 6.819 ms at the CPU endpoint. How-ever,
+672.6 49.0 independently measured eight-thread OpenMP is 5.996 ms.
+684.6 49.0 The small within-wrapper gain over its CPU endpoint therefore
+696.6 49.0 does not establish superiority over a well-performing CPU-only
+708.6 49.0 execution (Fig. 4). Endpoint differences across separate
+720.4 49.0 processes expose sensitivity to execution context.
+732.4 59.0 The initial throughput estimate does not always select the
+744.4 49.0 best tested fraction. Across the recorded family–size combi-
+COL 1
+56.7 319.5 )
+59.8 319.5 s
+63.5 319.5 m
+68.4 319.5 ( 8
+77.1 319.5 y
+81.6 319.5 c
+86.1 319.5 n
+91.1 319.5 e
+96.0 319.5 t 6
+109.9 319.5 e
+99.8 319.5 a
+104.6 319.5 l
+114.8 319.5 c
+119.3 319.5 a
+124.3 319.5 p 4
+129.4 319.5 s
+133.0 319.5 k
+137.8 319.5 r
+141.2 319.5 o
+146.3 319.5 w
+152.9 319.5 - 2
+156.6 319.5 y
+161.0 319.5 d
+166.0 319.5 a
+171.1 319.5 e
+176.0 319.5 t
+179.4 319.5 S 0
+202.5 351.1 0 20 40 60 80 100
+214.5 396.2 Rows assigned to CPU (%)
+254.8 312.1 Fig. 4. Pooled hybrid-wrapper medians across CPU fractions. Endpoint paths
+263.6 312.1 and separately timed standalone implementations must be distinguished.
+313.0 530.5 1.0
+316.5 332.6 10
+340.2 319.5 )s 8 0.8
+347.3 319.5 m
+354.5 319.5 (
+360.5 319.5 y n
+365.2 319.5 c n
+374.5 319.5 e
+365.1 337.9 6 0.6 o it
+375.7 547.6 c
+393.2 319.5 d
+379.2 319.5 t a l
+392.3 337.9 4 0.4 U
+379.9 547.6 a r f
+398.0 319.5 e t c P C
+410.7 319.5 id
+417.8 319.5 e 2
+422.0 319.5 r 0.2
+426.1 319.5 P
+443.0 337.9 0
+449.0 530.5 0.0
+459.5 354.1 0 2 4 6 8 10
+471.8 362.4 Measured held-out latency (ms)
+511.6 312.1 Fig. 5. Largest-resolution medians were excluded from fitting. Dashed line
+520.6 312.1 denotes exact prediction; color identifies CPU fraction.
+559.3 312.1 nations, nearest-grid selection has regret from 0 to 89.35%
+571.3 312.1 relative to the lowest observed candidate median. This is a
+583.4 312.1 retrospective diagnostic, subject to selection bias and mea-
+595.1 312.1 surement noise, not out-of-sample policy performance.
+610.1 321.9 5 hybrid observations have an overlap lower bound greater
+622.1 312.1 than 0.01 ms; the largest bound is 0.0556 ms. This supports
+634.1 312.1 limited interval overlap in those observations. It does not
+645.9 312.1 establish overlap for every configuration or explain latency
+657.9 312.1 improvements causally. A synchronized profiler trace would
+669.9 312.1 strengthen this validation.
+684.6 321.9 The fitted model yields 6.13% held-out MAPE on the 15
+696.6 312.1 largest-resolution medians. Figure 5 shows individual predic-
+708.6 312.1 tions. The held-out set uses the same three synthetic families
+720.6 312.1 and hardware, so this result demonstrates size extrapolation
+732.4 312.1 within the study only. It does not establish a portable allocation
+744.4 312.1 model or justify selecting arbitrary unmeasured fractions.
+
+PAGE 7 612 792
+COL 0
+52.3 158.3 TABLE II
+61.3 60.5 LARGEST-RESOLUTION SOBEL LATENCY VARIABILITY (MS). Q1–Q3
+70.3 89.3 COMBINES IMAGE-FAMILY AND TIMING VARIATION.
+87.8 89.3 Configuration Median Q1–Q3 n
+96.8 85.8 Sequential 37.318 36.489–40.950 45
+105.8 85.8 OpenMP 8 5.996 5.440–6.864 45
+114.8 85.8 CUDA global 9.839 9.049–10.443 45
+123.8 88.3 CUDA tiled 16x16 9.542 9.101–9.919 45
+156.0 136.6 VII. DISCUSSION
+171.5 61.0 The primary finding is a difference between where arith-
+183.2 51.0 metic runs quickly and where an entire host-to-host image
+195.2 53.3 operation runs quickly. For a small regular stencil, device
+207.2 51.0 computation is only part of the pipeline. Keeping intermediate
+219.0 51.0 data resident on the GPU could change this balance, but it
+231.0 59.3 would answer a different question and is not measured here.
+243.0 59.3 Adding shared-memory traffic and synchronization can cost
+254.7 51.3 more than the reuse it enables. The observed result should
+266.8 53.5 inform a future optimization choice, not be hidden by empha-
+278.8 51.0 sizing a favorable isolated wall-time sample. Similarly, col-
+290.8 50.8 laborative CPU–GPU execution should be compared against
+302.5 50.8 both endpoints under repeated controlled conditions. Merely
+314.5 51.0 demonstrating correctness and asynchronous submission is
+326.5 49.0 insufficient to claim a practical gain.
+338.5 59.0 The model is useful as a compact description of this dataset,
+350.3 49.0 while the rate-estimate regret demonstrates the limits of ideal-
+362.3 49.0 ized divisible-work assumptions. The extensive scheduling lit-
+374.3 49.0 erature provides stronger general techniques; our study instead
+386.3 49.0 makes the timing scope and the limits of a small empirical
+398.0 49.0 model inspectable.
+417.3 72.0 VIII. THREATS TO VALIDITY AND LIMITATIONS
+432.8 59.0 This is one laptop and one session. The desktop GPU is
+444.6 49.0 shared, CPU placement is uncontrolled, and background ac-
+456.6 49.0 tivity, thermal state and power policy can affect measurements.
+468.6 49.0 Fifteen within-process repetitions characterize local variability
+480.6 49.0 without establishing cross-day reproducibility. Table II reports
+492.3 49.0 the largest-resolution spread so that small differences are not
+504.3 49.0 mistaken for robust improvements.
+516.3 59.0 Only synthetic images are measured. Natural-image gener-
+528.3 49.0 alization, different machines, energy, GPU-resident pipelines,
+540.1 49.0 cold-start latency and production-library baselines remain
+552.1 49.0 untested. CPU SIMD tuning is not explicitly optimized.
+564.1 49.0 OpenMP Canny retains a serial queue and includes intermedi-
+576.1 49.0 ate allocation costs; CUDA and hybrid Canny are not imple-
+587.9 49.0 mented. Exact comparison validates the specified algorithms,
+599.9 49.0 not perceptual edge quality or agreement with every library.
+611.9 49.0 Tests cannot prove absence of all memory errors, and Compute
+623.6 49.0 Sanitizer was not run.
+635.6 59.0 The model uses a small, structured dataset and configuration
+647.6 49.0 medians. MAPE alone does not validate an allocation decision,
+659.6 49.0 and no statistically significant or universally optimal partition
+671.4 49.0 is claimed. The review verifies source existence and records
+683.4 49.0 reading depth, but is not an exhaustive systematic review.
+695.4 49.0 Author information and human validation remain required
+707.1 49.0 before submission.
+COL 1
+47.4 354.6 IX. CONCLUSION AND FUTURE WORK
+62.4 321.9 Under the specified host-to-host timing contract, OpenMP
+74.4 312.1 with eight threads outperforms baseline CUDA Sobel at the
+86.2 312.1 largest tested size, despite a short CUDA kernel interval.
+98.2 312.1 Shared-memory tiling worsens kernel time in all tested config-
+110.2 312.1 urations. Hybrid allocation depends on image size and execu-
+122.2 312.1 tion context; the evidence does not support a general advantage
+134.0 312.1 over CPU-only execution. A small model extrapolates to the
+146.0 312.1 held-out largest size with 6.13% MAPE, within a deliberately
+158.0 312.1 narrow scope.
+169.7 321.9 Next steps are independent measurement sessions, con-
+181.7 312.1 trolled power and affinity, natural images with documented
+193.7 312.1 licenses, profiler-confirmed overlap, allocation-inclusive la-
+205.7 312.1 tency, and GPU Canny with validated global connectivity.
+217.5 312.1 These extensions are required before broader performance or
+229.5 312.1 scheduling claims.
+247.5 378.1 AI ASSISTANCE DISCLOSURE
+262.5 321.9 OpenAI Codex assisted with implementation, experiment
+274.5 312.1 orchestration, analysis scripts and manuscript drafting. Mea-
+286.3 312.1 surements were produced by executed programs, not gener-ated
+298.3 312.1 timing values. This draft still requires human review of the
+310.3 312.1 code, evidence, authorship, and venue-specific disclosure
+322.0 312.1 requirements; no submission or acceptance is represented.
+340.0 412.4 REFERENCES
+356.3 316.1 [1] J. Canny, “A computational approach to edge detection,” IEEE
+365.1 330.4 Transactions on Pattern Analysis and Machine Intelligence, vol. PAMI-
+374.1 330.4 8, no. 6, pp. 679–698, 1986. [Online]. Available: https:
+383.1 330.4 //doi.org/10.1109/tpami.1986.4767851
+392.1 316.1 [2] J. Nickolls, I. Buck, M. Garland, and K. Skadron, “Scalable parallel
+401.1 330.4 programming with cuda: Is cuda the parallel programming model that
+409.8 330.4 application developers have been waiting for?” Queue, vol. 6, no. 2,
+418.8 330.4 pp. 40–53, 2008. [Online]. Available: https://doi.org/10.1145/1365490.
+427.9 330.4 1365500
+436.9 316.1 [3] S. Che, M. Boyer, J. Meng, D. Tarjan, J. W. Sheaffer, S.-H. Lee,
+445.6 330.4 and K. Skadron, “Rodinia: A benchmark suite for heterogeneous
+454.6 330.4 computing,” in 2009 IEEE International Symposium on Workload
+463.6 330.4 Characterization (IISWC), 2009, pp. 44–54. [Online]. Available:
+472.4 330.4 https://doi.org/10.1109/iiswc.2009.5306797
+481.4 316.1 [4] Y. Luo and R. Duraiswami, “Canny edge detection on nvidia cuda,”
+490.4 330.4 in 2008 IEEE Computer Society Conference on Computer Vision and
+499.4 330.4 Pattern Recognition Workshops, 2008, pp. 1–8. [Online]. Available:
+508.1 330.4 https://doi.org/10.1109/cvprw.2008.4563088
+517.1 316.1 [5] Z. Emrani, S. Bateni, and H. Rabbani, “A new parallel approach for
+526.1 330.4 accelerating the gpu-based execution of edge detection algorithms,”
+535.1 330.4 Journal of Medical Signals & Sensors, vol. 7, no. 1, p. 33, 2017. [Online].
+543.9 330.4 Available: https://doi.org/10.4103/2228-7477.199155
+552.9 316.1 [6] L. I. Mochurad, “Canny edge detection analysis based on parallel
+561.9 330.4 algorithm, constructed complexity scale and cuda,” Computing and
+570.9 330.4 Informatics, vol. 41, no. 4, pp. 957–980, 2022. [Online]. Available:
+579.6 330.4 https://doi.org/10.31577/cai\_2022\_4\_957
+588.7 316.1 [7] Y. Song, C. Li, S. Xiao, Q. Zhou, and H. Xiao, “A parallel canny
+597.7 330.4 edge detection algorithm based on opencl acceleration,” PLOS ONE, vol.
+606.7 330.4 19, no. 1, p. e0292345, 2024. [Online]. Available:
+615.4 330.4 https://doi.org/10.1371/journal.pone.0292345
+624.4 316.1 [8] Q. Chang, X. Li, Y. Li, and J. Miyazaki, “Multi-directional sobel
+633.4 330.4 operator kernel on gpus,” Journal of Parallel and Distributed
+642.4 330.4 Computing, vol. 177, pp. 160–170, 2023. [Online]. Available:
+651.2 330.4 https://doi.org/10.1016/j.jpdc.2023.03.004
+660.2 316.1 [9] K. Datta, M. Murphy, V. Volkov, S. Williams, J. Carter, L. Oliker,
+669.2 330.4 D. Patterson, J. Shalf, and K. Yelick, “Stencil computation optimization
+678.2 330.4 and auto-tuning on state-of-the-art multicore architectures,” in 2008
+687.2 330.4 SC - International Conference for High Performance Computing,
+696.0 330.4 Networking, Storage and Analysis, 2008, pp. 1–12. [Online]. Available:
+705.0 330.4 https://doi.org/10.1109/sc.2008.5222004
+
+PAGE 8 612 792
+COL 0
+52.5 49.0 [10] J. Ragan-Kelley, A. Adams, S. Paris, M. Levoy, S. Amarasinghe,
+61.3 67.3 and F. Durand, “Decoupling algorithms from schedules for easy
+70.3 67.3 optimization of image processing pipelines,” ACM Transactions
+79.0 67.3 on Graphics, vol. 31, no. 4, 2012. [Online]. Available: https:
+88.0 67.3 //people.csail.mit.edu/jrk/halide12/
+97.0 49.0 [11] C.-K. Luk, S. Hong, and H. Kim, “Qilin: Exploiting parallelism on
+106.0 67.3 heterogeneous multiprocessors with adaptive mapping,” in 42nd Annual
+115.0 67.3 IEEE/ACM International Symposium on Microarchitecture, 2009, pp.
+123.8 67.3 45–55. [Online]. Available: https://faculty.cc.gatech.edu/~hyesoon/qilin_
+132.8 67.3 luk.pdf
+141.8 49.0 [12] C. Augonnet, S. Thibault, R. Namyst, and P. Wacrenier, “Starpu: a
+150.8 67.3 unified platform for task scheduling on heterogeneous multicore
+159.5 67.3 architectures,” Concurrency and Computation: Practice and Experience,
+168.5 67.3 vol. 23, no. 2, pp. 187–198, 2011. [Online]. Available: https:
+177.5 67.3 //doi.org/10.1002/cpe.1631
+186.5 49.0 [13] J. Lee, M. Samadi, Y. Park, and S. Mahlke, “Skmd: Single kernel
+195.6 67.3 on multiple devices for transparent cpu-gpu collaboration,” ACM
+204.3 67.3 Transactions on Computer Systems, vol. 33, no. 3, pp. 1–27, 2015.
+213.3 67.3 [Online]. Available: https://doi.org/10.1145/2798725
+222.3 49.0 [14] C. Lee, W. W. Ro, and J.-L. Gaudiot, “Boosting cuda applications
+231.3 67.3 with cpu–gpu hybrid computing,” International Journal of Parallel
+240.1 67.3 Programming, vol. 42, no. 2, pp. 384–404, 2014. [Online]. Available:
+249.1 67.3 https://doi.org/10.1007/s10766-013-0252-y
+258.0 49.0 [15] P. Pandit and R. Govindarajan, “Fluidic kernels: Cooperative
+267.0 67.3 execution of opencl programs on multiple heterogeneous devices,” in
+275.8 67.3 Proceedings of Annual IEEE/ACM International Symposium on Code
+284.8 67.3 Generation and Optimization, 2014, pp. 273–283. [Online]. Available:
+293.6 67.3 https://doi.org/10.1145/2544137.2544163
+302.6 49.0 [16] G. Teodoro, T. M. Kurc, T. Pan, L. A. Cooper, J. Kong, P. Widener, and
+311.6 67.3 J. H. Saltz, “Accelerating large scale image analyses on parallel, cpu-gpu
+320.6 67.3 equipped systems,” in 2012 IEEE 26th International Parallel and
+329.6 67.3 Distributed Processing Symposium, 2012, pp. 1093–1104. [Online].
+338.3 67.3 Available: https://doi.org/10.1109/ipdps.2012.101
+COL 1
+48.0 312.1 [17] R. K and N. N. Chiplunkar, “A survey on techniques for cooperative
+56.8 330.4 cpu-gpu computing,” Sustainable Computing: Informatics and Systems,
+65.8 330.4 vol. 19, pp. 72–85, 2018. [Online]. Available:
+74.5 330.4 https://doi.org/10.1016/j.suscom.2018.07.010
+83.5 312.1 [18] C. Huang, A. Iwaki, T. Hatano, and T. Shimada, “A decomposition-based
+92.5 330.4 method for stage-aware cpu/gpu configuration selection under
+101.5 330.4 computation-latency slos in python image processing pipelines,” IEEE
+110.3 330.4 Access, vol. 14, pp. 123 398–123 424, 2026. [Online]. Available:
+119.3 330.4 https://doi.org/10.1109/access.2026.3721457
+128.3 312.1 [19] S. Williams, A. Waterman, and D. Patterson, “Roofline: an insightful
+137.3 330.4 visual performance model for multicore architectures,” Communications
+146.0 330.4 of the ACM, vol. 52, no. 4, pp. 65–76, 2009. [Online]. Available:
+155.0 330.4 https://doi.org/10.1145/1498765.1498785
+164.0 312.1 [20] T. Mytkowicz, A. Diwan, M. Hauswirth, and P. F. Sweeney, “Producing
+173.0 330.4 wrong data without doing anything obviously wrong!” ACM SIGPLAN
+181.8 330.4 Notices, vol. 44, no. 3, pp. 265–276, 2009. [Online]. Available:
+190.8 330.4 https://doi.org/10.1145/1508284.1508275
+199.8 312.1 [21] A. Georges, D. Buytaert, and L. Eeckhout, “Statistically rigorous
+208.8 330.4 java performance evaluation,” in Proceedings of the 22nd annual
+217.6 330.4 ACM SIGPLAN conference on Object-oriented programming systems,
+226.6 330.4 languages and applications, 2007, pp. 57–76. [Online]. Available:
+235.3 330.4 https://doi.org/10.1145/1297027.1297033
+244.6 312.1 [22] OpenMP Architecture Review Board, OpenMP Application
+253.3 330.4 Programming Interface, 2021, version 5.2; implementation uses
+262.3 330.4 only legacy parallel-for constructs. [Online]. Available:
+271.3 330.4 https://www.openmp.org/specifications/
+280.3 312.1 [23] NVIDIA, CUDA C++ Best Practices Guide, 2025, version 12.9.
+289.1 330.4 Accessed 2026-10-26. [Online]. Available: https://docs.nvidia.com/
+298.1 330.4 cuda/archive/12.9.0/cuda-c-best-practices-guide/index.html
